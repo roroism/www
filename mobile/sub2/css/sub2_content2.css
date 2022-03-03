@@ -1,0 +1,532 @@
+/* 윤리경영 */
+
+#content .title_area {
+
+}
+#content .title_area h2 {
+  /* 35px */
+  font-size: 2.500rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 30px;
+}
+#content .content_area {
+  margin-top: 3rem;
+}
+#content .content_area h3 {
+  /* 30px */
+  font-size: 2.143rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+#content .content_area h4 {
+  /* 27px */
+  font-size: 1.929rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+#content .content_area h3::before{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 35px;
+  background-color: #3cb149;
+  /* background-color: red; */
+  position: absolute;
+  top: -37px;
+  left: 50%;
+}
+#content .content_area h2::after {
+
+}
+
+
+
+/* 윤리경영 기본 */
+#content .ethics_basic {
+  position: relative;
+}
+#content .ethics_basic .green_vertical_bar {
+  position: absolute;
+  width: 1px; height: 50px;
+  background-color: #3cb149;
+}
+/* #content .ethics_basic .green_vertical_bar:nth-of-type(1) {
+  left: 265px; bottom: 177px;
+}
+#content .ethics_basic .green_vertical_bar:nth-of-type(2) {
+  left: 600px; bottom: 177px;
+}
+#content .ethics_basic .green_vertical_bar:nth-of-type(3) {
+  left: 935px; bottom: 177px;
+} */
+
+/* #content .ethics_basic::before {
+  content: "";
+  display: block;
+  width: 1px; height: 100px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+} */
+#content .ethics_basic div.ethics_basic_bg {
+  margin-top: 80px;
+  width: 100%;
+  height: 250px;
+  background: url("../images/content2/ethic1.jpg") center / cover no-repeat rgba(0, 0, 0, .1);
+}
+#content .ethics_basic .inner .opacity_box {
+  height: 250px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4); 
+}
+#content .ethics_basic h3 {
+  color: #fff;
+  position: relative;
+  padding-top: 30px;
+}
+#content .ethics_basic h3::before {
+  height: 65px;
+}
+#content .ethics_basic h3 + p {
+  /* 18px */
+  font-size: 1.286rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 0 3%;
+}
+#content .ethics_basic ul {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+#content .ethics_basic ul li {
+  /* 17px */
+  font-size: 1.214rem;
+  /* float: left; */
+  width: auto;
+  padding: 20px 2%;
+  line-height: 2em;
+  text-align: justify;
+}
+#content .ethics_basic ul li span {
+  display: block;
+  /* 24px */
+  font-size: 28px;
+  margin-bottom: 27px;
+  position: relative;
+  line-height: 1em;
+}
+#content .ethics_basic ul li:nth-of-type(1) span {
+  color: #3cb149;
+}
+#content .ethics_basic ul li:nth-of-type(2) span {
+  color: #191970;
+}
+#content .ethics_basic ul li:nth-of-type(3) span {
+  color: #751485;
+}
+#content .ethics_basic ul li span::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -18px;
+  width: 80%; height: 1px;
+  border-top: 1px solid #ccc;
+}
+
+
+
+/* 윤리경영 신고 절차 */
+#content .content_area .report_procedure {
+  margin-top: 7rem;
+}
+#content .content_area .report_procedure .inner{
+  position: relative;
+}
+/* #content .content_area .report_procedure .inner h3 {
+  position: relative;
+  text-align: left;
+  padding-bottom: 40px;
+} */
+/* #content .content_area .report_procedure .inner h3::before {
+  content: "";
+  position: absolute;
+  width: 70px; height: 5px;
+  background-color: #3cb149;
+  left: 5px; top: -25px;
+} */
+#content .content_area .report_procedure .inner h3 + p {
+  /* 20px */
+  font-size: 1.429rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 6%;
+  line-height: 1.5em;
+}
+#content .content_area .report_procedure .inner ol {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+#content .content_area .report_procedure .inner ol li {
+  /* margin: 40px 60px 60px 40px; */
+  border-radius: 10px;
+  /* background-color: #999; */
+  position: relative;
+  width: 90%;
+  text-align: center;
+  box-sizing: border-box;
+  /* padding-top: 60px; */
+  /* border: 1px solid black; */
+  margin: 0 auto 2rem;
+  padding: 2rem 0;
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(1) {
+  /* margin-left: 40px; */
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(3) {
+  /* margin-right: 40px; */
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(1) {
+  border-top: 4px solid #3cb149;
+  border-bottom: 4px solid #ccc;
+  border-left: 4px solid #ccc;
+  border-right: 4px solid #3cb149;
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(2) {
+  border-top: 4px solid #191970;
+  border-bottom: 4px solid #ccc;
+  border-left: 4px solid #ccc;
+  border-right: 4px solid #191970;
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(3) {
+  border-top: 4px solid #751485;
+  border-bottom: 4px solid #ccc;
+  border-left: 4px solid #ccc;
+  border-right: 4px solid #751485;
+}
+#content .content_area .report_procedure .inner ol li::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 30px; height: 30px;
+  right: -16px; top: 130px;
+  /* background: blue; */
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  line-height: 30px;
+  font-size: 20px;
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(1)::after {
+  content: "1";
+  background-color: #3cb149;
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(2)::after {
+  content: "2";
+  background-color: #191970;
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(3)::after {
+  content: "3";
+  background-color: #751485;
+}
+#content .content_area .report_procedure .inner ol li span {
+  /* 20px */
+  font-size: 1.429rem;
+  font-weight: 700;
+  /* line-height: 60px; */
+  display: block;
+  /* margin: 2rem 0 0 0; */
+  /* padding-bottom: 10px; */
+}
+#content .content_area .report_procedure .inner ol li p {
+  /* 18px */
+  margin-top: 1rem;
+  font-size: 1.125em;
+  font-weight: 400;
+  padding: 0 10px;
+  line-height: 1.6em;
+  height: 4rem;
+}
+#content .content_area .report_procedure .inner ol li:nth-of-type(1) p:last-child {
+  font-size: 16px;
+  color: #666;
+}
+#content .content_area .report_procedure .inner span.arrow1 {
+  /* display: block; */
+  position: absolute;
+  width: 70px; height: 70px;
+  background: center / contain no-repeat url("../images/content3/arrow1.png");
+  /* background-size: 50% 50%; */
+  opacity: .4;
+  transform: rotate(180deg);
+  z-index: 3;
+}
+#content .content_area .report_procedure .inner span.firstarrow {
+  left: 386px; top: 325px;
+}
+#content .content_area .report_procedure .inner span.secondarrow {
+  left: 745px; top: 325px;
+}
+
+
+
+
+
+/* 윤리경영 상담 및 신고 */
+#content .content_area .counselling {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #f8f8f8;
+  /* position: relative; */
+  /* left: 50%; */
+  /* margin-left: -1000px; */
+  border-top: 1px solid #f8f8f8;
+  /* overflow: hidden; */
+  /* border: 1px solid black; */
+}
+#content .content_area .counselling .inner {
+  padding-bottom: 100px;
+}
+#content .content_area .counselling h3 {
+  margin-top: 30px;
+  padding-bottom: 30px;
+} 
+/* #content .content_area .counselling h3::before {
+  content: "";
+  position: absolute;
+  width: 70px; height: 5px;
+  background-color: #3cb149;
+  left: 5px; top: -25px;
+} */
+#content .content_area .counselling ul {
+  overflow: hidden;
+  width: 100%;
+  margin: 30px auto 0;
+}
+#content .content_area .counselling ul li {
+  float: left;
+  padding: 1%;
+  width: 31.33%;
+  /* height: 325px; */
+}
+/* #content .content_area .counselling ul li .img_wrap {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+  margin: 0 auto;
+} */
+/* #content .content_area .counselling ul li .img_wrap {
+  padding: 50%;
+} */
+#content .content_area .counselling ul li img {
+  display: block;
+  border-radius: 50%;
+  width: 80%;
+  /* background-color: #fff; */
+  margin: 0 auto;
+}
+/* #content .content_area .counselling ul li:nth-of-type(1) .img_wrap {
+  background: center / 50% no-repeat url(../images/content3/mail.png) #fff;
+}
+#content .content_area .counselling ul li:nth-of-type(2) .img_wrap {
+  background: center / 50% no-repeat url(../images/content3/telephone.png) #fff;
+}
+#content .content_area .counselling ul li:nth-of-type(3) .img_wrap {
+  background: center / 50% no-repeat url(../images/content3/monitor.png) #fff;
+} */
+
+#content .content_area .counselling ul li dt {
+  /* 20px */
+  font-size: 1.429rem;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+#content .content_area .counselling ul li dl dd {
+  margin-top: 10px;
+  line-height: 1.5em;
+  font-size: 1.071rem;
+  color: #666;
+  /* text-align: justify; */
+}
+#content .content_area .counselling ul li:nth-of-type(2) dd {
+  text-align: center;
+}
+#content .content_area .counselling ul li:nth-of-type(2) dl dd:nth-of-type(2) {
+  margin: 0;
+}
+
+
+/* 윤리강령 7원칙 */
+#content .content_area .ethics_rule {
+margin-top: 150px;
+margin-bottom: 70px;
+}
+/* #content .content_area .ethics_rule h3 {
+  text-align: left;
+  position: relative;
+  padding-bottom: 40px;
+} */
+/* #content .content_area .ethics_rule h3::before {
+  content: "";
+  position: absolute;
+  width: 70px; height: 5px;
+  background-color: #3cb149;
+  left: 5px; top: -25px;
+} */
+#content .content_area .ethics_rule h3+p {
+  /* 20px */
+  font-size: 1.429rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 6%;
+  line-height: 1.5em;
+}
+#content .content_area .ethics_rule ul {
+  /* border: 1px solid black; */
+  margin-left: 26px;
+}
+#content .content_area .ethics_rule ul li {
+  font-size: 1.143rem;
+  /* padding: 1.786rem 1.429rem; */
+  padding: 1.786rem 0 1.786rem 3%;
+  color: #555;
+  font-weight: 500;
+  border-bottom: 1px dotted #333;
+  line-height: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+#content .content_area .ethics_rule ul li:last-child {
+  border-bottom: none;
+}
+
+#content .content_area .ethics_rule ul li::marker {
+  color: #3cb149; 
+  /* padding: 20px; */
+  font-size: 1.429rem;
+}
+#content .content_area .ethics_rule ul li:nth-of-type(1)::marker {
+  content: "01";
+}
+#content .content_area .ethics_rule ul li:nth-of-type(2)::marker {
+  content: "02";
+}
+#content .content_area .ethics_rule ul li:nth-of-type(3)::marker {
+  content: "03";
+}
+#content .content_area .ethics_rule ul li:nth-of-type(4)::marker {
+  content: "04";
+} 
+#content .content_area .ethics_rule ul li:nth-of-type(5)::marker {
+  content: "05";
+}
+#content .content_area .ethics_rule ul li:nth-of-type(6)::marker {
+  content: "06";
+}
+#content .content_area .ethics_rule ul li:nth-of-type(7)::marker {
+  content: "07";
+}
+
+
+/* 준법통제 */
+#content .content_area .compliance_system {
+  margin-top: 150px;
+  /* 18px */
+  font-size: 1.286rem;
+  line-height: 2em;
+  margin-bottom: 10.714rem;
+  padding: 0 4%;
+  display: none;
+}
+/* #content .content_area .compliance_system h3 {
+  position: relative;
+  text-align: left;
+} */
+/* #content .content_area .compliance_system h3::before {
+  content: "";
+  position: absolute;
+  width: 70px; height: 5px;
+  background-color: #3cb149;
+  left: 5px; top: -25px;
+} */
+#content .content_area .compliance_system h4 {
+  margin-top: 3.571rem;
+  text-align: left;
+  font-size: 1.571rem;
+  padding-bottom: 0;
+} 
+#content .content_area .compliance_system h4::before {
+
+}
+#content .content_area .compliance_system > ul li {
+  font-weight: 500;
+  color: #333;
+}
+#content .content_area .compliance_system > ul > li {
+  margin-top: 20px;
+}
+#content .content_area .compliance_system > ul > li p {
+  padding-left: 25px;
+}
+#content .content_area .compliance_system > ul > li > ul li {
+  padding-left: 50px;
+  text-indent: -25px;
+}
+#content .content_area .compliance_system > ul li * {
+  font-weight: 400;
+  color: #666;
+}
+
+
+
+/* 탭 */
+#content .content_area ul.tab_menu {
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+#content .content_area ul.tab_menu li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 700;
+}
+#content .content_area ul.tab_menu li a {
+  display: block;
+  padding: 5px 0;
+  /* 18px */
+  font-size: 1.143rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  transition: all .3s;
+}
+#content .content_area ul.tab_menu li .current {
+  background-color: #3cb149;
+  color: #fff;
+  border-top: 1px solid #3cb149;
+  border-bottom: 1px solid #3cb149;
+}
+
+/* 탭 기능 */
+/* .tabs {border:1px solid #ccc; width:600px;} 
+.tabs .tab_menu{overflow: hidden;}
+.tabs .tab_menu li{float: left; margin-right: 10px;}
+
+.tabs a.tab {display:block; width:84px;text-align: center;
+          font-size: 16px; background: red; color: #fff; font-weight: bold;padding: 10px 0; transition: all .5s;} 
+
+.tabs .contlist {display: none;
+    padding:15px;line-height:1.5em; background:#CCF;} 
+.tabs .contlist h3{font-size: 20px; font-weight: bold; margin-bottom: 15px;} */

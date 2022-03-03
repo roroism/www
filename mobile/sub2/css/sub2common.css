@@ -1,0 +1,64 @@
+/* sub2 공통 css */
+
+/* visual */
+.visual {
+  background: url("../images/sub2_visual.jpg") center center no-repeat;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+}
+.visual h3 {
+  position: absolute;
+  top: 40%; left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+.visual span {
+  position: absolute;
+  top: 55%; left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+.sub_menu {position: relative;}
+.sub_menu .sub_menu__arrow {
+  display: block;
+  padding: .8rem;
+  text-align: center;
+  /* background-color: coral; */
+  /* 16px */
+  font-size: 1.143rem;
+  border-bottom: 1px solid #ccc;
+  background: url("../../images/gnb_arrow_up_333_x1.png") 95% center no-repeat;
+  transition: all .1s;
+}
+.sub_menu .sub_menu__arrow.open {
+  background: url("../../images/gnb_arrow_down_333_x1.png") 95% center no-repeat;
+}
+.sub_menu .sub_menu_list {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  /* 16px */
+  font-size: 1.143rem;
+  z-index: 3;
+}
+.sub_menu .sub_menu_list li {
+  background-color: #fff;
+}
+.sub_menu .sub_menu_list li a {
+  display: block;
+  padding: 1rem 0;
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, .7); */
+  background-color: #fff;
+  color: #666;
+}

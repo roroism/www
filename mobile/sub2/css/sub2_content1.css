@@ -1,0 +1,358 @@
+/* 사회공헌 */
+
+#content .title_area {
+
+}
+#content .title_area h2 {
+  /* 35px */
+  font-size: 2.500rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 30px;
+}
+#content .content_area {
+  margin-top: 3rem;
+}
+#content .content_area h3 {
+  /* 30px */
+  font-size: 2.143rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+#content .content_area h4 {
+  /* 27px */
+  font-size: 1.929rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* 사회공헌 */
+#content .content_area .social_contribution {width: 100%; padding-bottom: 7.143rem;}
+#content .content_area .social_contribution h3 {position: relative;}
+#content .content_area .social_contribution h3::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 35px;
+  background-color: #3cb149;
+  position: absolute;
+  top: -37px;
+  left: 50%;
+}
+#content .content_area .social_contribution h3 + p {
+  /* 20px */
+  font-size: 1.429rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 6%;
+}
+#content .content_area .social_contribution .inner {
+  position: relative;
+}
+#content .content_area .social_contribution .inner .social_contribution_bg {
+  width: 100%;
+  height: 213px;
+  background: url("../images/content1/sub2_1_img1.jpg") center / cover no-repeat;
+  position: relative;
+}
+
+#content .content_area .social_contribution .inner div.content_area_description {
+  background-color: #fff;
+  width: 95%;
+  position: absolute;
+  top: 70%;
+  left: 0; right: 0;
+  margin: 0 auto;
+}
+#content .content_area .social_contribution .inner div.content_area_description > div {
+  border: 5px solid #3cb149;
+  margin: 20px;
+  padding: 10px 20px;
+}
+#content .content_area .social_contribution .inner div.content_area_description > div p {
+  /* 20px */
+  font-size: 1.429rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2em;
+}
+#content .content_area .social_contribution .inner div.content_area_description > div span {
+  /* 30px */
+  display: block;
+  font-size: 2.000rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+/* social_contribution_strategy */
+#content .content_area .social_contribution_strategy {
+  margin-top: 3.2rem;
+  margin-bottom: 6rem;
+}
+
+#content .content_area .social_contribution_strategy h4::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 35px;
+  background-color: #3cb149;
+  position: absolute;
+  top: -37px;
+  left: 50%;
+}
+#content .content_area .social_contribution_strategy ul {
+  overflow: hidden;
+  margin: 0 auto;
+}
+#content .content_area .social_contribution_strategy ul li {
+  float: left;
+  width: 33.3%;
+  /* padding: 20px; */
+}
+#content .content_area .social_contribution_strategy ul li img {
+  display: block;
+  width: 80%;
+  margin: 2% auto;
+}
+#content .content_area .social_contribution_strategy ul li dl {
+  text-align: center;
+}
+#content .content_area .social_contribution_strategy ul li dt {
+  padding: 1.429rem 1%;
+  font-weight: 700;
+  /* 18px */
+  font-size: 1.286rem;
+}
+#content .content_area .social_contribution_strategy ul li dt span {
+  font-weight: 500;
+  /* 17px */
+  font-size: 1.214rem;
+  color: #666;
+}
+#content .content_area .social_contribution_strategy ul li dd {
+  /* 16px */
+  font-size: 1.143rem;
+  padding: 0 5% 1.429rem;
+  text-align: justify;
+}
+
+
+/* goal */
+#content .content_area .goal {
+  width: 100%;
+  height: 300px;
+  background: url("../images/content1/goal_img_1.jpg") center / cover no-repeat;
+  /* border: 1px solid black; */
+  position: relative;
+}
+#content .content_area .goal::before {
+  content: "";
+  display: block;
+  width: 1px; height: 90px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+}
+#content .content_area .goal .opacity_box {
+  background: rgba(0, 0, 0, 0.4); 
+  overflow: hidden;
+  height: 300px;
+}
+#content .content_area .goal h4 {
+  position: relative;
+  color: #fff;
+  margin-top: 55px;
+  padding-bottom: 0;
+  margin-bottom: 40px;
+}
+#content .content_area .goal p {
+  color: #fff;
+  /* 18px */
+  font-size: 1.286rem;
+  text-align: center;
+  line-height: 45px;
+  width: 95%;
+}
+#content .content_area .goal p span {
+  font-weight: 700;
+}
+
+
+/* main_activities */
+#content .content_area .main_activities {
+  /* background-color: #f8f8f8; */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  
+}
+
+#content .content_area .main_activities h4 {
+  margin-top: 6rem;
+}
+#content .content_area .main_activities h4::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 35px;
+  background-color: #3cb149;
+  position: absolute;
+  top: -37px;
+  left: 50%;
+}
+#content .content_area .main_activities ul {
+  overflow: hidden;
+  /* margin-bottom: 90px; */
+  margin-top: 10px;
+  padding: 10px 3%;
+  width: 94%;
+
+}
+#content .content_area .main_activities ul li {
+  float: left;
+  width: 46%;
+  /* height: 190px; */
+  /* margin: 0 2%; */
+  padding: 0 2%;
+  height: 239px;
+}
+#content .content_area .main_activities ul li > div {
+  max-width: 15.571rem;
+  /* width: auto; */
+  margin: 0 auto;
+  
+  /* box-shadow: 2px 2px 8px 1px rgb(0 0 0 / 20%); */
+  /* border-radius: 10px; */
+}
+#content .content_area .main_activities ul li span {
+  font-weight: 700;
+  color: #3cb149;
+  font-family: 'Roboto', sans-serif;
+  /* 24px */
+  font-size: 1.714rem;
+  display: block;
+  margin-bottom: 10px;
+}
+#content .content_area .main_activities ul li dl {
+}
+#content .content_area .main_activities ul li dl dt {
+  font-weight: 700;
+  /* 16px */
+  font-size: 1.143rem;
+  margin-bottom: 10px;
+}
+#content .content_area .main_activities ul li div > span{
+  margin-top: 10px;
+}
+#content .content_area .main_activities ul li dl dd {
+  /* 17px */
+  font-size: 1.063em;
+  text-indent: -17px;
+  padding-left: 17px;
+  /* border: 1px solid black; */
+}
+#content .content_area .main_activities ul li .green_dot {
+  display: inline-block;
+  background-color: #751485;
+  /* background-color: #3cb149; */
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  vertical-align: -7px;
+  /* line-height: 1px; */
+  margin-right: 5px;
+}
+
+
+/* main_program */
+#content .content_area .main_program {
+  margin-bottom: 200px;
+}
+#content .content_area .main_program h3 {
+  position: relative;
+}
+#content .content_area .main_program h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .content_area .main_program .inner p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+#content .content_area .main_program .inner .un_sdgs ul {
+  overflow: hidden;
+  width: 1110px;
+  margin: 0 auto;
+}
+#content .content_area .main_program .inner .un_sdgs ul li {
+  float: left;
+  margin: 10px;
+  position: relative;
+  /* transition: all .5s ease; */
+  overflow: hidden;
+}
+#content .content_area .main_program .inner .un_sdgs ul li img {
+  display: block;
+  width: 350px;
+  height: 350px;
+}
+#content .content_area .main_program .inner .un_sdgs ul li:hover img {
+
+}
+#content .content_area .main_program .inner .un_sdgs ul li .un_program {
+  /* display: none; */
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  color: #fff;
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  left: 0; top: 15px;
+  padding: 10px;
+  transition: all .4s ease;
+  z-index: 1;
+}
+/* #content .content_area .main_program .inner .un_sdgs ul li:hover .un_program {
+  opacity: 1;
+  top: 0;
+} */
+
+#content .content_area .main_program .inner .un_sdgs ul li .un_program dl {
+  padding: 5px;
+}
+#content .content_area .main_program .inner .un_sdgs ul li .un_program dl:nth-of-type(1) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 18px;
+}
+
+#content .content_area .main_program .inner .un_sdgs ul li .un_program dl dt {
+  /* 24px */
+  font-size: 1.500em;
+  line-height: 36px;
+  color: #3cb149;
+  font-weight: 700;
+}
+#content .content_area .main_program .inner .un_sdgs ul li .un_program dl dd {
+  padding-left: 10px;
+  font-size: 1.125em;
+  line-height: 1.5em;
+
+}
+#content .content_area .main_program .inner .un_sdgs ul li .un_program dl dd span {
+  /* 18px */
+  font-size: 1.125em;
+  text-align: justify;
+}

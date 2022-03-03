@@ -1,0 +1,481 @@
+/* 환경경영 */
+
+#content .title_area {
+
+}
+#content .title_area h2 {
+  /* 35px */
+  font-size: 2.500rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 30px;
+}
+#content .content_area {
+  margin-top: 3rem;
+}
+#content .content_area h3 {
+  /* 30px */
+  font-size: 2.143rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+#content .content_area h4 {
+  /* 27px */
+  font-size: 1.929rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+#content .content_area h3::before{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 35px;
+  background-color: #3cb149;
+  /* background-color: red; */
+  position: absolute;
+  top: -37px;
+  left: 50%;
+}
+
+
+
+
+
+
+#content .content_area .environmental_management {
+  margin-bottom: 3rem;
+}
+#content .content_area .environmental_management > div {
+  overflow: hidden;
+}
+#content .content_area .environmental_management h3 {
+  position: relative;
+}
+#content .content_area .environmental_management h3 + p {
+  /* 20px */
+  font-size: 1.429rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 4.5%;
+}
+#content .content_area .environmental_management img {
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#content .content_area .environmental_management ul {
+  margin-top: 25px;
+  width: 100%;
+}
+#content .content_area .environmental_management ul li {
+  /* width: 650px; */
+  padding: 20px; 
+  margin-left: 2%;
+  /* border: 1px solid black; */
+  line-height: 1.5em;
+  vertical-align: -10px;
+  font-size: 1.143rem;
+}
+#content .content_area .environmental_management ul li span.e_num {
+  /* 24px */
+  font-size: 2.143rem;
+  padding-right: 10px;
+  float: left;
+  height: 54px;
+  display: block;
+  line-height: 30px;
+  font-weight: 500;
+  position: relative;
+}
+#content .content_area .environmental_management ul li span.u_font {
+  font-size: 25px;
+}
+
+#content .content_area .environmental_management ul li span.e_num::before {
+  content: "";
+  position: absolute;
+  left: -23px; top: -18px;
+  opacity: .1;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background-color: #3cb149;
+}
+/* #content .content_area .environmental_management ul li::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 102px; top: 20px;
+  opacity: .1;
+  width: 25px; height: 25px;
+  border-radius: 50%;
+  background-color: #751485;
+} */
+#content .content_area .environmental_management ul li:last-child::before,
+#content .content_area .environmental_management ul li:last-child::after {
+  display: none;
+}
+#content .content_area .environmental_management ul li p {
+  font-weight: 300;
+  margin-left: 50px;
+  text-align: justify;
+  line-height: 1.5em;
+  vertical-align: -10px;
+}
+#content .content_area .environmental_management > div > span:nth-of-type(1) {
+  font-weight: 400;
+  /* 20px */
+  font-size: 1.429rem;
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+}
+#content .content_area .environmental_management > div > span:nth-of-type(2) {
+  font-weight: 400;
+  /* 20px */
+  font-size: 1.429rem;
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+#content .content_area .environmental_management > div > span:nth-of-type(3) {
+  font-weight: 400;
+  /* 30px */
+  font-size: 2.143rem;
+  display: block;
+  text-align: center;
+}
+
+
+
+/* environmental_ms */
+#content .content_area .environmental_ms {
+  border-top: 1px solid #fff;
+  position: relative;
+  margin-bottom: 200px;
+}
+#content .content_area .environmental_ms h3 {
+  margin-top: 3rem;
+  position: relative;
+}
+#content .content_area .environmental_ms .inner > div{
+  overflow: hidden;
+}
+#content .content_area .environmental_ms .inner .p_box {
+  width: 95%;
+  margin: 80px auto 0;
+  clear: both;
+}
+#content .content_area .environmental_ms .inner .p_box dl dt:nth-of-type(1) {
+  /* 18px */
+  font-size: 1.286rem;
+  font-weight: 700;
+  padding: 40px 0 10px 0;
+}
+#content .content_area .environmental_ms .inner .p_box dl dt:nth-of-type(2) {
+  /* 14px */
+  font-size: 1rem;
+  /* padding-left: 40px; */
+  color: #666;
+  position: relative;
+}
+/* #content .content_area .environmental_ms .inner .p_box dl dd p:nth-of-type(1)::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0; top: -21px;
+  background-color: #3cb149;
+  z-index: 2;
+} */
+#content .content_area .environmental_ms .inner .p_box dl dt:nth-of-type(2) span {
+  color: #333;
+}
+#content .content_area .environmental_ms .inner .p_box dl dd p {
+  text-align: justify;
+  line-height: 1.7em;
+  padding: 40px 0;
+  /* 14px */
+  font-size: 1rem;
+}
+#content .content_area .environmental_ms .inner .p_box dl dd p:nth-of-type(1) {
+  padding-bottom: 0;
+  position: relative;
+}
+#content .content_area .environmental_ms .inner .p_box dl dd p:nth-of-type(2) {
+  padding-top: 20px;
+}
+
+#content .content_area .environmental_ms .inner .img_box {
+  margin-top: 50px;
+  margin: 50px 3% 0;
+  width: 94%;
+  text-align: center;
+
+}
+#content .content_area .environmental_ms .inner .img_box img {
+  display: block;
+  width: 40%;
+  float: right;
+  margin: 10px;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+#content .content_area .environmental_ms .inner .img_box img:nth-of-type(1){
+  /* position: absolute;
+  left: 0;  right: 0; */
+}
+#content .content_area .environmental_ms .inner .img_box img:nth-of-type(2){
+  /* position: absolute;
+  left: 0;  right: 0; */
+  margin-top: 40px;
+}
+#content .content_area .environmental_ms .environmental_ms_bg1 {
+  position: absolute;
+  width: 100%;
+  padding-bottom:30%;
+  height: 350px;
+  top: 410px;
+  z-index: -1;
+  background: url("../images/content3/bg1.jpg") center / cover no-repeat;
+}
+#content .content_area .environmental_ms .environmental_ms_bg2 {
+  position: absolute;
+  width: 100%;
+  /* height: 150px; */
+  padding-bottom:45%;
+  /* opacity: .1; */
+  /* background-color: #3cb149; */
+  top: 280px;
+  z-index: -1;
+  background: url("../images/content3/bg2.jpg") center / cover no-repeat;
+}
+
+
+
+/* environmental_main_activity */
+/* #content .content_area .environmental_main_activity {
+  margin-bottom: 150px;
+}
+#content .content_area .environmental_main_activity h3 {
+  position: relative;
+}
+#content .content_area .environmental_main_activity p {
+  font-size: 1.429rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 4.5%;
+}
+#content .content_area .environmental_main_activity .inner > div {
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+#content .content_area .environmental_main_activity .selectedGallery_area {
+  padding: 20px;
+  
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .image_area {
+  float: left;
+  padding: 2%;
+  margin: 1%;
+  width:700px; height:500px; background: center / cover no-repeat url(../images/content4/major_activities_1.jpg);
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .description_area {
+  float: left;
+  padding: .5%;
+  margin: .5%;
+  font-size: 1.500em;
+  text-align: center;
+  width: 31.6%;
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .description_area dt {
+  border-bottom: 1px solid #999;
+  height: 75px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .description_area dd {
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  padding-top: 15px;
+  text-align: justify;
+}
+
+#content .content_area .environmental_main_activity .changeGallery_area {
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+#content .content_area .environmental_main_activity .changeGallery_area li {
+  float: left;
+ padding: 20px 20px 10px 20px;
+}
+#content .content_area .environmental_main_activity .changeGallery_area li a {
+ display: block;
+}
+#content .content_area .environmental_main_activity .changeGallery_area li img {
+  width: 140px;
+  height: 100px;
+  cursor: pointer;
+} */
+
+
+
+
+/* image 슬라이드 */
+/* .slide_gallery_wrap {
+  width:900px;
+  overflow:hidden; 
+  position:relative;
+  margin: 0 auto;
+}
+.slide_gallery{
+  overflow: hidden;
+  width: 1800px;
+  position: relative;
+}
+
+.environmental_main_activity .inner > div {
+  position: relative;
+  margin: 0 auto;
+}
+.environmental_main_activity .inner > div .button{
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 605px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.environmental_main_activity .inner > div .m1 {
+  left: 50px;
+  background: url("../images/content4/left_arrow.png") center/50% no-repeat;
+  transition: all .5s;
+}
+.environmental_main_activity .inner > div .m1:hover {
+  background: url("../images/content4/left_arrow_blk.png") center/50% no-repeat;
+  left: 45px;
+}
+.environmental_main_activity .inner > div .m2 {
+  right: 50px;
+  background: url("../images/content4/right_arrow.png") center/50% no-repeat;
+  transition: all .5s;
+}
+.environmental_main_activity .inner > div .m2:hover {
+  background: url("../images/content4/right_arrow_blk.png") center/50% no-repeat;
+  right: 45px;
+} */
+
+
+/* environmental_main_activity_swiper */
+.environmental_main_activity_swiper {
+  width: 100%;
+}
+.environmental_main_activity_swiper h3+p {
+  /* 20px */
+  font-size: 1.429rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 6%;
+  line-height: 1.5em;
+}
+
+/* swiper 310 */
+ .swiper-container {
+  width: 100%;
+  /* height: 400px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.gallery-top {
+  /* height: 80%; */
+  /* width: 100%; */
+  margin-bottom: 10px;
+}
+.gallery-thumbs {
+  /* height: 50%; */
+  box-sizing: border-box;
+  /* padding: 10px 0 0 0; */
+  height: 200px;
+  /* height: 20%; */
+  /* padding-bottom: 70%; */
+} 
+.gallery-thumbs .swiper-slide {
+  height: 100%;
+  /* height: 50%; */
+  opacity: 0.4;
+  /* padding-bottom: 70%; */
+}
+
+/* 설명 */
+.gallery-top .swiper-slide {
+  position: relative;
+}
+.gallery-top .swiper-slide > div {
+  position: absolute;
+  left: 0; right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  width: 96%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90px;
+  z-index: 10;
+  color: #fff;
+  padding: 2%;
+}
+.gallery-top .swiper-slide > div strong {
+  /* text-align: center; */
+  font-size: 1.143rem;
+  font-weight: 500;
+}
+.gallery-top .swiper-slide > div p {
+  margin-top: .5rem;
+  font-size: 1rem;
+}
+
+
+
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}  
+
+
+/* .gallery-thumbs .swiper-slide:nth-of-type(1) {
+  
+  background-image: url("../images/content3/major_activities_1.jpg");
+}
+.gallery-thumbs .swiper-slide:nth-of-type(2) {
+  
+  background-image: url("../images/content3/major_activities_2.jpg");
+}
+.gallery-thumbs .swiper-slide:nth-of-type(3) {
+  
+  background-image: url("../images/content3/major_activities_3.jpg");
+}
+.gallery-thumbs .swiper-slide:nth-of-type(4) {
+  
+  background-image: url("../images/content3/major_activities_4.jpg");
+}
+.gallery-thumbs .swiper-slide:nth-of-type(5) {
+  
+  background-image: url("../images/content3/major_activities_5.jpg");
+}
+.gallery-thumbs .swiper-slide:nth-of-type(6) {
+  
+  background-image: url("../images/content3/major_activities_6.jpg");
+}
+.gallery-thumbs .swiper-slide:nth-of-type(7) {
+  
+  background-image: url("../images/content3/major_activities_7.jpg");
+} */

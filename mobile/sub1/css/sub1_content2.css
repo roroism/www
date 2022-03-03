@@ -1,0 +1,154 @@
+/* 연혁 */
+
+#content .title_area {
+
+}
+#content .title_area h2 {
+  /* 35px */
+  font-size: 2.500rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 30px;
+}
+#content .content_area {
+  margin-top: 3rem;
+}
+
+
+#content .content_area .history .inner > p:nth-of-type(1) {
+  /* 20px */
+  font-size: 1.429rem;
+  line-height: 1.5em;
+  text-align: center;
+  /* position: relative; */
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+#content .content_area .history .inner > ul {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+}
+#content .content_area .history .inner > ul li {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 700;
+}
+#content .content_area .history .inner > ul li a {
+  display: block;
+  padding: 5px 0;
+  /* 18px */
+  font-size: 1.143rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  transition: all .3s;
+}
+#content .content_area .history .inner > ul li a:hover {
+  content: "";
+  border-top: 1px solid #3cb149;
+  border-bottom: 1px solid #3cb149;
+  color: #3cb149;
+}
+#content .content_area .history .inner > ul li a span{
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+#content .content_area .history .inner > ul li .current {
+  background-color: #3cb149;
+  color: #fff;
+  border-top: 1px solid #3cb149;
+  border-bottom: 1px solid #3cb149;
+}
+#content .content_area .history .inner > ul li a.current:hover {
+  background-color: #3cb149;
+  color: #fff;
+}
+#content .content_area .history .bgf_history {
+  position: relative;
+  display: none;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#content .content_area .history .bgf_history h3 {
+  /* 30px */
+  font-size: 2.143rem;
+  text-align: center;
+  position: relative;
+  margin-top: 3rem;
+}
+#content .content_area .history .bgf_history h3::after {
+  content: "";
+  display: block;
+  width: 120px; height: 5px;
+  background-color: #3cb149;
+  position: absolute;
+  margin: 0 auto;
+  left:0; right: 0;
+  bottom: -.5rem;
+}
+#content .content_area .history .bgf_history > p {
+  /* 20px */
+  font-size: 1.250em;
+  margin-top: 27px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#content .content_area .history .bgf_history > ul {
+  position: relative;
+}
+
+#content .content_area .history .bgf_history ul > li {
+  margin-bottom: 1.5rem;
+  /* overflow: hidden; */
+  /* border: 1px solid black; */
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+#content .content_area .history .bgf_history ul > li:nth-of-type(odd) dl {
+}
+#content .content_area .history .bgf_history ul > li:nth-of-type(even) dl {
+} 
+#content .content_area .history .bgf_history ul > li dt {
+  margin-bottom: 15px;
+}
+#content .content_area .history .bgf_history ul > li dd {
+  /* 16px */
+  font-size: 1.143rem;
+  line-height: 1.8em;
+  padding-left: 3rem;
+  text-indent: -2.5rem;
+}
+#content .content_area .history .bgf_history .year {
+  color: #3cb149;
+  /* 24px */
+  font-size: 1.429rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+#content .content_area .history .bgf_history ul li strong {
+  font-family: 'Roboto', sans-serif;
+  /* 20px */
+  font-size: 1.429rem;
+  padding-right: 1rem;
+}
+#content .content_area .history .bgf_history img {
+  width: 100%;
+}
+
+
+
+/* 탭 기능 */
+.tabs {border:1px solid #ccc; width:600px;} 
+.tabs .tab_menu{overflow: hidden;}
+.tabs .tab_menu li{float: left; margin-right: 10px;}
+
+.tabs a.tab {display:block; width:84px;text-align: center;
+          font-size: 16px; background: red; color: #fff; font-weight: bold;padding: 10px 0; transition: all .5s;} 
+
+.tabs .contlist {display: none;
+    padding:15px;line-height:1.5em; background:#CCF;} 
+.tabs .contlist h3{font-size: 20px; font-weight: bold; margin-bottom: 15px;}
