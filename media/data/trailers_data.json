@@ -1,0 +1,68 @@
+{
+  "communityvideo":[
+    {
+      "title" : "Dokev Fan Art Sand Sculpture (Rock Star) Pearl Abyss DokeV sand sculpture (Rockstar)",
+      "des" : "#dokev #도깨비 #pearlabyss",
+      "des2" : "Dokev Fan art Sand Sculpture. I watched the trailer for the Pearl Abyss game Goblin and made it with sand sculptures.",
+      "img":"communityvideo5.jpg",
+      "video_path":"https://www.youtube.com/embed/G12VMtCQNPM?wmode=transparent"
+    },
+    {
+      "title" : "【Speed Painting】Pearl Abyss DOKEV fan art",
+      "des" : "#dokev #fanart",
+      "des2" : "Shuha! Hello everyone! This is Shunia. This time, based on the video that only p/v was released in Pearl Abyss I've been working on \"Fan Art\"! It's not an open game yet, so you might be unfamiliar with it Please look pretty!",
+      "img":"communityvideo3.jpg",
+      "video_path":"https://www.youtube.com/embed/CdSIQWUGxrE?wmode=transparent"
+    },
+    {
+      "title" : "[COVER]Pearl Abyss New Game, DokeV ! ★DokeV OST★ Rockstar-Luena singing a cappella with GALACTIKA (Acapella vers.)",
+      "des" : "#도깨비 #DokeV #PearlAbyss",
+      "des2" : "Pearl Abyss' new game announced at Gamescom in 2021!!😳😳 If you watch the video, you will fall in love! Soup soup is filling up ahah~~!😅 When will it be released~~~ When it is released, it is just installed. Enjoy the OST sung by Tune Aid's a cappella with a fun game video! ~😉 See U~~~ soon!!! 👍🏻👍🏻👍🏻",
+      "img":"communityvideo1.jpg",
+      "video_path":"https://www.youtube.com/embed/OzJ_HUXwlQ4?wmode=transparent"
+    },
+    {
+      "title" : "The goblins in the goblin music video",
+      "des" : "#도깨비 #dokev #dokevmv",
+      "des2" : "The names mentioned in this content are my own. (Excluding Horong) Please note that this is not an official name. This content contains trademarks or copyrighted works that Pearl Abyss owns.",
+      "img":"communityvideo4.jpg",
+      "video_path":"https://www.youtube.com/embed/E0l4KUV9E58?wmode=transparent"
+    },
+    {
+      "title" : "Pearl Abyss Goblin Character Creation | Making a dokev with paper clay",
+      "des" : "#pearlabyss #character #dokev",
+      "des2" : "I made a dokev from the DokeV trailer video by Fearl Abyss and hope the game will be released soon for meeting Dokevs in the game.",
+      "img":"communityvideo2.jpg",
+      "video_path":"https://www.youtube.com/embed/QQXDssqSezc?wmode=transparent"
+    }
+
+  ],
+  
+  "trailers":[
+    {
+      "title" : "DokeV - World Premiere Gameplay Trailer | gamescom 2021",
+      "des" : "#DokeV #Gamescom #GameplayTrailer",
+      "img" : "trailersvideo1.jpg",
+      "video_path" : "https://www.youtube.com/embed/FaRbQHlegaM?wmode=transparent"
+    },
+    {
+      "title" : "DokeV - Official Reveal Trailer | Pearl Abyss Connect 2019",
+      "des" : "#DokeV #PearlAbyss #RevealTrailer",
+      "img" : "trailersvideo2.jpg",
+      "video_path" : "https://www.youtube.com/embed/WtcQl41oFQI?wmode=transparent"
+    },
+    {
+      "title" : "Pearl Abyss Connect 2019 - Trailers of New Titles Revealed",
+      "des" : "#ShadowArena #PLAN8 #DokeV",
+      "img" : "trailersvideo3.jpg",
+      "video_path" : "https://www.youtube.com/embed/5U7HnrYNmPc?wmode=transparent"
+    },
+    {
+      "title" : "Inside DokeV: Game Overview",
+      "des" : "#DokeV #Gamescom #DevCommentary",
+      "img" : "trailersvideo4.jpg",
+      "video_path" : "https://www.youtube.com/embed/CH9HRqr3qnU?wmode=transparent"
+    }
+  ]
+}
+

@@ -1,0 +1,660 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>DokeV</title>
+<link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/layout.css">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./css/swiper.min.css">
+
+<script src="js/prefixfree.min.js"></script>
+
+
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+</script>
+</head>
+
+<body>
+   <div id="skipNav">
+	   <a href="#content">Go to Body Contents</a>
+	   <a href="#gnb">Go to Navigation</a>
+   </div>
+
+   <div id="wrap">
+	<div class="videoBox">
+		  <video autoplay loop muted id="videoBG"></video>
+			<img src="images/back.jpg" id="imgBG" alt="dokev art image">
+			
+			<a class="down" href="#">SCROLL DOWN</a>
+	</div>
+	
+	<header id="headerArea">
+	  <div class="headerInner">
+		  <h1><a href="#">DokeV</a></h1>
+			<a class="menu_ham" href="#"><span>menu button</span></a>
+		  <nav id="gnb">
+				<h2 class="hidden">Navigation Area</h2> 
+					<ul>
+						<li><h3><a href="sub1.html">About</a></h3></li>
+						<li><h3><a href="sub2.html">MakingInfo</a></h3></li>
+						<li><h3><a href="sub3.html">Trailers</a></h3></li>
+						<li><h3><a href="sub4.html">Gallery</a></h3></li>
+					</ul>
+		  </nav>
+		</div>
+	</header>
+	
+	<article id="content">
+		<h2 class="hidden">Body Contents Area</h2>
+		
+		<section class="about">
+			<h3 class="hidden">About</h3>
+			<div class="inner">
+
+				<!-- <div class="dan1">
+					<div class="img_wrap">
+						<img src="./images/about_dokev01.jpg" alt="About DokeV 이미지1">
+					</div>
+					<div class="img_wrap">
+						<img src="./images/about_dokev02.jpg" alt="About DokeV 이미지2">
+					</div>
+					<div class="about_dokev">
+						<h4>ABOUT <br> DokeV</h4>
+						<p>DokeV is a creature-collecting open world action-adventure
+							filled with intriguing stories and set in a unique,
+							vibrant world.
+							Befriend the adorable Dokebi that gain strength from
+							and encourage people's dreams,
+							and get ready to embark on an adventure!
+						</p>
+					</div>
+				</div>
+				<div class="dan2">
+					<div class="about_pearl">
+						<h4>About <br> Pearl Abyss</h4>
+						<p>Founded in 2010, Pearl Abyss is a 
+							global game developer known for 
+							the Black Desert MMORPG 
+							franchise. We are currently 
+							servicing Black Desert across 150 
+							regions on PC, console, and mobile, 
+							and developing Crimson Desert, 
+							DokeV and PLAN 8 with Pearl Abyss’
+							proprietary next-generation engine.
+						</p>
+					</div>
+					<div class="img_wrap">
+						<img src="./images/about_pa01.jpg" alt="Pearl Abyss 이미지1">
+					</div>
+					<div class="img_wrap">
+						<img src="./images/about_pa02.jpg" alt="Pearl Abyss 이미지2">
+					</div>
+				</div> -->
+
+				<ul>
+					<li>
+						<div class="img_wrap">
+							<img src="./images/about_dokev01.jpg" alt="About DokeV 이미지1">
+						</div>
+					</li>
+					<li>
+						<div class="img_wrap">
+							<img src="./images/about_dokev02.jpg" alt="About DokeV 이미지2">
+						</div>
+					</li>
+					<li class="about_dokev">
+						<h4>ABOUT <br> DokeV</h4>
+						<p>
+							What is DokeV?
+							DokeV is an upcoming creature-collecting open world action-adventure from Pearl Abyss 
+							filled with intriguing stories and set in a unique, vibrant world.
+						</p>
+						<p>Meet Dokebi, 
+							whimsical creatures that live side-by-side with humans and encourage people's dreams 
+							from which they gain strength.
+						</p>
+						<p>The gorgeous and colorful world of DokeV is brimming with activities, stories,
+							and experiences, so get ready to befriend tons of Dokebi, embark on an adventure, 
+							and rock the world! Who knows, they may be dancing around you, even now..!
+						</p>
+						<!-- <p>DokeV is a creature-collecting open world action-adventure
+							filled with intriguing stories and set in a unique,
+							vibrant world.
+							Befriend the adorable Dokebi that gain strength from
+							and encourage people's dreams,
+							and get ready to embark on an adventure!
+						</p> -->
+						<p>Wondering how to pronounce DokeV?
+							Read it as "doh-keh-vee". It's the world where the Dokebi live in!
+							Hear it all first on DokeV's social media or by subscribing to 
+							the official newsletter on the site.
+						</p>
+						<div class="more_plusbutton">
+							<a href="javascript:void(0)">more button</a>
+						</div>
+					</li>
+					<li class="about_pearl">
+						<h4>About <br> Pearl Abyss</h4>
+						<p>Founded in 2010, Pearl Abyss is a 
+							global game developer known for 
+							the Game 
+							franchise. We are currently 
+							servicing Game across 150 
+							regions on PC, console, and mobile, 
+							and developing Crimson Desert, 
+							DokeV and PLAN 8 with Pearl Abyss’
+							proprietary next-generation engine.
+						</p>
+						<p>Our goal is to create an unforgettable experience with extraordinary gameplay.
+							Aspiring to create a realistic and immersive game for players,
+							we work with the highest standards of systems, game graphics, and sound.</p>
+						<div class="more_plusbutton">
+							<a href="javascript:void(0)">more button</a>
+						</div>
+					</li>
+					<li>
+						<div class="img_wrap">
+							<img src="./images/about_pa01_1.jpg" alt="Pearl Abyss image1">
+						</div>
+						<div class="img_wrap">
+							<img src="./images/about_pa02_1.jpg" alt="Pearl Abyss image2">
+						</div>
+					</li>
+					<li>
+						<div class="img_wrap">
+							<img src="./images/about_pa03.jpg" alt="Pearl Abyss image3">
+						</div>
+					</li>
+
+
+				</ul>
+
+			</div> 
+			<!-- inner end -->
+		</section>
+
+
+		<section class="making_info">
+			<div class="inner">
+				<h3>Making Info</h3>
+				<div class="box_top">
+						<div class="img_wrap">
+							<a href="javascript:void(0)">
+								<div class="img_wrap__inner">
+									<img src="./images/rockstarmv.png" alt="rockstar mv" />
+								</div>
+							</a>
+						</div>
+						<dl>
+							<dt>A Special Performance</dt>
+							<dd>The characters of DokeV take center stage
+								in this fun-filled, energetic ROCKSTAR Music Video!
+								Time to get up on your feet and dance!</dd>
+						</dl>
+				</div>
+				<ul class="chara">
+					<li>
+						<a href="javascript:void(0)">
+							<!-- <span>credits >EXECUTIVE PRODUCER: PEARL ABYSS MUSIC PRODUCER: GALACTIKA MIXED BY TAK(NEWTYPE) CHOREOGRAPHY BY 1MILLION DANCE STUDIO VOCALS BY LUENA</span> -->
+							<dl>
+								<dt>credits</dt>
+								<dd>EXECUTIVE PRODUCER: PEARL ABYSS</dd>
+								<dd>MUSIC PRODUCER: GALACTIKA</dd>
+								<dd>MIXED BY TAK(NEWTYPE)</dd>
+								<dd>CHOREOGRAPHY BY 1MILLION DANCE STUDIO</dd>
+								<dd>VOCALS BY LUENA</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="chara_item_wrap">
+								<div class="chara_item front_item">
+									<img src="./images/chara1.jpg" alt="eunha and wangko" />
+									<div class="charaname">
+										<strong>Eunha</strong><strong>Wangko</strong>
+									</div>
+								</div>
+								<div class="chara_item back_item">
+									<img src="./images/chara1_back.jpg" alt="eunha" />
+									<div class="charaname">
+										<strong>Eunha</strong><strong>more view</strong>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="chara_item_wrap">
+								<div class="chara_item front_item">
+									<img src="./images/chara2.jpg" alt="yerin and wangko" />
+									<div class="charaname">
+										<strong>Yerin</strong><strong>Wangko</strong>
+									</div>
+								</div>
+								<div class="chara_item back_item">
+									<img src="./images/chara2_back_1.jpg" alt="yerin" />
+									<div class="charaname">
+										<strong>Yerin</strong><strong>more view</strong>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="chara_item_wrap">
+								<div class="chara_item front_item">
+									<img src="./images/chara3.jpg" alt="sowon and gisang-i" />
+									<div class="charaname">
+										<strong>Sowon</strong><strong>Gisang-i</strong>
+									</div>
+								</div>
+								<div class="chara_item back_item">
+									<img src="./images/chara3_back.jpg" alt="sowon" />
+									<div class="charaname">
+										<strong>Sowon</strong><strong>more view</strong>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="chara_item_wrap">
+								<div class="chara_item front_item">
+									<img src="./images/chara4.jpg" alt="yuju and pielo" />
+									<div class="charaname">
+										<strong>Yuju</strong><strong>Pielo</strong>
+									</div>
+								</div>
+								<div class="chara_item back_item">
+									<img src="./images/chara4_back.jpg" alt="yuju" />
+									<div class="charaname">
+										<strong>Yuju</strong><strong>more view</strong>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="chara_item_wrap">
+								<div class="chara_item front_item">
+									<img src="./images/chara5.jpg" alt="sinB and gagsital" />
+									<div class="charaname">
+										<strong>SinB</strong><strong>Gagsital</strong>
+									</div>
+								</div>
+								<div class="chara_item back_item">
+									<img src="./images/chara5_back.jpg" alt="sinB" />
+									<div class="charaname">
+										<strong>SinB</strong><strong>more view</strong>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="chara_item_wrap">
+								<div class="chara_item front_item">
+									<img src="./images/chara6.jpg" alt="umji and cherryB" />
+									<div class="charaname">
+										<strong>Umji</strong><strong>CherryB</strong>
+									</div>
+								</div>
+								<div class="chara_item back_item">
+									<img src="./images/chara6_back.jpg" alt="umji" />
+									<div class="charaname">
+										<strong>Umji</strong><strong>more view</strong>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="chara_item_wrap">
+								<div class="chara_item front_item">
+									<img src="./images/chara7.jpg" alt="dokev" />
+									<div class="charaname">
+										<strong>DokeV</strong><strong>Others</strong>
+									</div>
+								</div>
+								<div class="chara_item back_item">
+									<img src="./images/chara7.jpg" alt="dokev" />
+									<div class="charaname">
+										<strong>DokeV</strong><strong>more view</strong>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<div class="btn_wrap">
+					<a href="javascript:void(0)" class="btn">more</a>
+				</div>
+			</div>
+			<!-- inner end -->
+		</section>
+
+
+		<div class="blankbox"></div>
+
+
+		<section class="trailers">
+			<div class="inner">
+				<ul class="trailers_grid">
+					<li class="grid_item1">
+						<a href="./sub3.html">
+							<h3>Trailers</h3>
+						</a>
+					</li>
+					<li class="grid_item2">
+						<a href="javascript:void(0)">
+							<div class="img_wrap">
+								<!-- <img src="./images/trailers_02.jpg" alt="DokeV - Official Reveal Trailer | Pearl Abyss Connect 2019" /> -->
+								<span class="hidden">DokeV - Official Reveal Trailer | Pearl Abyss Connect 2019 video</span>
+							</div>
+						</a>
+						
+					</li>
+					<li class="grid_item3">
+						<a href="javascript:void(0)">
+							<dl>
+								<dt>DokeV - Official Reveal Trailer
+									| Pearl Abyss Connect 2019</dt>
+								<dd>#DokeV #PearlAbyss</dd>
+								<dd>Watch the official game reveal trailer 
+									for DokeV, an upcoming 
+									creature-collecting open world 
+									action-adventure by Pearl Abyss, and 
+									come face-to-face for the first time 
+									with the creatures living among us!
+									This trailer consists of actual in-game 
+									footage.
+									
+									Question of the day: 
+									how do you pronounce DokeV?
+									Read it as "doh-keh-vee".
+									It's the world where the Dokebi live in!</dd>
+							</dl>
+						</a>
+					</li>
+					<li class="grid_item4">
+						<a href="javascript:void(0)">
+							<div class="img_wrap">
+								<!-- <img src="./images/trailers_01.jpg" alt="DokeV - World Premiere Gameplay Trailer | gamescom 2021" /> -->
+								<span class="hidden">DokeV - World Premiere Gameplay Trailer | gamescom 2021 video</span>
+							</div>
+						</a>
+					</li>
+					<li class="grid_item5">
+						<a href="javascript:void(0)">
+							<dl>
+								<dt>DokeV - World Premiere Gameplay Trailer | gamescom 2021</dt>
+								<dd>#DokeV #Gamescom</dd>
+								<dd>Dive into a gorgeous and lively world where Dokebi and humans live side-by-side!
+									Watch DokeV’s first official gameplay trailer which premiered at gamescom 2021:
+									Opening Night Live and let’s get a look at what these adorable denizens are
+									cooking up...
+									This trailer contains actual in-game and gameplay footage. As a work-in-progress,
+									the content is subject to change.</dd>
+							</dl>
+						</a>
+					</li>
+					<li class="grid_item6">
+						<a href="javascript:void(0)">
+								<div class="img_wrap">
+									<!-- <img src="./images/trailers_03.jpg" alt="Pearl Abyss Connect 2019 - Trailers of New Titles	Revealed" /> -->
+									<span class="hidden">Pearl Abyss Connect 2019	- Trailers of New Titles Revealed video</span>
+								</div>
+						</a>
+					</li>
+					<li class="grid_item7">
+						<a href="javascript:void(0)">
+							<dl>
+								<dt>Pearl Abyss Connect 2019
+									- Trailers of New Titles 
+									Revealed</dt>
+								<dd>#ShadowArena #PLAN8 #DokeV</dd>
+								<dd>Revisit Pearl Abyss Connect 2019,
+									the new projects announcement 
+									event that took place at G-Star 
+									2019.</dd>
+							</dl>
+						</a>
+					</li>
+					<li class="grid_item8">
+						<a href="javascript:void(0)">
+							<div class="img_wrap">
+								<!-- <img src="./images/trailers_04.jpg" alt="ROCKSTAR (KR/EN Lyrics Video) | Official Reveal Trailer OST" /> -->
+								<span class="hidden">ROCKSTAR (KR/EN Lyrics Video) | Official Reveal Trailer OST video</span>
+							</div>
+						</a>
+					</li>
+					<li class="grid_item9">
+						<a href="javascript:void(0)">
+							<dl>
+								<dt>ROCKSTAR 
+									(KR/EN Lyrics Video) | 
+									Official Reveal Trailer OST</dt>
+								<dd>#DokeV #ROCKSTAR</dd>
+								<dd>Learn the lyrics to "ROCKSTAR", 
+									the original song from Pearl Abyss' 
+									DokeV official trailer, and rock out! 
+									With Korean, Romanized Korean, 
+									and English subtitles.</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+
+
+
+
+
+			</div>
+			<!-- inner end -->
+		</section>
+
+		<div class="blankbox"></div>
+
+		<section class="gallery">
+			<div class="inner">
+				<h3>Gallery</h3>
+				<ul class="gallery_des">
+					<li>
+						<dl>
+							<dt>Community</dt>
+							<dd>A big thank you to the hot cheers sent to 
+								#DokeV after the video was released on 
+								#OpeningNightLive.
+								Until the day you leave the adventure with 
+								your Tokkebi friends! Please give us a lot of 
+								expectations and interests.</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>Art</dt>
+							<dd>You can see the images and concept art 
+								used in the production process. You can 
+								preview it on colorful backgrounds and 
+								various characters. If you're curious, check 
+								out the gallery at the bottom.</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>Wallpaper</dt>
+							<dd>Are you interested in creating world content?
+								Various wallpapers are available, from 
+								unique friends to curious dokeV.</dd>
+						</dl>
+					</li>
+				</ul>
+
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_01.jpg" alt="gallery01">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_02.jpg" alt="gallery02">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_03.jpg" alt="gallery03">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_04.jpg" alt="gallery04">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_05.jpg" alt="gallery05">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_06.jpg" alt="gallery06">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_07.jpg" alt="gallery07">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_08.jpg" alt="gallery08">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_09.jpg" alt="gallery09">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:void(0)">	
+								<div class="img_wrap">
+									<img src="./images/gallery_10.jpg" alt="gallery10">
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- Add Scrollbar -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+
+				<div class="btn_wrap">
+					<a href="javascript:void(0)" class="btn">more</a>
+				</div>
+			</div>
+			<!-- inner end -->
+		</section>
+
+
+	</article>
+	
+
+
+
+
+
+
+	<footer id="footerArea">
+		<a class="topMove" href="#">
+			<span>TOP</span>
+			<!-- <i class="fas fa-chevron-circle-up"></i> -->
+		</a>
+		<div class="inner">
+			<div class="footer_left_box">
+				<img src="./images/logo_pearlabyss.png" alt="pearlabyss로고" />
+			</div>
+			<div class="footer_center_box">
+				<img src="./images/logo_dokev.png" alt="dokev logo" />
+				<p>&copy;Pearl Abyss Corp. All Right Reserved.</p>
+			</div>
+			<div class="footer_right_box">
+				<ul class="sns">
+					<li><a href="javascript:void(0)" title="open in new window" target="_blank">facebook</a></li>
+					<li><a href="javascript:void(0)" title="open in new window" target="_blank">instargram</a></li>
+					<li><a href="javascript:void(0)" title="open in new window" target="_blank">twitter</a></li>
+					<li><a href="javascript:void(0)" title="open in new window" target="_blank">youtube</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>		
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/video.js"></script>
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+<!-- Swiper JS -->
+<script src="./js/swiper.min.js"></script>
+<!-- Initialize Swiper 080 110 -->
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		breakpoints: {
+			641: {slidesPerView: 2},
+			1025: {slidesPerView: 3},
+		},
+		spaceBetween: 30,
+		scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+		// hide:true,
+  	},
+	});
+</script>
+
+</body>
+</html>

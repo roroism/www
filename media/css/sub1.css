@@ -1,0 +1,364 @@
+/* 와이드 PC */
+
+#content{
+   /* width:90%; */
+   /* margin:0 5%; */
+   /* height:6000px; */
+}
+
+/* button */
+.btn_wrap {
+	position: absolute;
+	top: 2.4rem;
+	right: 10%;
+}
+.btn_wrap a.btn {
+	display: block;
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	/* text-indent: -9999px; */
+	border-radius: 20px;
+	border: 1px solid #3596e7;
+	/* background: url("../images/next.png") 78% center / 15% no-repeat; */
+	background: url("../images/nextBtn.png") 78% center / 15% no-repeat;
+	color: #3596e7;
+	text-indent: 20px;
+	transition: .3s;
+}
+.btn_wrap a.btn:hover {
+	border: 1px solid #fff;
+	/* background-color: #3596e7; */
+	color: #fff;
+	background: url("../images/nextBtn_white.png") 78% center / 15% no-repeat #3596e7;
+}
+
+
+
+/* about_dokev */
+#content section.about_dokev {
+  margin: 0 auto ;
+  padding: 3rem 4% 4rem; 
+	background-color: rgba(255, 255, 255, 1);
+  /* height: 1000px; */
+}
+#content section.about_dokev h3 {
+  text-align: center;
+}
+#content section.about_dokev > div {
+  margin-top: 2rem;
+}
+#content section.about_dokev p {
+  margin-top: 1.3rem;
+  text-align: center;
+  /* 18px */
+  font-size: 1.125rem;
+}
+#content section.about_dokev p:nth-of-type(1) {
+  margin-top: 0;
+}
+
+
+
+/* concept_art */
+#content section.concept_art {
+  margin: 0 auto ;
+  padding: 3rem 2% 6rem; 
+	background-color: rgba(255, 255, 255, 1);
+}
+#content section.concept_art h3 {
+  text-align: center;
+}
+#content section.concept_art .inner {
+  width: 100%;
+  position: relative;
+}
+#content section.concept_art ul {
+  overflow: hidden;
+  margin-top: 3rem;
+}
+#content section.concept_art ul li {
+  transition: all .3s;
+}
+#content section.concept_art ul img {
+  width: 100%;
+}
+#content section.concept_art ul li:nth-of-type(1) {
+  width:50%; position:absolute; left:25%;
+}
+#content section.concept_art ul li:nth-of-type(2) {
+  width:25%; position: absolute; right: 0;
+}
+#content section.concept_art ul li:nth-of-type(3) {
+  width:25%; position: absolute; right: 0; bottom: 0;
+}
+#content section.concept_art ul li:nth-of-type(4) {
+  width:25%;
+}
+#content section.concept_art ul li:nth-of-type(5) {
+  width:25%;
+}
+/* swiper pagi */
+#content section.concept_art .swiper-pagination-bullet {
+	background: #fff;
+	opacity: .5;
+}
+#content section.concept_art .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #ef3261;
+	opacity: 1;
+}
+
+
+
+
+@media (hover: hover) {
+  #content section.concept_art ul:hover li {
+    filter: grayscale(100);
+    /* opacity: .3; */
+  }
+  #content section.concept_art ul:hover li:hover {
+    filter: grayscale(0);
+    /* opacity: 1; */
+  }
+}
+
+
+
+/* blankbox */
+#content .blankbox {
+  width: 100%;
+  height: 300px;
+  background: url("../images/sub1/sub1_bg.jpg") center no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+/* about_pearlabyss */
+#content .about_pearlabyss {
+  margin: 0 auto ;
+  padding: 3rem 4% 6rem; 
+	background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+#content .about_pearlabyss .left_box {
+  /* width: 38%; */
+  width: 40%;
+  background: url("../images/sub1/about_pearlabyss.jpg") center / cover no-repeat;
+}
+/* #content .about_pearlabyss .left_box img {
+  width: 100%;
+} */
+#content .about_pearlabyss .right_box {
+  /* width: 60%; */
+  width: 55%;
+}
+#content .about_pearlabyss .right_box h3 {
+  margin-top: 2rem;
+}
+#content .about_pearlabyss .right_box p {
+  margin-top: 2rem;
+}
+#content .about_pearlabyss .right_box ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 2rem;
+}
+#content .about_pearlabyss .right_box ul li {
+  width: 30%;
+}
+#content .about_pearlabyss .right_box ul li img {
+  width: 100%
+}
+
+
+
+/* ourstory */
+#content .ourstory {
+  margin: 0 auto ;
+  padding: 3rem 4% 6rem; 
+	background-color: rgba(255, 255, 255, 1);
+}
+#content .ourstory h3 {
+  text-align: center;
+}
+#content .ourstory p:nth-of-type(1) {
+  /* 36px */
+  font-size: 2.250rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+#content .ourstory p:nth-of-type(2),
+#content .ourstory p:nth-of-type(3) {
+  color: #999;
+  /* 20px */
+  font-size: 1.250rem;
+  text-align: center;
+  width: 70%;
+  margin: 2rem auto 0;
+}
+#content .ourstory ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+#content .ourstory ul li .img_wrap {
+  overflow: hidden;
+}
+#content .ourstory ul li img {
+  width: 100%;
+  transition: all .3s;
+}
+#content .ourstory ul li:hover img {
+  transform: scale(1.1);
+}
+#content .ourstory ul li {
+  width: 31%;
+	margin: 1rem 0;
+}
+#content .ourstory ul li dl dt {
+  /* 20px */
+  font-size: 1.250rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+#content .ourstory ul li dl dd {
+  /* 16px */
+  font-weight: 1rem;
+  margin-top: 1rem;
+  color: #666;
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+	/* concept_art */
+	#content section.concept_art ul li:nth-of-type(1) {
+		position: static; width: auto;
+	}
+	#content section.concept_art ul li:nth-of-type(2) {
+		position: static; float: left; width: 50%;
+	}
+	#content section.concept_art ul li:nth-of-type(3) {
+		position: static; float: left; width: 50%;
+	}
+	#content section.concept_art ul li:nth-of-type(4) {
+		float: left; width: 50%;
+	}
+	#content section.concept_art ul li:nth-of-type(5) {
+		float: left; width: 50%;
+	}
+
+	/* about_pearlabyss */
+	#content .about_pearlabyss .left_box {
+		width: 100%;
+		padding-bottom: 53%;
+		/* height: 300px; */
+	}
+	#content .about_pearlabyss .right_box {
+		width: auto;
+	}
+
+	/* our story */
+	#content .ourstory ul li {
+		width: 48%;
+	}
+	#content .ourstory ul li:nth-of-type(3),
+	#content .ourstory ul li:nth-of-type(6) {
+		display: none;
+	}
+
+
+}
+
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+
+
+	/* concept_art */
+	#content section.concept_art ul {
+		overflow:visible;
+	}
+	#content section.concept_art ul li:nth-of-type(1) {
+		
+	}
+	#content section.concept_art ul li:nth-of-type(2) {
+		width: auto; float: none;
+	}
+	#content section.concept_art ul li:nth-of-type(3) {
+		width: auto; float: none;
+	}
+	#content section.concept_art ul li:nth-of-type(4) {
+		width: auto; float: none;
+	}
+	#content section.concept_art ul li:nth-of-type(5) {
+		width: auto; float: none;
+	}
+	#content section.concept_art ul:hover li {
+    filter: inherit;
+    /* opacity: .3; */
+  }
+  #content section.concept_art ul:hover li:hover {
+    filter: inherit;
+    /* opacity: 1; */
+  }
+
+
+	/* blankbox */
+	#content .blankbox {
+		background-attachment: inherit;
+	}
+
+	/* about_pearlabyss */
+	#content .about_pearlabyss .left_box {
+		display: none;
+	}
+	#content .about_pearlabyss .right_box h3,
+	#content .about_pearlabyss .right_box p {
+		text-align: center;
+	}
+
+	/* our story */
+	#content .ourstory ul li {
+		width: 100%;
+	}
+	#content .ourstory ul li:nth-of-type(2),
+	#content .ourstory ul li:nth-of-type(5),
+	#content .ourstory p:nth-of-type(3) {
+		display: none;
+	}
+
+
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+}
+
+
+

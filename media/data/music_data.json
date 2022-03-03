@@ -1,0 +1,35 @@
+{
+  "music":[
+    {
+      "title" : "01 ROCKSTAR",
+      "des" : "별들의전쟁 * (GALACTIKA *)",
+      "img":"music1.jpg",
+      "audio_path":"01ROCKSTAR.mp3",
+      "sub":"01_ROCKSTAR.vtt"
+    },
+    {
+      "title" : "02 ROCKSTAR (TAK Remix)",
+      "des" : "TAK(NEWTYPE)",
+      "img":"music2.jpg",
+      "audio_path":"02ROCKSTAR(TAKRemix).mp3",
+      "sub":"02_ROCKSTAR_(TAK_Remix).vtt"
+    },
+    {
+      "title" : "03 ROCKSTAR (Inst.)",
+      "des" : "별들의전쟁 * (GALACTIKA *)",
+      "img":"music3.jpg",
+      "audio_path":"03ROCKSTAR(Inst.).mp3",
+      "sub":"03_ROCKSTAR_(Inst.).vtt"
+    },
+    {
+      "title" : "04 ROCKSTAR (TAK Remix) (Inst.)",
+      "des" : "TAK(NEWTYPE)",
+      "img":"music4.jpg",
+      "audio_path":"04ROCKSTAR(TAKRemix)(Inst.).mp3",
+      "sub":"04_ROCKSTAR_(TAK_Remix)_(Inst.).vtt"
+    }
+
+  ]
+
+}
+

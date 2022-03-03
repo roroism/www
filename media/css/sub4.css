@@ -1,0 +1,116 @@
+/* 와이드 PC */
+
+#content{
+  /* width:90%; */
+  /* margin:0 5%; */
+  /* height:6000px; */
+  background: #fff;
+}
+
+/* button */
+.btn_wrap {
+	position: absolute;
+	top: 2.4rem;
+	right: 10%;
+}
+.btn_wrap a.btn {
+	display: block;
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	/* text-indent: -9999px; */
+	border-radius: 20px;
+	border: 1px solid #3596e7;
+	/* background: url("../images/next.png") 78% center / 15% no-repeat; */
+	background: url("../images/nextBtn.png") 78% center / 15% no-repeat;
+	color: #3596e7;
+	text-indent: 20px;
+	transition: .3s;
+}
+.btn_wrap a.btn:hover {
+	border: 1px solid #fff;
+	/* background-color: #3596e7; */
+	color: #fff;
+	background: url("../images/nextBtn_white.png") 78% center / 15% no-repeat #3596e7;
+}
+
+
+/* 플러그인과 관련된 css */
+/*-------------------------------------------------------------------*/
+
+.grid-image-item,.grid--images .grid-sizer { width: 20%;}
+.grid-image-item {
+  float: left; margin-bottom: 10px
+}
+
+.grid-image-item img{
+    border-radius: 3%;
+  display: block;
+    width: 96%;margin: 10px auto;
+}
+/* .grid-image-item h4{
+  display: block;
+    width: 96%;text-align: center;margin: 0 auto;
+} */
+.grid-image-item strong {
+  display: block;
+  width: 96%;text-align: center;margin: 0 auto;
+  /* 25px */
+  font-size: 1.563rem;
+}
+.grid-image-item p{
+  display: block;
+  width: 96%;text-align: center;margin: 0 auto;
+}
+/*-------------------------------------------------------------------*/
+#content section.gallery {
+  /* margin: 3rem 0 4rem; */
+  padding: 3rem 0 5rem;
+}
+#content section.gallery h3 {
+  text-align: center;
+}
+#content section.gallery h3+p {
+  /* 18px */
+  font-size: 1.125rem;
+  text-align: center;
+  margin: 1rem auto;
+  width: 80%;
+}
+/* #content section.gallery strong {
+  font-size: 1.563rem;
+  display: block;
+  width: 96%;text-align: center;margin: 0 auto;
+} */
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+  .grid-image-item,
+  .grid--images .grid-sizer { width: 25%;}
+}
+
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  .grid-image-item,
+  .grid--images .grid-sizer {width: 33.33%;}
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  .grid-image-item,
+  .grid--images .grid-sizer {width: 50%;}
+}

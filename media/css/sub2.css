@@ -1,0 +1,610 @@
+/* 와이드 pc  */
+
+@keyframes disc_rotate {
+	from{transform: rotate(0);}
+	to	{transform: rotate(360deg);}
+}
+
+#content{
+   /* width:90%; */
+   /* margin:0 5%; */
+   /* height:6000px; */
+}
+
+/* button */
+.btn_wrap {
+	position: absolute;
+	top: 2.4rem;
+	right: 10%;
+}
+.btn_wrap a.btn {
+	display: block;
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	/* text-indent: -9999px; */
+	border-radius: 20px;
+	border: 1px solid #3596e7;
+	/* background: url("../images/next.png") 78% center / 15% no-repeat; */
+	background: url("../images/nextBtn.png") 78% center / 15% no-repeat;
+	color: #3596e7;
+	text-indent: 20px;
+	transition: .3s;
+}
+.btn_wrap a.btn:hover {
+	border: 1px solid #fff;
+	/* background-color: #3596e7; */
+	color: #fff;
+	background: url("../images/nextBtn_white.png") 78% center / 15% no-repeat #3596e7;
+}
+
+
+/* chara */
+#content section.chara {
+	margin: 0 auto ;
+  padding: 3rem 2% 6rem; 
+	background-color: rgba(255, 255, 255, .5);
+	backdrop-filter: blur(4px);
+}
+#content section.chara h3 {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+#content section.chara ul.chara_tabs {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 93%;
+	margin: 0 auto;
+}
+#content section.chara ul.chara_tabs li {
+	/* width: 16.666%; */
+	width: 15%;
+	transform: skewX(-14deg);
+	overflow: hidden;
+	border-radius: 15px;
+	border: 3px solid #fff;
+	box-sizing: border-box;
+	transition: all .3s;
+}
+#content section.chara ul.chara_tabs li.active {
+	transform: scale(1.1) skewX(-14deg); 
+}
+#content section.chara ul.chara_tabs li a {
+	display: block;
+}
+#content section.chara ul.chara_tabs li a .img_wrap {
+	transform: skewX(14deg) translateX(-12%);
+	/* overflow: hidden; */
+	width: 132%;
+	padding-bottom: 132%;
+}
+/* #content section.chara ul.chara_tabs li a img {
+	width: 100%;
+	transform: skewX(14deg);
+} */
+#content section.chara ul.chara_tabs li:nth-of-type(1) a .img_wrap {
+	background: url("../images/sub2/tab_chara1.jpg") center / cover no-repeat;
+}
+#content section.chara ul.chara_tabs li:nth-of-type(2) a .img_wrap {
+	background: url("../images/sub2/tab_chara2.jpg") center / cover no-repeat;
+}
+#content section.chara ul.chara_tabs li:nth-of-type(3) a .img_wrap {
+	background: url("../images/sub2/tab_chara3.jpg") center / cover no-repeat;
+}
+#content section.chara ul.chara_tabs li:nth-of-type(4) a .img_wrap {
+	background: url("../images/sub2/tab_chara4.jpg") center / cover no-repeat;
+}
+#content section.chara ul.chara_tabs li:nth-of-type(5) a .img_wrap {
+	background: url("../images/sub2/tab_chara5.jpg") center / cover no-repeat;
+}
+#content section.chara ul.chara_tabs li:nth-of-type(6) a .img_wrap {
+	background: url("../images/sub2/tab_chara6.jpg") center / cover no-repeat;
+}
+#content section.chara .swiper_chara {
+	margin-top: 4rem;
+}
+#content section.chara .swiper_chara img {
+	width: 100%;
+}
+#content section.chara .swiper_chara .des_wrap {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#content section.chara .swiper_chara .des_wrap > .img_wrap {
+	width: 60%;
+}
+#content section.chara .swiper_chara .des_wrap > .img_wrap img {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+#content section.chara .swiper_chara .des_wrap .right_box {
+	width: 40%;
+}
+#content section.chara .swiper_chara .des_wrap .right_box dl {
+	margin: 3rem 0 2rem;
+}
+#content section.chara .swiper_chara .des_wrap .right_box dt {
+	/* 30px */
+	font-size: 1.875rem;
+	font-weight: 700;
+}
+#content section.chara .swiper_chara .des_wrap .right_box dd {
+	/* 22px */
+	font-size: 1.375rem;
+	margin-top: 1rem;
+}
+#content section.chara .swiper_chara .des_wrap .right_box .img_area {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(1),
+#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(2) {
+	width: 48%;
+}
+#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(3),
+#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(4),
+#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(5) {
+	margin-top: 18px;
+	width: 31%;
+}
+
+
+
+/* dokev_music */
+#content section.dokev_music {
+	margin: 0 auto ;
+  padding: 3rem 2% 6rem; 
+	background-color: rgba(255, 255, 255, .5);
+	backdrop-filter: blur(4px);
+}
+#content section.dokev_music h3 {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+#content section.dokev_music img {
+	width: 100%;
+}
+#content section.dokev_music .box_wrap {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	align-items: center;
+}
+#content section.dokev_music .left_box {
+	width: 58%;
+}
+/* video */
+#content section.dokev_music .left_box video {
+	width: 100%;
+	border: 1px solid #aaa;
+	object-fit: initial;
+	max-height: 100px;
+}
+#content section.dokev_music .left_box video::cue {
+	font-size: 25px;
+	/* background-color: white; */
+	background-color: transparent;
+	font-weight: 500;
+	color: #333;
+}
+/* button */
+#content section.dokev_music .left_box ul.discbutton {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 60%;
+	margin: 0 auto;
+}
+#content section.dokev_music .left_box ul.discbutton li {
+	width: 6%;
+	transition: all .3s;
+}
+#content section.dokev_music .left_box ul.discbutton li a {
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#content section.dokev_music .left_box ul.discbutton li a .img_wrap {
+	width: 100%;
+	padding-bottom: 100%;
+}
+#content section.dokev_music .left_box ul.discbutton li:nth-of-type(1) a .img_wrap {
+	background: url("../images/sub2/prev_btn.png") center / contain no-repeat;
+}
+#content section.dokev_music .left_box ul.discbutton li:nth-of-type(2) a .img_wrap {
+	background: url("../images/sub2/stop_btn.png") center / contain no-repeat;
+}
+#content section.dokev_music .left_box ul.discbutton li:nth-of-type(3) a .img_wrap {
+	background: url("../images/sub2/play_btn.png") center / contain no-repeat;
+}
+#content section.dokev_music .left_box ul.discbutton li:nth-of-type(4) a .img_wrap {
+	background: url("../images/sub2/pause_btn.png") center / contain no-repeat;
+}
+#content section.dokev_music .left_box ul.discbutton li:nth-of-type(5) a .img_wrap {
+	background: url("../images/sub2/next_btn.png") center / contain no-repeat;
+}
+/* music title des */
+#content section.dokev_music .left_box dl dt {
+	/* 30px */
+	font-size: 1.875rem;
+	font-weight: 700;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+#content section.dokev_music .left_box dl dd {
+	/* 18px */
+	font-size: 1.125rem;
+	margin-top: .5rem;
+	text-align: center;
+	color: #666;
+}
+#content section.dokev_music ul.play_list {
+	width: 42%;
+	/* background-color: #3596e7; */
+}
+#content section.dokev_music ul.play_list li {
+	margin: 0 1rem;
+	padding: 1rem;
+	box-sizing: border-box;
+	transition: all .3s;
+	border: 2px solid transparent;
+}
+#content section.dokev_music ul.play_list li.active {
+	background-color: #7cc3fd;
+	border: 2px solid #3596e7;
+}
+#content section.dokev_music ul.play_list li a {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#content section.dokev_music ul.play_list li a > div {
+	width: 30%;
+}
+#content section.dokev_music ul.play_list li .img_wrap {
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+#content section.dokev_music ul.play_list li .img_wrap::after {
+	content: "";
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%; top: 50%;
+	width: 30%;
+	padding-bottom: 30%;
+	background-color: rgba(255, 255, 255, .6);
+	border-radius: 50%;
+}
+#content section.dokev_music ul.play_list li dl {
+	width: 66%;
+	margin: 2%;
+}
+#content section.dokev_music ul.play_list li dl dt {
+	/* 25px */
+	font-size: 1.563rem;
+	font-weight: 700;
+}
+#content section.dokev_music ul.play_list li dl dd {
+	/* 18px */
+	font-size: 1.125rem;
+	margin-top: 1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+
+
+/* wave */
+#wave {
+	position: relative;
+	width: 100%;
+	height: 30vw;
+}
+#wave .music_box {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 20%;
+	padding-bottom: 20%;
+	/* background: #fff; */
+	border-radius: 30%;
+	z-index: 2;
+	background: url("../images/logo_dokev.png") center / 80% no-repeat #fff;
+	/* animation: vibration .2s infinite linear; */
+}
+#wave.on .music_box {
+	animation: bounce .235s infinite alternate;
+}
+#wave.on .wave {
+  opacity: .4;
+  position: absolute;
+	transform: translate(-50%, -50%);
+	left: 32%;
+	/* top: 50%; */
+  /* top: 2vw; */
+	left: 50%;
+	top: 50%;
+  border: 2px solid #3781aa;
+	box-sizing: border-box;
+  /* width: 300px; */
+  /* height: 300px; */
+	width: 20vw;
+	/* padding-bottom: 30%; */
+	height: 20vw;
+	/* width: 300px; */
+	/* height: 300px; */
+  /* transform-origin: 50% 48%; */
+  transform-origin: 50% 48%;
+  /* transform-origin: center; */
+  border-radius: 43%;
+  animation: wave 3s infinite linear;
+	z-index: -1;
+}
+#wave.on .wave.wave_three {
+  animation: wave 5s infinite linear;
+	border: 2px solid #ee5f83;
+}
+#wave.on .wave.wave_two {
+  animation: wave 7s infinite linear;
+  opacity: .1;
+  border: 3px solid #4eabc1;
+}
+
+
+@keyframes wave {
+  from {
+		transform: translate(-50%, -50%) rotate(0deg) scale(0,0);
+		opacity: 1;
+  }
+  to {
+		transform: translate(-50%, -50%) rotate(360deg) scale(2,2);
+		opacity: 0;
+  }
+}    
+@keyframes vibration {
+	/* 0%   { transform: translate(-1px,-1px); }
+	25%  { transform: translate(1px,1px);  }
+	50%  { transform: translate(1px,-1px); }
+	100% { transform: translate(-1px,1px);  } */
+	12.5%   { margin-left: -1px; }
+	25%  { margin-left: 1px; }
+	37.5%  { margin-left: -1px; }
+	50% { margin-left: 1px; }
+	100% { margin-left: 0;}
+}
+@keyframes bounce {
+	0% { transform:translate(-50%, -50%) scale(1); opacity:1;}
+	100% { transform:translate(-50%, -50%) scale(1.1); opacity:0.9;}
+}	
+
+@media (hover: hover) {
+	#content section.dokev_music .left_box ul.discbutton li:hover {
+		transform: scale(1.3);
+	}
+	#content section.dokev_music ul.play_list li:hover .img_wrap img {
+		animation: disc_rotate 2s linear infinite;
+	}
+	#content section.chara ul.chara_tabs li:hover {
+		transform: scale(1.1) skewX(-14deg); 
+	}
+	#content section.dokev_music ul.play_list li:hover {
+		background-color: #eee;
+	}
+	#content section.dokev_music ul.play_list li.active:hover {
+		background-color: #7cc3fd;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+	/* chara */
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(1) {
+		width: 61.5%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(2) {
+		margin-top: 15px;
+		width: 61.5%;
+		order: 4;
+	}
+
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(3) {
+		margin-top: 0;
+		width: 34.5%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(4) {
+		margin-top: 15px;
+		width: 34.5%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(5) {
+		display: none;
+	}
+
+
+
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+	/* chara */
+	#content section.chara ul.chara_tabs {
+		/* width: 70%; */
+		width: 70vw;
+	}
+	#content section.chara .swiper_chara .des_wrap > .img_wrap {
+		width: 59%;
+		margin-left: 1%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box {
+		width: 39%;
+		margin-right: 1%;
+	}
+	#content section.chara ul.chara_tabs li {
+		width: 23%;
+		margin: 1rem 2%;
+	}
+	#content section.chara .swiper_chara .des_wrap > .img_wrap img {
+		width: 100%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(1) {
+		width: 100%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(2) {
+		display: none;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(3) {
+		margin-top: 15px;
+		width: 48%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(4) {
+		margin-top: 15px;
+		width: 48%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box dl {
+		margin: 0 0 1rem;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box dt {
+		/* 26px */
+		font-size: 1.625rem;
+		font-weight: 700;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box dd {
+		/* 18px */
+		font-size: 1.125rem;
+		margin-top: 1rem;
+	}
+
+	/* dokev_music */
+	#content section.dokev_music .left_box {
+		width: 100%;
+	}
+	#wave {
+		height: 50vw;
+	}
+	#content section.dokev_music ul.play_list {
+		width: 100%;
+		margin-top: 2rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	#content section.dokev_music ul.play_list li {
+		width: calc(50% - 2rem);
+	}
+	#content section.dokev_music ul.play_list li dl dt {
+		max-height: 3rem;
+		-webkit-box-orient: vertical;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		-webkit-line-clamp: 2;
+		display: -webkit-box;
+	}
+
+}
+
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+	/* chara */
+	#content section.chara ul.chara_tabs {
+		/* width: 70%; */
+		width: 80vw;
+	}
+	#content section.chara .swiper_chara {
+		margin-top: 0rem;
+	}
+	#content section.chara .swiper_chara .des_wrap > .img_wrap {
+		width: 100%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box dl {
+		margin: 1rem 0 1rem;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box {
+		width: 100%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(3) {
+		margin-top: 18px;
+		width: 48.5%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(4) {
+		margin-top: 18px;
+		width: 48.5%;
+	}
+
+	/* dokev_music */
+	#content section.dokev_music ul.play_list {
+		display: block;
+	}
+	#content section.dokev_music ul.play_list li {
+		width: auto;
+	}
+
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+	/* chara */
+	#content section.chara {
+		margin: 0 auto ;
+		padding: 3rem 0 6rem; 
+	}
+	#content section.chara ul.chara_tabs {
+		/* width: 70%; */
+		width: 90%;
+	}
+	#content section.chara ul.chara_tabs li {
+		width: 27%;
+		margin: 1rem 2%;
+	}
+	#content section.chara .swiper_chara .des_wrap .right_box .img_area li:nth-of-type(1) {
+		display: none;
+	}
+
+	/* dokev_music */
+	#content section.dokev_music {
+		padding: 3rem 0 6rem; 
+	}
+	#content section.dokev_music ul.play_list li {
+		margin: 0;
+	}
+
+}
