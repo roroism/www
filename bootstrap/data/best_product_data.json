@@ -1,0 +1,40 @@
+{
+  "bestseller":[
+    {
+      "title" : "8.5 DRY CLIMBING ROPE",
+      "des" : "Outdoor",
+      "price" : "$79.95",
+      "color": [{"color_value":"#1797b3", "img_path":"best1_1.png"}, {"color_value":"#729527", "img_path":"best1_2.png"}, {"color_value":"#4e4e7d", "img_path":"best1_3.png"}, {"color_value":"#da326a", "img_path":"best1_4.png"}, {"color_value":"#961813", "img_path":"best1_5.png"}],
+      "des2": "The Black Diamond 9.4 Dry seamlessly blends high-end specs with a durable construction that can handle day in and day out use. By combining a 1X1 sheath that's burly enough withstand everyday abuse with a versatile diameter equally suited for hard redpoint burns or projecting sessions, the 9.4 hits the sweet spot for climbers who demand performance and need reliability. The dry treated core and sheath repels moisture from the inside out while the middle marker is easily identifiable. The handling knots easily and feeds through a belay device smoothly, making it perfectly suited for hard redpoint burns or projecting sessions on both ice and rock."
+    },
+    {
+      "title" : "BOUNDARY MAPPED JACKET-MEN'S",
+      "des" : "climbing",
+      "price" : "$49.95",
+      "color": [{"color_value":"#466d88", "img_path":"best2_1.png"}, {"color_value":"#3a363a", "img_path":"best2_2.png"}, {"color_value":"#418176", "img_path":"best2_3.png"}],
+      "des2": "A versatile, insulating and incredibly breathable midlayer vest that combines a range of field-proven materials, the First Light Hybrid Vest is essential core insulation for stop-start pursuits in cold conditions. This dynamic vest features migration-resistant PrimaLoft® Silver Insulation Active with strategic panels of nylon merino-blend fabric for added breathability, as well as a lightweight Schoeller® stretch-woven shell fabric with NanoSphere® Technology that easily sheds oil, dirt and water."
+    },
+    {
+      "title" : "JETFORCE AVALANCHE AIRBAG PACK",
+      "des" : "skiing",
+      "price" : "$84.95",
+      "color": [{"color_value":"#242424", "img_path":"best3_1.png"}, {"color_value":"#d62f3b", "img_path":"best3_2.png"}],
+      "des2": "With best-in-class durability thanks to its haulbag inspired design, and urban features that make commutes a breeze, the Street Creek 24 is the ultimate everyday pack. The Street Creek’s dedicated 15” laptop sleeve adds versatility for the working stiff, while the burly haulbag construction holds up to day-in, day-out commutes. And when the weather goes south, an integrated rain cover pocket houses the protection you need when caught in a storm."
+    },
+    {
+      "title" : "STORM 400 HEADLAMP",
+      "des" : "hiking",
+      "price" : "$100.90",
+      "color": [{"color_value":"#fe1817", "img_path":"best4_1.png"}, {"color_value":"#342b2c", "img_path":"best4_2.png"}, {"color_value":"#6d6265", "img_path":"best4_3.png"}, {"color_value":"#0074b2", "img_path":"best4_4.png"}, {"color_value":"#9d8d3c", "img_path":"best4_5.png"}, {"color_value":"#e7eae3", "img_path":"best4_6.png"}, {"color_value":"#815234", "img_path":"best4_7.png"}],
+      "des2": "The Storm 400 is engineered for epics in all conditions, featuring a robust waterproof/dustproof housing and 400 lumens of bright light. With a new, compact body, the Storm 400 is more ergonomic, and the updated user interface includes a secondary switch for easy mode selection."
+    },
+    {
+      "title" : "CRAG HALF-FINGER GLOVES",
+      "des" : "hiking",
+      "price" : "$99.90",
+      "color": [{"color_value":"#2f2d2d", "img_path":"best5_1.png"}, {"color_value":"#608db2", "img_path":"best5_2.png"}, {"color_value":"#ef5836", "img_path":"best5_3.png"}, {"color_value":"#286db0", "img_path":"best5_4.png"}],
+      "des2": "The Black Diamond Mercury Mitt is a popular choice for year-round use and combines a BD.dry™ waterproof insert with an Empel DWR on the shell. The removable insulated liner, filled with Primaloft Gold Cross Core, dries quickly, and insulates even when wet. A four-way stretch fabric shell and a long gauntlet cuff keep spindrift and moisture outside, while the goat leather palm and additional reinforcement layer stands up to rocky terrain, repeated rope handling and the general wear and tear associated with dedicated mountain use."
+    }
+  ]
+}
+
