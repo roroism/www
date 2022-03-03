@@ -1,0 +1,632 @@
+/* 계열사 소개 */
+#content .content_area {
+  
+}
+/* 탭 */
+#content .content_area .subsidiary_tab {
+  overflow: hidden;
+  /* width: 100%; */
+  /* border: 1px solid black; */
+  width: 840px;
+  margin: 0 auto 250px;
+
+}
+#content .content_area .subsidiary_tab li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 700;
+}
+#content .content_area .subsidiary_tab li a {
+  display: block;
+  padding: 5px 0;
+  /* 20px */
+  font-size: 1.250em;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  transition: all .3s;
+}
+#content .content_area .subsidiary_tab li a:hover {
+  content: "";
+  border-top: 1px solid #3cb149;
+  border-bottom: 1px solid #3cb149;
+  color: #3cb149;
+}
+#content .content_area .subsidiary_tab li a span{
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+#content .content_area .subsidiary_tab li .current {
+  background-color: #3cb149;
+  color: #fff;
+  border-top: 1px solid #3cb149;
+  border-bottom: 1px solid #3cb149;
+}
+#content .content_area .subsidiary_tab li a.current:hover {
+  background-color: #3cb149;
+  color: #fff;
+}
+
+/* bgflogis회사소개 */
+#content .content_area .introduction {
+  position: relative;
+}
+#content .content_area .introduction .center_box {
+  border-left: 3px solid #3cb149;
+  border-bottom: 3px solid #3cb149;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 15px;
+}
+#content .content_area .introduction h3 {
+
+}
+#content .content_area .introduction h3+p {
+  /* 40px */
+  font-size: 2.500em;
+  font-weight: 700;
+  text-align: justify;
+  float: right;
+  overflow: hidden; 
+  width: 52%;
+  margin: 25px 0 70px;
+}
+#content .content_area .introduction h3+p+p {
+  /* 25px */
+  font-size: 1.563em;
+  text-align: justify;
+  float: right;
+  overflow: hidden;
+  margin-bottom: 70px;
+  padding-left: 41px;
+}
+#content .content_area .introduction .center_box .logis_service {
+ /* overflow: hidden; */
+ /* border: 1px solid black; */
+ float: right;
+ width: 700px;
+ 
+}
+#content .content_area .introduction .center_box .logis_service li {
+  color: #fff;
+  float: left;
+  padding: 15px 10px 180px;
+  width: 25%;
+  box-sizing: border-box;
+  font-size: 1.125em;
+}
+#content .content_area .introduction .center_box .logis_service li:nth-of-type(1) {
+  background: no-repeat -130px 0/cover url("../images/content1/transportation.png");
+  /* border: 1px solid black; */
+}
+#content .content_area .introduction .center_box .logis_service li:nth-of-type(2) {
+  background: no-repeat 0 0/cover url("../images/content1/warehouse.jpg");
+}
+#content .content_area .introduction .center_box .logis_service li:nth-of-type(3) {
+  background: no-repeat 0 0/cover url("../images/content1/convenience_store.jpg");
+}
+#content .content_area .introduction .center_box .logis_service li:nth-of-type(4) {
+  background: no-repeat 0 0/cover url("../images/content1/Trade.jpg");
+  /* border: 1px solid red; */
+}
+#content .content_area .introduction .center_box .logis_service li span {
+  display: block;
+}
+
+/* introduction 백그라운드 */
+#content .content_area .introduction .introduction__left_bg {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  left: -750px;
+  top: -100px;
+  z-index: -1;
+  background: no-repeat right 0px top 0px/26% url("../images/content1/bg_bgf.png");
+}
+#content .content_area .introduction .introduction__right_bg {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  right: -500px;
+  bottom: -100px;
+  z-index: -1;
+  background: no-repeat left 500px top -13px/15% url("../images/content1/bg_logis_v.png");
+}
+#content .content_area .introduction .introduction__bg {
+  background-color: #f5f5f5;
+}
+
+
+/* 활동사진 */
+#content .content_area .activity_images {
+  position: relative;
+  margin-top: 190px;
+  margin-bottom: 95px;
+}
+#content .content_area .activity_images h3 {
+  position: relative;
+  padding-bottom: 50px;
+}
+#content .content_area .activity_images h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .content_area .activity_images h3+p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+/* 활동사진 백그라운드 */
+#content .content_area .activity_images .activity_images__bg {
+  position: absolute;
+  left: 50%;
+  margin-left: -1000px;
+  z-index: -1;
+  width: 2000px;
+  height: 750px;
+  background-color: #f5f5f5;
+  top: 350px;
+}
+
+/* 갤러리 */
+.main{
+  position:relative;width:950px; height:430px;
+  /* border: 1px solid black; */
+  overflow:hidden; margin: 0 auto;
+}
+.gallery{position:relative;left:0; top:0; overflow:hidden; width:750px; height:430px; margin: 0 auto;}
+.gallery ul li{list-style:none; }
+.gallery .link1,.gallery .link2,.gallery .link3,.gallery .link4,.gallery .link5{display:none}
+.gallery ul li img {background-size: cover; width: 800px;}
+.dock{
+  width: 200px;
+  position:absolute;
+  /* left:450px; top:380px; */
+  margin: 0 auto;
+  left: 0; right: 0;
+  bottom: 10px;
+}
+
+.dock span.mbutton{ margin-right:15px; cursor:pointer; 
+    display:block; float:left; width:15px; height:15px; background:no-repeat center/contain url(../images/content1/logis_black_circle.png);}
+
+.dock .ps{ margin-right:15px; margin-top: -5px; cursor:pointer; 
+    display:block; float:left; width:25px; height:25px;
+    background:no-repeat center/contain url(../images/content1/logis_pause_button.png);}
+.main .btn{ width: 40px; height: 100px;
+           position: absolute;  top:150px;cursor:pointer;}
+.main .btnLeft{
+  text-indent: -999px;
+  left:30px;
+  background: url("../images/content1/logis_arrow_left.png") no-repeat center center / 130%;
+  transition: all .2s ease;
+}
+.main .btnLeft:hover{transform:translateX(-4px);}
+.main .btnRight{
+  text-indent: 999px;
+  right:30px;
+  background: url("../images/content1/logis_arrow_right.png") no-repeat center center / 130%;
+  transition: all .2s ease;
+}
+.main .btnRight:hover{transform:translateX(4px);}
+img{border:0; vertical-align:top;}
+/* 갤러리 end */
+
+/* activity_images__point */
+#content .content_area .activity_images .activity_images__point {
+  margin-top: 80px;
+}
+#content .content_area .activity_images .activity_images__point ul {
+  overflow: hidden;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  width: 1040px;
+}
+#content .content_area .activity_images .activity_images__point ul li {
+  width: 200px;
+  height: 80px;
+  float: left;
+  padding: 170px 15px 15px 15px;
+  margin: 15px;
+  text-align: center;
+  border-bottom: 4px solid #fff;
+  transition: border-bottom .5s;
+}
+#content .content_area .activity_images .activity_images__point ul li dt {
+  font-weight: 700;
+}
+#content .content_area .activity_images .activity_images__point ul li dd {
+  margin-top: 10px;
+}
+#content .content_area .activity_images .activity_images__point ul li:nth-of-type(1) {
+  background: url("../images/content1/import99.9.png") no-repeat center top 20px/50% #fff;
+}
+#content .content_area .activity_images .activity_images__point ul li:nth-of-type(2) {
+  background: url("../images/content1/automatic.png") no-repeat center top 20px/ 50% #fff;
+}
+#content .content_area .activity_images .activity_images__point ul li:nth-of-type(3) {
+  background: url("../images/content1/logistics.png") no-repeat center top 24px/ 47% #fff;
+}
+#content .content_area .activity_images .activity_images__point ul li:nth-of-type(4) {
+  background: url("../images/content1/warehouse.png") no-repeat center top 29px/ 44% #fff;
+}
+#content .content_area .activity_images .activity_images__point ul li:nth-of-type(1):hover {
+  border-bottom: 4px solid #3cb149;
+}
+#content .content_area .activity_images .activity_images__point ul li:nth-of-type(2):hover {
+  border-bottom: 4px solid #191970;
+}
+#content .content_area .activity_images .activity_images__point ul li:nth-of-type(3):hover {
+  border-bottom: 4px solid #751485;
+}
+#content .content_area .activity_images .activity_images__point ul li:nth-of-type(4):hover {
+  border-bottom: 4px solid #3cb149;
+}
+
+
+/* 중간이미지 */
+#content .content_area .cvs_bg {
+  background: url("../images/content1/cvs_bg.jpg") no-repeat center/100%;
+  position: relative;
+  width: 2000px;
+  height: 350px;
+  left: 50%;
+  margin-left: -1000px;
+}
+
+
+/* cvs 물류사업 */
+#content .content_area .cvs {
+  margin-top: 120px;
+  margin-bottom: 150px;
+  overflow: hidden;
+}
+#content .content_area .cvs h3 {
+  position: relative;
+  padding-bottom: 70px;
+}
+#content .content_area .cvs h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .content_area .cvs h3+p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+#content .content_area .cvs h3+p+p {
+  /* 18px */
+  font-size: 1.125em;
+  text-align: center;
+  margin-bottom: 100px;
+  line-height: 1.5em;
+}
+
+/* h4 */
+#content .content_area .cvs h4 {
+  /* 30px */
+  font-size: 1.875em;
+  float: left;
+  width: 18%;
+  /* border: 1px solid black; */
+  padding-left: 2%;
+}
+#content .content_area .cvs .inner > div {
+  width: 80%;
+  float: left;
+  /* border: 1px solid black; */
+}
+/* #content .content_area div:nth-of-type(1)::after {
+  clear: both;
+} */
+#content .content_area .cvs .inner  {
+  margin-top: 80px;
+}
+#content .content_area .cvs .inner div:nth-of-type(2) {
+  margin-top: 80px;
+}
+#content .content_area .cvs .inner h4:nth-of-type(2) {
+  margin-top: 80px;
+}
+#content .content_area .cvs .inner div img {
+  float: left;
+  width: 48%;
+  margin: 1%;
+}
+#content .content_area .cvs .inner div p {
+  clear: both;
+  text-align: justify;
+  padding: 2% 1%;
+}
+
+
+
+
+
+/* bgf food */
+/* bgffood회사소개 */
+#content .content_area .introduction_food {
+  position: relative;
+}
+#content .content_area .introduction_food .center_box {
+  border-right: 3px solid #751485;
+  border-bottom: 3px solid #751485;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 15px;
+}
+#content .content_area .introduction_food h3 {
+
+}
+#content .content_area .introduction_food h3+p {
+  /* 40px */
+  font-size: 2.500em;
+  font-weight: 700;
+  text-align: justify;
+  float: left;
+  overflow: hidden; 
+  width: 56%;
+  margin: 25px 0 70px;
+}
+#content .content_area .introduction_food h3+p+p {
+  /* 25px */
+  font-size: 1.563em;
+  text-align: justify;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 70px;
+  padding-right: 41px;
+}
+#content .content_area .introduction_food .center_box .food_service {
+ /* overflow: hidden; */
+ /* border: 1px solid black; */
+ float: left;
+ width: 700px;
+ 
+}
+#content .content_area .introduction_food .center_box .food_service li {
+  color: #fff;
+  float: left;
+  padding: 15px 10px 154px;
+  width: 25%;
+  box-sizing: border-box;
+  font-size: 1.125em;
+}
+#content .content_area .introduction_food .center_box .food_service li:nth-of-type(1) {
+  background: no-repeat -130px 0/cover url("../images/content1/foodmanufacturing.jpg");
+  /* border: 1px solid black; */
+}
+#content .content_area .introduction_food .center_box .food_service li:nth-of-type(2) {
+  background: no-repeat -140px 0/cover url("../images/content1/HygieneManagement.jpg");
+}
+#content .content_area .introduction_food .center_box .food_service li:nth-of-type(3) {
+  background: no-repeat 0 0/cover url("../images/content1/QualityManagement.jpg");
+}
+#content .content_area .introduction_food .center_box .food_service li:nth-of-type(4) {
+  background: no-repeat 0 0/cover url("../images/content1/logisticscenter.jpg");
+  /* border: 1px solid red; */
+}
+#content .content_area .introduction_food .center_box .food_service li span {
+  display: block;
+}
+
+/* introduction 백그라운드 */
+#content .content_area .introduction_food .introduction__left_bg {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  right: -750px;
+  top: -100px;
+  z-index: -1;
+  background: no-repeat left 0px top 0px/26% url("../images/content1/bg_bgf.png");
+}
+#content .content_area .introduction_food .introduction__right_bg {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  left: -500px;
+  bottom: -100px;
+  z-index: -1;
+  background: no-repeat right 500px top -13px/15% url("../images/content1/bg_food_v.png");
+}
+#content .content_area .introduction_food .introduction__bg {
+  background-color: #f5f5f5;
+}
+
+
+/* 활동사진 */
+#content .content_area .activity_images_food {
+  position: relative;
+  margin-top: 190px;
+  margin-bottom: 95px;
+}
+#content .content_area .activity_images_food h3 {
+  position: relative;
+  padding-bottom: 50px;
+}
+#content .content_area .activity_images_food h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .content_area .activity_images_food h3+p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin: 0 auto 50px;
+  font-weight: 400;
+  /* width: 65%; */
+}
+
+/* 활동사진 백그라운드 */
+#content .content_area .activity_images_food .activity_images__bg {
+  position: absolute;
+  left: 50%;
+  margin-left: -1000px;
+  z-index: -1;
+  width: 2000px;
+  height: 750px;
+  background-color: #f5f5f5;
+  top: 350px;
+}
+
+
+/* activity_images__point */
+#content .content_area .activity_images_food .activity_images__point {
+  margin-top: 80px;
+}
+#content .content_area .activity_images_food .activity_images__point ul {
+  overflow: hidden;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  width: 1040px;
+}
+#content .content_area .activity_images_food .activity_images__point ul li {
+  width: 200px;
+  height: 80px;
+  float: left;
+  padding: 170px 15px 15px 15px;
+  margin: 15px;
+  text-align: center;
+  border-bottom: 4px solid #fff;
+  transition: border-bottom .5s;
+}
+#content .content_area .activity_images_food .activity_images__point ul li dt {
+  font-weight: 700;
+}
+#content .content_area .activity_images_food .activity_images__point ul li dd {
+  margin-top: 10px;
+}
+#content .content_area .activity_images_food .activity_images__point ul li:nth-of-type(1) {
+  background: url("../images/content1/control_food.png") no-repeat center top 25px/45% #fff;
+}
+#content .content_area .activity_images_food .activity_images__point ul li:nth-of-type(2) {
+  background: url("../images/content1/management.png") no-repeat center top 25px/ 45% #fff;
+}
+#content .content_area .activity_images_food .activity_images__point ul li:nth-of-type(3) {
+  background: url("../images/content1/research.png") no-repeat center top 25px/ 45% #fff;
+}
+#content .content_area .activity_images_food .activity_images__point ul li:nth-of-type(4) {
+  background: url("../images/content1/operating.png") no-repeat center top 25px/ 45% #fff;
+}
+#content .content_area .activity_images_food .activity_images__point ul li:nth-of-type(1):hover {
+  border-bottom: 4px solid #3cb149;
+}
+#content .content_area .activity_images_food .activity_images__point ul li:nth-of-type(2):hover {
+  border-bottom: 4px solid #191970;
+}
+#content .content_area .activity_images_food .activity_images__point ul li:nth-of-type(3):hover {
+  border-bottom: 4px solid #751485;
+}
+#content .content_area .activity_images_food .activity_images__point ul li:nth-of-type(4):hover {
+  border-bottom: 4px solid #3cb149;
+}
+
+
+/* 중간이미지 */
+#content .content_area .food_bg {
+  background: url("../images/content1/food_bg.jpg") no-repeat center/100%;
+  position: relative;
+  width: 2000px;
+  height: 350px;
+  left: 50%;
+  margin-left: -1000px;
+}
+
+
+/* food제조사업 */
+#content .content_area .cvs_food {
+  margin-top: 120px;
+  margin-bottom: 150px;
+  overflow: hidden;
+}
+#content .content_area .cvs_food h3 {
+  position: relative;
+  padding-bottom: 70px;
+}
+#content .content_area .cvs_food h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .content_area .cvs_food h3+p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+#content .content_area .cvs_food h3+p+p {
+  /* 18px */
+  font-size: 1.125em;
+  text-align: center;
+  margin: 0 auto 100px;
+  width: 70%;
+  line-height: 1.5em;
+  
+}
+
+/* h4 */
+#content .content_area .cvs_food h4 {
+  /* 30px */
+  font-size: 1.875em;
+  float: left;
+  width: 18%;
+  /* border: 1px solid black; */
+  padding-left: 2%;
+}
+#content .content_area .cvs_food .inner > div {
+  width: 80%;
+  float: left;
+  /* border: 1px solid black; */
+}
+/* #content .content_area div:nth-of-type(1)::after {
+  clear: both;
+} */
+#content .content_area .cvs_food .inner  {
+  margin-top: 80px;
+}
+#content .content_area .cvs_food .inner div:nth-of-type(2) {
+  margin-top: 80px;
+}
+#content .content_area .cvs_food .inner h4:nth-of-type(2) {
+  margin-top: 80px;
+}
+#content .content_area .cvs_food .inner div img {
+  float: left;
+  width: 48%;
+  margin: 1%;
+}
+#content .content_area .cvs_food .inner div p {
+  clear: both;
+  text-align: justify;
+  padding: 2% 1%;
+}
+
+
+

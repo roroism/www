@@ -1,0 +1,169 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채용안내-모집과정</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub6common.css"/>
+  <link rel="stylesheet" href="./css/sub6_content1.css">
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <!-- VISUAL -->
+    <div class="visual">
+      <img src="./common/images/sub6visual.jpg" alt="">
+      <h3>채용안내</h3>
+      <span>recruitment guide</span>
+    </div>
+
+    <!-- sub_menu -->
+    <div class="sub_menu">
+      <ul>
+        <li class="current"><a href="./sub6_1.html">모집과정</a></li>
+        <li><a href="./sub6_2.html">복리후생</a></li>
+        <li><a href="./sub6_3.php">모집공고</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <article id="content">
+      <div class="title_area">
+        <div class="line_map">
+          <span>HOME</span> &gt; 채용안내 &gt; <strong>모집과정</strong>
+        </div>
+        <h2>모집과정</h2>
+        <p>충분한 이해를 통해 서로에게 좋은 친구가 되는 과정입니다.</p>
+        <p>BGF리테일의 새 친구가 되는 과정을 소개합니다!</p>
+        <!-- <ul class="sub_tab_menu">
+          <li class="sub_tab_menu_grid3"><a href="#">목표</a></li>
+          <li><a href="#">추진체계</a></li>
+          <li><a href="#">ESG 평가 등급</a></li>
+        </ul> -->
+      </div><!--title_area-->
+
+
+      <div class="content_area">
+ 
+        <div class="recruitment_process">
+          <div class="inner">
+            <!-- <h3>모집과정</h3> -->
+            <ol class="process_title">
+              <li>
+                <img src="./images/content1/recruit1.png" alt="서류접수" />
+                <span>서류접수</span>
+                <span class="arrow1 firstarrow"></span>
+              </li>
+              <li>
+                <img src="./images/content1/recruit2.png" alt="AI인성검사" />
+                <span>AI인성검사</span>
+                <span class="arrow1 secondarrow"></span>
+              </li>
+              <li>
+                <img src="./images/content1/recruit3.png" alt="1차 면접" />
+                <span>1차 면접</span>
+              </li>
+              <li>
+                <img src="./images/content1/recruit4.png" alt="인턴실습" />
+                <span>인턴실습</span>
+                <span class="arrow1 fourtharrow"></span>
+              </li>
+              <li>
+                <img src="./images/content1/recruit5.png" alt="최종 면접" />
+                <span>최종 면접</span>
+                <span class="arrow1 fiftharrow"></span>
+              </li>
+              <li>
+                <img src="./images/content1/recruit6.png" alt="최종입사" />
+                <span>최종입사</span>
+                <span class="arrow1 sixtharrow"></span>
+              </li>
+            </ol>
+
+            <ol class="process_description">
+              <li>
+                <span>01</span>
+                <dl>
+                  <dt>서류접수</dt>
+                  <dd>
+                    <p>지원자의 기본 정보를 파악하는 단계입니다.</p>
+                    <p>기본 항목의 점수화보다는 각 소개 항목을 꼼꼼히 검토해, 지원자의 역량을 충분히 파악할 수 있도록 노력하고 있습니다.</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <span>02</span>
+                <dl>
+                  <dt>AI인성검사</dt>
+                  <dd>
+                    <p>AI를 통해 성향과 역량을 알아봅니다.</p>
+                    <p>별도의 면접장 방문 없이 지원자가 원하는 장소에서 진행됩니다.</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <span>03</span>
+                <dl>
+                  <dt>1차면접</dt>
+                  <dd>
+                    <p>현재 고객과 사회의 좋은 친구로 역량을 펼치고 있는 선배들과 가치관, 역량에 대한 이야기를 나눕니다.</p>
+                    <p>지원자의 생각을 충분히 듣고, 이해하기 위해 선배들도 열린 마음으로 다가가고 있습니다.</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <span>04</span>
+                <dl>
+                  <dt>인턴실습</dt>
+                  <dd>
+                    <p>CU 직영점 근무를 통해 자신의 역량을 펼치며, BGF의 업무가 지원자의 적성에 맞는지 판단할 수 있는 기회입니다.</p>
+                    <p>고객과 스태프, 선배 매니저를 직접 만나 다양한 경험을 하며, 현장에 대해 배울 수 있습니다. BGF는 어떻게 고객과 사회의 '좋은 친구'가 되고 있는지 직접 확인해보세요!</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <span>05</span>
+                <dl>
+                  <dt>최종면접</dt>
+                  <dd>
+                    <p>좋은 친구가 되기 위한 최종 관문, BGF를 이끄는 최고 경영진을 만납니다.</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <span>06</span>
+                <dl>
+                  <dt>최종입사</dt>
+                  <dd>
+                    <p>BGF와 함께 하게 되어 반갑습니다!</p>
+                    <p>우리 서로,그리고 고객과 사회에 더 좋은 친구가 되기 위해 함께 나아갑시다.</p>
+                    <p>좋은 친구들의 성장을 위해 더 든든한 BGF가 되겠습니다.</p>
+                  </dd>
+                </dl>
+              </li>
+            </ol>
+          </div><!-- inner -->
+        </div><!-- recruitment_process -->
+      </div><!-- content_area -->
+    </article><!-- content -->
+
+    <? include "../common/sub_footer.html" ?>
+  
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* FAQ */
+
+#content .title_area {
+  margin-bottom: 110px;
+}
+#content .title_area h2 {
+  position: relative;
+}
+#content .title_area h2::after {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+}
+#content .title_area h2 + p {
+  /* 30px */
+  font-size: 1.875em;
+  text-align: center;
+  margin-bottom: 17px;
+  line-height: 1.5em;
+  margin-top: 80px;
+  font-weight: 500;
+}
+#content .title_area h2 + p + p {
+  /* 20px */
+  font-size: 1.250em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+
+
+/* FAQ */
+#content .content_area .faq_box {
+  margin-bottom: 200px;
+}
+.faq h3 {margin-left: 14px;}
+.faq{width:1200px; border-bottom:1px solid #ddd;font-size:1.125em; margin: 0 auto;}  
+.faq .hgroup{position:relative;margin:0 0 10px 0;}  
+.faq .hgroup .all{
+  position:absolute; top:-4px; right:10px; color:#333;
+  background: no-repeat 87% 53% /15% url("../images/faq_arrow_down.png");
+  padding: 0 50px 0 5px;
+}  
+.faq li:nth-of-type(1) .q {
+  border-top: 2px solid #333;
+}
+.faq .q{
+  margin:0;border-top:1px solid #ddd;
+  position: relative;
+}
+.faq .q::before {
+  content: "Q";
+  position: absolute;
+  top: 15px;
+  left: 60px;
+  /* 24px */
+  font-size: 1.500em;
+  color: #3cb149;
+}
+.faq .q a span {
+  display: block;
+  float: right;
+  width: 30px; height: 30px;
+  background: no-repeat center/contain url("../images/faq_arrow_down.png");
+}
+.faq .a::before{
+  content: "A";
+  position: absolute;
+  top: 25px;
+  left: 62px;
+  /* 24px */
+  font-size: 1.500em;
+  color: #751485;
+}
+
+.faq .q a.trigger{
+  display:block;
+  text-align:left; padding: 25px 30px 25px 150px;
+}  
+.faq .hide .q a.trigger{}  
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{
+  background:#9df9a8;
+  /* color:#000; */
+}  
+.faq .a{
+          position: relative;
+          line-height:1.5em;
+          text-align: justify;
+          overflow:hidden;
+          display:none;
+          padding: 25px 30px 25px 150px;
+          background-color: #f9f9f9;
+        }

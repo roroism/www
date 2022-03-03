@@ -1,0 +1,302 @@
+
+body {
+  background-color: #f9f9f9;
+}
+.logo {
+  margin: 50px auto 35px; display: block; width: 150px; height: 50px; text-indent: -9999px; overflow: hidden;
+  background: url("../../common/images/logo1.png") center / contain no-repeat;
+}
+article {
+  background-color: #fff;
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px 70px 30px;
+  box-shadow: 8px 8px 18px rgb(0 0 0 / 6%);
+  border-radius: 3px;
+}
+article h2 {
+  /* 30px */
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 700;
+}
+article h2+p {
+  color: #999;
+  text-align: center;
+  line-height: 1.5em;
+}
+article ul.find_tab {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+article ul.find_tab li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid #3cb149;
+  /* background-color: #f8f8f8; */
+}
+article ul.find_tab li.on {
+  /* box-sizing: border-box; */
+  border-top: 2px solid #3cb149;
+  border-left: 2px solid #3cb149;
+  border-right: 2px solid #3cb149;
+  border-bottom: none;
+  /* background-color: #fff; */
+}
+article ul.find_tab li a {
+  /* 21px */
+  font-size: 1.313rem;
+  display: block;
+  padding: 15px 0;
+}
+
+article .tab_desc {
+  display: none;
+}
+article fieldset {
+  margin-top: 40px;
+}
+article .tab_desc input.find_input {
+  /* 17px */
+  font-size: 1.063em;
+  height: 3.3rem;
+  width: 498px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-indent: 20px;
+}
+article .tab_desc .telBox select {
+  /* 17px */
+  font-size: 1.063em;
+  width: 23.7%;
+  height: 3.3rem;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-indent: 20px;
+  margin-top: 10px;
+
+}
+article .tab_desc .telBox input.find_input {
+ width: 33%;
+}
+article input.find_input::placeholder {
+  text-indent: 20px;
+  color: #999;
+}
+article input.find_input:focus,
+article .tab_desc .telBox select:focus {
+  border: 1px solid #3cb149;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(60 177 73 / 60%);
+}
+article input.find_input:focus-visible,
+article .tab_desc .telBox select:focus-visible {
+  outline: none;
+}
+article .find_pw input.find_input:nth-child(2)  {
+  margin-top: 10px;
+}
+article .find {
+  margin-top: 30px;
+}
+
+/* 찾기버튼 */
+article input.find {
+  width: 100%;
+  height: 3.3rem;
+  background-color: #3cb149;
+  color: #fff;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+  border: 1px solid #3cb149;
+  box-sizing: border-box;
+}
+article input.find:hover {
+  background-color: #fff;
+  color: #3cb149;
+}
+
+/* 로그인 영역*/
+article #login_button {
+  margin-top: 15px;
+}
+/* 로그인 버튼 */
+article #login_button a {
+  display: block;
+  width: 100%;
+  height: 3.3rem;
+  background-color: #ccc;
+  color: #fff;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 3.3rem;
+}
+article #login_button a:hover {
+  background-color: #fff;
+  color: #ccc;
+}
+
+/* 회원가입 영역 */
+article .sign_up_support {
+  margin: 35px 0 0;
+  border-top: 1px solid #ccc;
+  padding: 25px 0 0;
+  color: #666;
+}
+/* 회원가입 버튼 */
+article .sign_up_support a {
+  display: block;
+  width: 100%;
+  height: 3.3rem;
+  background-color: #fff;
+  color: #666;
+  /* 20px */
+  font-size: 1.125em;
+  border-style: none;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 3.3rem;
+  margin-top: 10px;
+  border: 1px solid #bbb;
+  transition: all .3s;
+}
+article .sign_up_support a:hover {
+  border: 1px solid #666;
+}
+
+.loadtext {
+  width: 100%;
+  height: 400px;
+}
+
+/* modal */
+.modal_bg {
+  position: fixed;
+  left: 0; top: 0;
+  z-index: 1000;
+  width: 100%; height: 100%;
+  background-color: #3a3e50;
+  opacity: 0.5;
+  display: none;
+}
+/* 팝업창 mok*/
+.modal_popup {
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  width: 550px;
+  height: 350px;
+  background-color: #f5f5f5; 
+  box-shadow: 1px 3px 7px 0px #666;
+  z-index: 1001;
+  display: none;
+  border: 1px solid #f5f5f5;
+  padding: 45px 30px 30px;
+  /* overflow-y: scroll; */
+}
+.modal_popup.find_id_height {
+  height: 270px;
+}
+/* 닫기버튼 */
+.modal_popup a.close_btn {
+  position: absolute;
+  right: 1rem; top: 1.071rem;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url("../images/x.png") center / contain no-repeat;
+  width: 1.786rem; height: 1.786rem;
+  transition: transform .3s;
+}
+.modal_popup a.close_btn:hover {
+  transform:rotate(180deg);
+}
+.modal_popup > strong {
+  display: block;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.data_wrap {
+  background-color: #eee;
+  padding: 20px 30px;
+}
+
+/* modal button */
+.modal_button_wrap {
+  margin-top: 15px;
+  text-align: center;
+}
+.modal_button_wrap li {
+  display: inline-block;
+  margin: 0 10px;
+}
+/* 로그인 */
+.modal_button_wrap li:nth-of-type(1) a {
+  display: block;
+  width: 200px;
+  height: 3.3rem;
+  line-height: 3.3rem;
+  background-color: #3cb149;
+  color: #fff;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color .3s, color .3s;
+  border: 1px solid #3cb149;
+  box-sizing: border-box;
+  text-align: center;
+}
+.modal_button_wrap li:nth-of-type(1) a:hover {
+  background-color: #fff;
+  color: #3cb149;
+}
+/* 비밀번호찾기 */
+.modal_button_wrap li:nth-of-type(2) a {
+  display: block;
+  width: 200px;
+  height: 3.3rem;
+  line-height: 3.3rem;
+  background-color: #fff;
+  color: #666;
+  /* 20px */
+  font-size: 1.125em;
+  border-style: none;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 3.3rem;
+  margin-top: 10px;
+  border: 1px solid #bbb;
+  transition: border .3s;
+  text-align: center;
+}
+.modal_button_wrap li:nth-of-type(2) a:hover {
+  border: 1px solid #666;
+}
+
+.modal_popup .data_wrap strong {
+  /* 18px */
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+

@@ -1,0 +1,418 @@
+<?
+  session_start();
+  @extract($_GET);
+  @extract($_POST);
+  @extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGFretail</title>
+  <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="./common/css/common.css">
+  <link rel="stylesheet" href="./maincss/main.css">
+  
+  <!-- 브라우저 접두사 -->
+  <script src="./common/js/prefixfree.min.js"></script>
+  <!-- 광고 팝업 -->
+  <script src="./mainjs/mainpopup.js"></script>
+</head>
+<body>
+  
+  <? include "./common/main_header.html" ?>
+
+    <div class="visual">
+      <div class="gallery">
+        <ul>
+          <li class="link1"><img src="./images/visual5_2000_930.jpg" alt='main visual 이미지1' ><div class="slogan"><p class="standByPosition07 toTop_40 delay_03">Logistics Infrastructure, <br/>Logistics Network</p><p class="standByPosition07 toTop_40 delay_06">약속을 지키는 좋은 친구</p></div></li>
+          <li class="link2"><img src="./images/visual3_2000_930_20.jpg" alt='main visual 이미지2' ><div class="slogan"><p class="standByPosition07 toTop_40 delay_03">Research and Development <br/>Control tower of Convenience food</p><p class="standByPosition07 toTop_40 delay_06">안심이 되는 좋은 친구</p></div></li>
+          <li class="link3"><img src="./images/visual4_2000_930_20.jpg" alt='main visual 이미지3' ><div class="slogan"><p class="standByPosition07 toTop_40 delay_03">Realizing <br/> The Service Network</p><p class="standByPosition07 toTop_40 delay_06">행복을 전하는 좋은 친구</p></div></li>
+          <li class="link4"><img src="./images/visual2_2000_930.jpg" alt='main visual 이미지4' ><div class="slogan"><p class="standByPosition07 toTop_40 delay_03">In good food <br/>We trust</p><p class="standByPosition07 toTop_40 delay_06">삶을 풍요롭게 만드는 좋은 친구</p></div></li>
+        </ul>
+      </div>
+       
+      <div class="dock">
+          <span class="mbutton btn1"></span>
+          <span class="mbutton btn2"></span>
+          <span class="mbutton btn3"></span>
+          <span class="mbutton btn4"></span>
+          <span class="ps"></span>
+      </div>
+      <span class="btn btnLeft"></span>
+      <span class="btn btnRight"></span>
+      <!-- <img src="./images/visual1_2000_930.jpg" alt="visual이미지"/> -->
+    </div><!-- visual -->
+
+    <article id="content">
+      <h2 class="hidden">본문콘텐츠영역</h2>
+
+      <div class="esg">
+        <div class="inner">
+          <h3 class="hidden">지속가능경영</h3>
+          <p class="esg_title standByPosition07 toTop_40 delay_00">Be Good Friends, BGF Retail</p>
+          <p class="standByPosition07 toTop_40 delay_01">지속가능경영을 모든 경영활동 전반에 걸쳐 체계적으로 수행하기 위해 <br> 환경&middot;사회적 책임을 다하고 있습니다.</p>
+          <ul>
+            <li class="esg_li standByPosition05 toRight_100 delay_06">
+              <img src="./images/esg_background1.jpg" alt="환경경영" />
+              <div class="text_area">
+                <h4>환경경영</h4>
+                <span class="eng_font">environment</span>
+                <p>BGF 리테일은 기업 이념에 근거하여 지구 환경에 공헌하는 상품·서비스의 제공과 모든 경영 자원을 최대한
+                  유효하게 활용하는 것으로 지속 가능한 사회의 실현에 공헌해 나갈 것입니다.</p>
+                <a href="./sub2/sub2_4.html"><span class="hidden">환경경영</span></a>
+                <!-- <a href="#"></a> -->
+              </div>
+              <div class="esg_li__title">
+                <a href="./sub2/sub2_4.html">환경경영</a>
+                <span class="eng_font">environment</span>
+              </div>
+            </li>
+            <li class="esg_li standByPosition05 toBottom_100 delay_08">
+              <img src="./images/esg_background2.jpg" alt="윤리경영" />
+              <div class="text_area">
+                <h4>윤리경영</h4>
+                <span class="eng_font">ethics</span>
+                <p>BGF리테일 윤리경영은 모든 관계자들이 윤리적 판단에 따라 업무를 수행하는 것을 기본으로 합니다.</p>
+                <a href="./sub2/sub2_3.html"><span class="hidden">윤리경영</span></a>
+                <!-- <a href="#"></a> -->
+              </div>			
+              <div class="esg_li__title">
+                <a href="./sub2/sub2_3.html">윤리경영</a>
+                <span class="eng_font">ethics</span>
+              </div>
+            </li>
+            <li class="esg_li standByPosition05 toLeft_100 delay_10">
+              <img src="./images/esg_background3.jpg" alt="사회공헌" />
+              <div class="text_area">
+                <h4>사회공헌</h4>
+                <span class="eng_font">Social</span>
+                <p>BGFretail전사가 합심해 일상의 가까운 곳에서 함께 나누는 좋은 친구 같은 기업이 되기 위해 노력하고 있습니다.</p>
+                <a href="./sub2/sub2_2.html"><span class="hidden">사회공헌</span></a>
+                <!-- <a href="#"></a> -->
+              </div>			
+              <div class="esg_li__title">
+                <a href="./sub2/sub2_2.html">사회공헌</a>
+                <span class="eng_font">Social</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div><!-- esg -->
+
+
+      <!-- 계열사 소개 -->
+      <div class="subsidiary">
+        <h3 class="hidden">계열사소개</h3>
+        <div class="subsidiary1">
+          <h4 class="standByPosition05 toTop_40 delay_05">Nice to CU</h4>
+          <p class="standByPosition05 toTop_40 delay_05">고객과 사회에 좋은 친구.<br/>BGF리테일의 편의점 브랜드 CU입니다.</p>
+          <span class="hashtag standByPosition07 toTop_40 delay_08">#CU #Refresh</span>
+          <p class="standByPosition07 toTop_40 delay_08">
+            nice to see you! 친근한 인사처럼<br/>
+            고객에게 언제 어디서나 반가운 브랜드로 다가갑니다.<br/><br/>
+            상품과 서비스 제공을 넘어<br/>
+            당신에게 휴식과 위로, 응원과 힘이 되는<br/>
+            즐거운 경험과 공간을 만들어갑니다.
+          </p>
+          <div class="standByPosition07 toRight_100 delay_12">
+            <a class="button_more standByPosition05" href="./sub3/sub3_2.html">더 알아보기<i class="fas fa-arrow-right"></i></a>
+          </div>
+          <img class="standByPosition07 toLeft_100 delay_00" src="./images/cu1_img.jpg" alt="CU이미지1"/>
+          <img class="standByPosition07 toLeft_100 delay_12" src="./images/cu2_img.jpg" alt="CU이미지2"/>
+        </div>
+        <div class="subsidiary2">
+          <div class="inner">
+            <h4 class="standByPosition05 toTop_40 delay_05"><span>BGF</span> 로지스</h4>
+            <p class="standByPosition05 toTop_40 delay_05">
+              항상 변화하고 끊임없이 도전하며<br/>
+              고객서비스에 충실한 물류기업
+            </p>
+            <span class="hashtag standByPosition07 toTop_40 delay_08">#Challenge #Stability</span>
+            <p class="standByPosition07 toTop_40 delay_08">전국 통합물류센터를 통해 백령도, 울릉도까지 안정적인 물류 공급을 지원합니다. 지역 중심의 물류 거점지로서의 역할을 수행합니다. 공급상품 특성에 따라 최적의 입지 선정으로 전국납품률 평균 99.9%를 달성하고 있습니다.</p>
+            <div class="standByPosition07 toLeft_100 delay_12">
+              <a class="button_more" href="./sub3/sub3_1.html">더 알아보기<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <img class="standByPosition07 toRight_100 delay_00" src="./images/bgflogi1_img.jpg" alt="BGF로지스이미지1"/>
+            <img class="standByPosition07 toRight_100 delay_12" src="./images/bgflogi2_img.jpg" alt="BGF로지스이미지2"/>
+          </div>
+        </div>
+        <div class="subsidiary3">
+          <h4 class="standByPosition05 toTop_40 delay_05"><span>BGF</span> 푸드</h4>
+          <p class="standByPosition05 toTop_40 delay_05">
+            언제나 믿고 먹을 수 있는<br/>
+            편의점 안심 먹거리 생산 R&amp;D 전문 기업
+          </p>
+          <span class="hashtag standByPosition07 toTop_40 delay_08">#Safety #Quality</span>
+          <p class="standByPosition07 toTop_40 delay_08">BGF푸드는 도시락, 주먹밥, 김밥, 샌드위치, 햄버거 등 <br> 신선식품을 생산하는 도시락 공장과 상온&middot;저온 상품 및 잡화를 <br> 취급하는 물류센터의 동시 운영으로 광주, 전라도, 대전, 충청도의 <br> 생산 및 물류 거점 역할을 하고 있습니다.</p>
+          <div class="standByPosition07 toRight_100 delay_12">
+            <a class="button_more" href="./sub3/sub3_3.html">더 알아보기<i class="fas fa-arrow-right"></i></a>
+          </div>
+          <img class="standByPosition07 toLeft_100 delay_00" src="./images/bgffood1_img.png" alt="BGF푸드이미지1"/>
+          <img class="standByPosition07 toLeft_100 delay_12" src="./images/bgffood2_img.png" alt="BGF푸드이미지2"/>
+        </div>
+      </div><!-- subsidiary -->
+
+      <div class="news">
+        <h3 class="standByPosition07 toTop_40 delay_00">보도자료</h3>
+        <p class="standByPosition07 toTop_40 delay_01">혁신과 변화를 통해 편리한 생활을 창조해 나갑니다</p>
+        
+
+        <!-- <div id="slide_gallery_box">
+          <div class="slide_gallery">
+            <ul>
+                <li><img src="images/slide1.jpg" alt="" /></li>
+                <li><img src="images/slide2.jpg" alt="" /></li>
+                <li><img src="images/slide3.jpg" alt="" /></li>
+                <li><img src="images/slide4.jpg" alt="" /></li>
+                <li><img src="images/slide5.jpg" alt="" /></li>
+            </ul>   
+          </div> 
+           <div class="sub_menu_box">
+                <a href="#" class="m1 button"><img src="images/btn_prev.jpg" alt=""></a>
+                <a href="#" class="m2 button"><img src="images/btn_next.jpg" alt=""></a>
+          </div>
+        </div> -->
+
+
+        <div class="standByPosition05 toTop_75 delay_05">
+          <div id="news_list_area">
+            <? include "./lib/func.php"; ?>	
+            <? latest_article("concert", 10, 25); ?>
+            <!-- <ul>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news1_img.png" alt="보도자료1이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>CU, "대한민국의 달콤함"을 몽골, 말레이...</dt>
+                    <dd>CU, "대한민국의 달콤함"을 몽골, 말레이시...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news2_img.png" alt="보도자료2이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>냉동식단은 그만! CU, The건강식단 시...</dt>
+                    <dd>넷플릭스 드라마 '오징어게임' 열풍에 국내 중소기업과 손잡고 완제품 달고나...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news3_img.png" alt="보도자료3이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>편의점 점령한 곰 세마리! CU 빼빼로데이...</dt>
+                    <dd>테지음 테디베어, 케어베어, 곰표 등 곰 시리즈 상품 외에도 기획 상품 라이브커...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news3_img.png" alt="보도자료3이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>편의점 점령한 곰 세마리! CU 빼빼로데이...</dt>
+                    <dd>테지음 테디베어, 케어베어, 곰표 등 곰 시리즈 상품 외에도 기획 상품 라이브커...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news2_img.png" alt="보도자료3이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>편의점 점령한 곰 세마리! CU 빼빼로데이...</dt>
+                    <dd>테지음 테디베어, 케어베어, 곰표 등 곰 시리즈 상품 외에도 기획 상품 라이브커...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news2_img.png" alt="보도자료3이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>편의점 점령한 곰 세마리! CU 빼빼로데이...</dt>
+                    <dd>테지음 테디베어, 케어베어, 곰표 등 곰 시리즈 상품 외에도 기획 상품 라이브커...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news2_img.png" alt="보도자료3이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>편의점 점령한 곰 세마리! CU 빼빼로데이...</dt>
+                    <dd>테지음 테디베어, 케어베어, 곰표 등 곰 시리즈 상품 외에도 기획 상품 라이브커...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news3_img.png" alt="보도자료3이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>편의점 점령한 곰 세마리! CU 빼빼로데이...</dt>
+                    <dd>테지음 테디베어, 케어베어, 곰표 등 곰 시리즈 상품 외에도 기획 상품 라이브커...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news2_img.png" alt="보도자료3이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>편의점 점령한 곰 세마리! CU 빼빼로데이...</dt>
+                    <dd>테지음 테디베어, 케어베어, 곰표 등 곰 시리즈 상품 외에도 기획 상품 라이브커...</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="./images/news1_img.png" alt="보도자료1이미지"/><span>2021.11.09</span>
+                  <dl>
+                    <dt>CU, "대한민국의 달콤함"을 몽골, 말레이...</dt>
+                    <dd>CU, "대한민국의 달콤함"을 몽골, 말레이시...</dd>
+                  </dl>
+                </a>
+              </li>
+            </ul> -->
+          </div><!-- news_list_area -->
+        </div>
+        
+        <div class="news_prev_button_wrap standByPosition05 toTop_75 delay_07">
+          <a href="javascript:void(0)" class="news_button news_prev_button">이전화살표</a>
+        </div>
+        <div class="news_next_button_wrap standByPosition05 toTop_75 delay_07">
+          <a href="javascript:void(0)" class="news_button news_next_button">다음화살표</a>
+        </div>
+        <div class="standByPosition05 toTop_75 delay_07">
+          <a class="button_more" href="./concert/list.php">더 알아보기<i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div><!-- news -->
+
+
+      <div class="introduction">
+        <h3 class="standByPosition07 toTop_40 delay_00">회사소개</h3>
+          <div class="introduction_img_area_wrap standByPosition05 toRight_75 delay_03">
+            <div id="introduction_img_area"></div>
+          </div>
+        <!-- <img src="./images/introduction1.jpg" alt="경영철학이미지"/> -->
+        <!-- <img src="./images/introduction2.jpg" alt="기업비전이미지"/> -->
+        <!-- <img src="./images/introduction3.jpg" alt="배움지원이미지"/> -->
+        <div class="introduction_right_box_wrap standByPosition07 toTop_40 delay_06">
+          <div class="introduction_right_box">
+            <div id="introduction_description_area">
+              <!-- <ul>
+                <li>
+                  <h4>경영철학</h4>
+                  <dl>
+                    <dt>좋은 친구 같은 기업, <br/><span class="eng">BGF</span><br/><span class="eng">Be Good Friends!</span></dt>
+                    <dd><span class="eng">BGF</span>는 <span class="eng">Be Good Friends</span>의 줄임말로 '좋은 친구'같은 기업이 되겠다는 의미를 담고 있습니다. 고객은 물론 지역 사회에 대한 역할과 책임을 다하는 BGF는 변화와 위기에 맞서 끊임없이 혁신중입니다. 또한 소매 유통을 넘어 제조, 물류, 금융서비스 등 모든 사업부문의 가치를 유기적으로 연결하여 시너지를 발휘하는 기업으로 성장하기 위해 노력하고 있습니다.</dd>
+                  </dl>
+                  <p></p>
+                  <p></p>
+                  <a href="#"><span class="eng">BGF</span>의 경영철학 알아보기<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <h4>기업비전</h4>
+                  <dl>
+                    <dt><span class="eng">BGFretail</span>에는 5가지의 핵심가치가 있습니다</dt>
+                    <dd>긍정에너지 열정! 편리한 세상을 위한 도전! 꾸밈없이 당당한 정직! 서로에게 든든한 팀웍! 다른 내일을 위한 학습! <span class="eng">BGF</span>의 경영이념은 언제 어디서나 최상의 상품과 서비스를 제공하여 고객가치를 실현하고 사회발전에 공헌하는 기업으로 성장하는 것 입니다.</dd>
+                  </dl>
+                 <a href="#"><span class="eng">BGF</span>의 핵심가치 알아보기<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <h4>배움지원</h4>
+                  <dl>
+                    <dt>새로운 것에 대한 학습과 성장. <br/><span>BGF</span>리테일이 함께합니다</dt>
+                    <dd>급변하는 환경에서 더 나은 상품과 서비스를 제공하는 친구가 되기 위해 BGF는 언제나 학습합니다. 업계에서 가장 숙련된 노하우를 보유하고 있는 BGF는 구성원 각자가 자신의 역할을 충분히 수행할 수 있도록 체계적인 교육을 운영하고 있습니다. <br> 특히, BGF리테일의 새로운 친구가 된 신입사원에게는 조직과 업무에 잘 적응할 수 있도록 1년 간의 밀착 교육 제도를 제공하고 있습니다.</dd>
+                  </dl>
+                  <a href="#"><span class="eng">BGF</span>의 배움지원 알아보기<i class="fas fa-chevron-right"></i></a>
+                </li>
+              </ul> -->
+            </div>
+            <a href="javascript:void(0)" id="introduction_backBtn"><span>이전으로</span></a>
+            <a href="javascript:void(0)" id="introduction_pauseBtn"><span>일시정지</span></a>
+            <a href="javascript:void(0)" id="introduction_nextBtn"><span>이후로</span></a>
+          </div>
+        </div>
+        <div class="introduction_right_bg"></div>
+      </div><!-- introduction -->
+
+
+      <div class="recruit">
+        <div class="opacity_box">
+          <h3>인재채용</h3>
+          <p>BGF와 함께할 새 친구를 모집합니다</p>
+          <ul>
+            <li>
+              <a href="./sub6/sub6_1.html">
+                <!-- <img src="./images/recruit_icon1.png" alt="모집과정이미지아이콘"> -->
+                <!-- <h4 class="hidden">모집과정</h4> -->
+                <span class="recruit_icon1"></span>
+                <dl>
+                  <dt>모집과정</dt>
+                  <dd>충분한 이해를 통해 서로에게 좋은 친구가 되는 과정을 소개합니다.</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="./sub6/sub6_2.html">
+                <!-- <img src="./images/recruit_icon2.png" alt="복리후생이미지아이콘"> -->
+                <!-- <h4 class="hidden">복리후생</h4> -->
+                <span class="recruit_icon2"></span>
+                <dl>
+                  <dt>복리후생</dt>
+                  <dd>일과 생활의 조화를 통한 개인과 회사의 공동 성장을 지향하며, 임직원의 여가생활, 개인 성장, 건강, 가족 복지 등 생활 전반에 대한 지원 제도를 운영하고 있습니다.</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="./sub6/sub6_3.php">
+                <!-- <img src="./images/recruit_icon3.png" alt="모집공고이미지아이콘"> -->
+                <!-- <h4 class="hidden">모집공고</h4> -->
+                <span class="recruit_icon3"></span>
+                <dl>
+                  <dt>모집공고</dt>
+                  <dd>현재 모집중인 새 친구에 대한 모집 소식을 확인하실 수 있습니다.</dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- recruit -->
+    </article>
+    
+    <? include "./common/main_footer.html" ?>
+    <script src="./mainjs/move.js"></script>
+    <script src="./mainjs/main.js"></script>
+    <!-- <script src="./mainjs/introduction_ajax.js"></script> -->
+    <!-- <script src="./mainjs/news.js"></script> -->
+
+  <!-- 공지사항 팝업 -->
+  <div id="showimage" style="z-index:99;position:absolute;width:322px;left:170px;top:150px;">
+    <script>
+      function closeWin(){
+         var chk = document.getElementById('Notice')
+         if ( chk.checked ) {
+               setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+          }
+      }
+     if ( getCookie( "Notice" ) == "done" ) {
+         hidebox();
+     }
+   </script>
+    <div>
+      <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+    </div>
+    <div style="font-size:12px;text-align:center;color:#666;">
+      <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+      <a href="#"  onclick="closeWin();hidebox();return false;"> [close] </a>
+    </div>
+  </div>
+
+  <!-- scroll_text -->
+  <!-- <div class="scroll_text"></div> -->
+
+</body>
+</html>

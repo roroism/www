@@ -1,0 +1,88 @@
+/* sub6/view.php */
+
+/* concert/view.php */
+
+#content .title_area {
+  margin-bottom: 110px;
+}
+#view_title {
+  border-top: 2px solid #333;
+  padding: 35px;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #999;
+}
+#view_title #view_title1 {
+  color: #555;
+  font-weight: 500;
+  font-size: 1.563em;
+  line-height: 1.5em;
+}
+#view_title #view_title2 {
+  color: #777;
+  font-size: 1.125em;
+  margin-top: 20px;
+  overflow: hidden;
+}
+#view_title #view_title2 dl dt {
+  font-weight: 700;
+}
+#view_title #view_title2 dl:nth-of-type(1) {
+  float: left;
+  line-height: 1.5em;
+}
+#view_title #view_title2 dl:nth-of-type(1) dt {
+  float: left;
+  margin-right: 15px;
+}
+#view_title #view_title2 dl:nth-of-type(1) dt:nth-of-type(1) {
+  /* margin-right: 0; */
+}
+#view_title #view_title2 dl:nth-of-type(1) dd {
+  float: left;
+  margin-right: 15px;
+}
+#view_title #view_title2 dl:nth-of-type(1) dd:nth-of-type(1) {
+  margin-right: 60px;
+}
+#view_title #view_title2 dl:nth-of-type(2) {
+  line-height: 1.5em;
+  float: right;
+}
+#view_title #view_title2 dl:nth-of-type(2) dt {
+  float: left;
+  margin-right: 15px;
+}
+#view_title #view_title2 dl:nth-of-type(2) dd {
+  float: left;
+}
+/* view_content */
+#view_content {
+  padding: 55px 40px 90px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 10px;
+}
+#view_content img {
+  display: block;
+  margin: 0 auto;
+}
+/* view_button */
+#view_button {
+  margin-top: 15px;
+  text-align: right;
+  margin-bottom: 150px;
+  padding: 0 35px;
+}
+#view_button a {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 7px 18px;
+}
+#view_button a:nth-of-type(1) {
+  color: #fff;
+  background-color: #444;
+}
+#view_button a:nth-of-type(2),
+#view_button a:nth-of-type(3),
+#view_button a:nth-of-type(4) {
+  background-color: #e2e2e2;
+}

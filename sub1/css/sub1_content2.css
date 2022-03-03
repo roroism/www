@@ -1,0 +1,225 @@
+/* 기업비전내용 */
+
+/* management_philosophy area */
+
+/* #content .content_area .management_philosophy {} */
+#content .content_area .management_philosophy .inner h3{
+  /* 40px */
+  font-size: 2.500em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+#content .content_area .management_philosophy .inner h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 60px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -85px;
+}
+#content .content_area .management_philosophy .inner p {
+  /* 24px */
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  margin-bottom: 160px;
+  position: relative;
+}
+#content .content_area .management_philosophy .inner p::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 105px;
+  background-color: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: 175px;
+}
+
+/* vision area */
+#content .content_area .vision {
+  margin-bottom: 220px;
+}
+
+#content .content_area .vision .inner .vision_background {
+  width: 1200px; height: 280px;
+  background: center / cover no-repeat url("../images/content2/vision.jpg");
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#content .content_area .vision .inner .vision_background .opacity_box {
+  width: 1200px; height: 280px;
+  background-color: rgba(51, 51, 51, .4);
+  overflow: hidden;
+} 
+#content .content_area .vision .inner .vision_background h3 {
+  /* 40px */
+  font-size: 2.500em;
+  text-align: center;
+  color: #fff;
+  margin: 70px auto 30px;
+}
+#content .content_area .vision .inner .vision_background p {
+  /* 30px */
+  font-size: 1.875em;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/* core_values area */
+#content .content_area .core_values {margin-bottom: 180px;}
+#content .content_area .core_values h3 {
+  /* 40px */
+  font-size: 2.500em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 170px;
+}
+#content .content_area .core_values h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 60px;
+  background-color: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -85px;
+}
+
+#content .content_area .core_values .inner .core_values_figure{
+  /* 18px */
+  font-size: 1.125em;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  /* border: 1px solid red; */
+  margin-bottom: 100px;
+  
+}
+#content .content_area .core_values .inner .core_values_figure div span {
+  /* 30px */
+  font-size: 30px;
+  font-weight: 700;
+}
+#content .content_area .core_values .inner .core_values_figure .circle {
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background-color: #3cb149;
+  box-sizing: border-box;
+  padding: 60px 0;
+  overflow: hidden;
+  position: absolute;
+}
+#content .content_area .core_values .inner .core_values_figure .core_values_circle1 {
+  left: 500px; top: -70px;
+}
+#content .content_area .core_values .inner .core_values_figure .core_values_circle2 {
+  right: 210px; top: 20%;
+}
+#content .content_area .core_values .inner .core_values_figure .core_values_circle3 {
+  right: 300px; bottom: 1%;
+}
+#content .content_area .core_values .inner .core_values_figure .core_values_circle4 {
+  left: 300px; bottom: 1%;
+}
+#content .content_area .core_values .inner .core_values_figure .core_values_circle5 {
+  left: 210px; top: 20%;
+}
+#content .content_area .core_values .inner .core_values_figure .background_logo_circle {
+  width: 309px; height: 309px;
+  border-radius: 50%;
+  background-color: #3cb149;
+  position: absolute;
+  left: 50%; margin-left: -154.5px;
+  bottom: 50%; margin-bottom: -154.5px;
+}
+#content .content_area .core_values .inner .core_values_figure .background_logo_circle .logo_circle {
+  /* 18px */
+  /* overflow: hidden; */
+  font-size: 1.125em;
+  text-align: center;
+  color: #3cb149;
+  /* box-sizing: border-box;
+  padding-bottom: 150px; */
+  width: 230px; height: 230px;
+  background-color: blue;
+  background: center  / auto no-repeat url("../images/content2/logo_green.png") white;
+  border-radius: 50%;
+  position: absolute;
+  /* margin: 0 auto; */
+  left: 50%; margin-left: -115px;
+  bottom: 50%; margin-bottom: -115px;
+  line-height: 150px;
+  box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.3);
+  
+  
+}
+#content .content_area .core_values .inner .core_values_figure .background_circle {
+  border-radius: 50%;/*645*/
+  width: 645px; height: 645px;
+  border: 8px dotted #eee;
+  /* border-spacing: 100px; */
+  margin: 0 auto;
+}
+
+
+
+
+
+#content .content_area .core_values .inner .core_values_text {
+  overflow: hidden;
+  padding-top: 100px;
+
+}
+#content .content_area .core_values .inner .core_values_text li {
+  float: left;
+  text-align: center;
+  width: 239px;
+  /* background-color: pink; */
+  position: relative;
+}
+#content .content_area .core_values .inner .core_values_text li dt {
+  /* 30px */
+  font-size: 1.875em;
+  font-weight: 700;
+  /* border: 1px solid black; */
+  padding: 10px 0;
+  position: relative;
+}
+#content .content_area .core_values .inner .core_values_text dt::after {
+  content: "";
+  display: block;
+  width: 58px; height: 15px;
+  background-color: #3cb149;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  margin-left: -29px;
+  top: 30px;
+  opacity: .7;
+}
+
+#content .content_area .core_values .inner .core_values_text li dd {
+  /* 18px */
+  font-size: 1.125em;
+  /* border: 1px solid blue; */
+  padding: 13px 25px;
+  line-height: 1.688em;
+  border-left: 1px solid #999;
+}
+#content .content_area .core_values .inner .core_values_text li:nth-of-type(1) dd {
+  border-left: none;
+}
+#content .content_area .core_values .inner .core_values_text li > span::before {
+  content: "";
+  display: block;
+  width: 1px; height: 40px;
+  background-color: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -80px;
+  
+}

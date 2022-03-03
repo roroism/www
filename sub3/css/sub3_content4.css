@@ -1,0 +1,235 @@
+/* 생활 혜택 */
+
+#content .title_area {
+  margin-bottom: 110px;
+}
+#content .title_area h2 {
+  position: relative;
+}
+#content .title_area h2::after{
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+}
+#content .title_area h2 + p {
+  /* 30px */
+  font-size: 1.875em;
+  text-align: center;
+  margin-bottom: 17px;
+  line-height: 1.5em;
+  margin-top: 80px;
+}
+#content .content_area {
+  /* background-color: #f9f9f9; */
+}
+
+/* 제휴 신용/체크카드 */
+#content .content_area .partnership_card {
+  margin-bottom: 150px;
+}
+#content .content_area .partnership_card ul {
+  margin: 0 auto;
+  width: 1110px;
+  overflow: hidden;
+}
+/* 355 490 */
+#content .content_area .partnership_card .inner #page-load ul li {
+  float: left;
+  /* border: 1px solid black; */
+  padding: 25px;
+  margin: 20px;
+  border-radius: 10px;
+  /* box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.1); */
+  box-shadow: 2px 2px 8px 1px rgb(0 0 0 / 20%);
+  background-color: #fff;
+  transition: all .3s;
+}
+#content .content_area .partnership_card .inner #page-load ul li:hover {
+  transform: scale(1.02);
+}
+#content .content_area .partnership_card ul li img {
+  display: block;
+  width: 230px; height: 145px;
+  margin: 20px auto 0;
+}
+#content .content_area .partnership_card ul li span {
+  display: block;
+  color: #999;
+  font-size: 14px;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+#content .content_area .partnership_card ul li p {
+  width: 280px;
+  /* line-height: 1.5em; */
+  text-align: center;
+  /* border: 1px solid black; */
+}
+#content .content_area .partnership_card ul li p:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 1.500em;
+  height: 74px;
+  line-height: 74px;
+  vertical-align:middle;
+  border-bottom: 1px solid #ccc;
+}
+#content .content_area .partnership_card ul li p:nth-of-type(2) {
+  font-size: 1.250em;
+  margin-top: 20px;
+}
+#content .content_area .partnership_card ul li p:nth-of-type(3) {
+  font-size: 1.250em;
+}
+
+
+/* 자세히 보기 버튼 */
+#content .button_more {
+  display: block;
+  width: 135px;
+  background: #3cb149;
+  color: #fff;
+  padding: 10px 0 10px 25px;
+  border-radius: 7px;
+  border: 1px solid #3cb149;
+  transition: all .3s;
+  margin: 20px auto 0;
+  /* text-align: center; */
+}
+#content .button_more:hover {
+  background: #fff;
+  color: #3cb149;
+}
+#content .button_more i {
+  margin-left: 20px;
+}
+
+
+/* modal */
+#content .partnership_card .modal_bg {
+  position: fixed;
+  left: 0; top: 0;
+  z-index: 1000;
+  width: 100%; height: 100%;
+  background-color: #3a3e50;
+  opacity: 0.5;
+  display: none;
+}
+/* 팝업창 */
+#content .partnership_card .modal_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -400px 0 0 -500px;
+  width: 1000px;
+  height: 800px;
+  /* background-color: #f8f8f8; */
+  background-color: #f5f5f5; 
+  box-shadow: 1px 3px 7px 0px #666;
+  z-index: 1001;
+  display: none;
+  border: 1px solid #f5f5f5;
+}
+/* 안쪽창 */
+#content .partnership_card .whiteboard {
+  position: relative;
+  margin-top: 120px;
+  width: 950px;
+  height: 630px;
+  background-color: #fff;
+  margin: 100px auto 0;
+  border: 1px solid #fff;
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+/* 카드이미지 */
+#content .partnership_card .whiteboard img {
+  width: 200px;
+  position: absolute;
+  left: 0; right: 0;
+  top: -80px;
+  margin: 0 auto;
+}
+/* 카드설명 */
+#content .partnership_card .whiteboard .modal_title {
+  /* border: 1px solid black; */
+  margin-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  
+}
+#content .partnership_card .whiteboard .modal_title p,
+#content .partnership_card .whiteboard .modal_title p+span {
+  text-align: center;
+}
+#content .partnership_card .whiteboard p {
+  font-weight: 700;
+  font-size: 22px;
+}
+#content .partnership_card .whiteboard span {
+  display: block;
+}
+/* 혜택3가지 */
+#content .partnership_card .whiteboard ul.modal_description {
+  /* border: 1px solid black; */
+  overflow: hidden;
+  width: 100%;
+}
+#content .partnership_card .whiteboard ul.modal_description li {
+  float: left;
+  /* border: 1px solid black; */
+  /* padding: 20px; */
+  width: 33.1%;
+  padding: 40px 0;
+  border-bottom: 1px solid #ccc;
+}
+#content .partnership_card .whiteboard ul.modal_description li:nth-of-type(1) {
+  background: no-repeat 10% 50% /25% url("../images/content4/won.png");
+}
+#content .partnership_card .whiteboard ul.modal_description li:nth-of-type(2) {
+  background: no-repeat 10% 50% /25% url("../images/content4/standard.png");
+}
+#content .partnership_card .whiteboard ul.modal_description li:nth-of-type(3) {
+  background: no-repeat 10% 50% /25% url("../images/content4/growth.png");
+}
+#content .partnership_card .whiteboard ul.modal_description li dl {
+  float: right;
+  margin-right: 22px;
+}
+#content .partnership_card .whiteboard ul.modal_description li dt {
+  font-weight: 700;
+}
+#content .partnership_card .whiteboard ul.modal_description li dd {
+  /* font-size: 1.125em; */
+  font-size: 18px;
+}
+
+/* 할인혜택 list*/
+#content .partnership_card .whiteboard ul.modal_description2 {
+  margin-top: 15px;
+  width: 100%;
+  /* border: 1px solid black; */
+  list-style: disc;
+  font-size: 1.125em;
+}
+#content .partnership_card .whiteboard ul.modal_description2 li {
+  padding: 5px 15px;
+  margin-left: 20px;
+}
+#content .partnership_card .whiteboard ul.modal_description2 li::marker {
+  color: #3cb149;
+}
+/* 닫기버튼 */
+#content .partnership_card .modal_popup > a {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 20px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: no-repeat center/50% url("../images/content4/x.png");
+}

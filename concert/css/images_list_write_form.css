@@ -1,0 +1,196 @@
+/* concert/write_form.php */
+
+#content .title_area {
+  margin-bottom: 0px;
+}
+.content_area h3 {
+  font-size: 1.875em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.write_form_wrap {
+  width: 1000px;
+  border-top: 2px solid #333;
+  margin: 0 auto 100px;
+}
+#write_form {
+
+}
+.write_row {
+  padding: 5px 0;
+}
+#write_row1 {
+  overflow: hidden;
+  /* margin: 10px 0 5px; */
+}
+#write_row1 dl {
+  float: left;
+  background-color: #fbfbfb;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 13.5px 20px;
+  color: #555;
+  width: 600px;
+  /* 17px */
+  font-size: 1.063em;
+}
+#write_row1 dl:nth-of-type(1) {
+  background-color: #e3e3e3;
+}
+#write_row1 dl dt {
+  float: left;
+}
+#write_row1 dl dd {
+  float: left;
+}
+#write_row1 .write_htmlWrite_wrap {
+  float: right;
+  background-color: #fbfbfb;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 13.5px 20px;
+  color: #555;
+  width: 390px;
+}
+#write_row1 .write_htmlWrite_wrap input {
+  float: left;
+  position: relative;
+  top: 4px;
+  margin-right: 15px;
+}
+#write_row1 .write_htmlWrite_wrap label {
+  float: left;
+}
+#write_row2 {
+
+}
+
+/* modify */
+#write_row1_modify {
+  overflow: hidden;
+  background-color: #fbfbfb;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 13.5px 20px;
+  margin: 10px 0 5px;
+  color: #555;
+}
+#write_row1_modify dl {
+  float: left;
+  /* 17px */
+  font-size: 1.063em;
+}
+#write_row1_modify dl dd {
+  float: left;
+  /* padding-left: 20px; */
+}
+/* modify end */
+
+/* 제목입력란 */
+#write_row2 input#write_title {
+  /* 17px */
+  font-size: 1.063em;
+  height: 3.3rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  text-indent: 20px;
+  box-sizing: border-box;
+}
+#write_row2 input#write_title::placeholder {
+  text-indent: 20px;
+  color: #999;
+}
+#write_row2 input#write_title:focus-visible {
+  outline: none;
+}
+#write_row2 input#write_title:focus {
+  /* border: 1px solid #3cb149; */
+  /* box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%), 0 0 8px rgb(60 177 73 / 60%); */
+  border: 1px solid #777;
+}
+/* 내용입력란 */
+#write_row3 textarea {
+  /* 17px */
+  font-size: 1.063em;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 20px;
+  line-height: 1.5em;
+  font-family: "나눔고딕", Dotum,"굴림",Gulim, sans-serif;
+  width: 958px;
+  max-width: 958px;
+}
+#write_row3 textarea::placeholder {
+  color: #999;
+}
+#write_row3 textarea:focus-visible {
+  outline: none;
+}
+#write_row3 textarea:focus {
+  border: 1px solid #777;
+}
+
+/* save image */
+.file_uploader_wrap {
+  background-color: #fbfbfb;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 13.5px 20px;
+  color: #555;
+  width: 100%;
+  font-size: 1.063em;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.file_uploader_wrap strong {
+  float: left;
+  margin-right: 40px;
+}
+.file_uploader_wrap .file_selecter_wrap {
+  float: left;
+}
+.file_uploader_wrap .delete_ok {
+  float: left;
+}
+.file_uploader_wrap .delete_ok span {
+  display: inline-block;
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file_uploader_wrap .delete_ok .delete_checkbox_wrap {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* button */
+#write_button {
+  margin-top: 25px;
+  text-align: right;
+}
+#write_button .write_done_btn, 
+#write_button .write_list_btn {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  border: none;
+}
+#write_button .write_done_btn {
+  color: #fff;
+  background-color: #3cb149;
+  padding: 8.5px 18px;
+  cursor: pointer;
+}
+#write_button .write_list_btn {
+  background-color: #e2e2e2;
+}

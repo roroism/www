@@ -1,0 +1,112 @@
+/* 재무정보 */
+
+#content .title_area {
+  margin-bottom: 110px;
+}
+#content .title_area h2 {
+  position: relative;
+}
+/* #content .title_area h2::after {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+} */
+/* #content .title_area h2 + p {
+
+  font-size: 1.875em;
+  text-align: center;
+  margin-bottom: 17px;
+  line-height: 1.5em;
+  margin-top: 80px;
+  font-weight: 500;
+}
+#content .title_area h2 + p + p {
+
+  font-size: 1.250em;
+  text-align: center;
+  line-height: 1.5em;
+} */
+#content .content_area .finance h3 {
+  padding-top: 30px;
+  position: relative;
+  padding-bottom: 0px;
+}
+#content .content_area .finance h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 60px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -65px;
+}
+#content .content_area .chart01 {
+  margin: 0 auto;
+  width: 800px;
+  /* padding-left: 100px; */
+}
+#content .content_area .finance {
+  margin-top: 90px;
+  border: 1px solid #fff;
+  /* background-color: #fafafa; */
+
+}
+
+/* 제무정보표 */
+#content .content_area .finance5 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  
+}
+#content .content_area .finance5 .inner h3 {
+  padding-bottom: 50px;
+  position: relative;
+}
+#content .content_area .finance5 h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 60px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -65px;
+}
+#content .content_area .finance5 table thead {
+  /* 22px */
+  font-size: 1.375em;
+  border-top: 2px solid #333;  
+  border-bottom: 1px solid #666;
+  background-color: #c6ffcd;
+}
+#content .content_area .finance5 table thead tr th {
+  padding: 20px 0;
+}
+
+#content .content_area .finance5 table tbody {
+  /* 18px */
+  font-size: 1.125em;
+  color: #666;
+}
+#content .content_area .finance5 table tbody tr {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+#content .content_area .finance5 table tbody tr td:nth-of-type(1) {
+  width: 170px;
+}
+#content .content_area .finance5 table tbody tr td:nth-of-type(2) {
+  width: 330px;
+}
+#content .content_area .finance5 table tbody tr td:nth-of-type(3),
+#content .content_area .finance5 table tbody tr td:nth-of-type(4),
+#content .content_area .finance5 table tbody tr td:nth-of-type(5),
+#content .content_area .finance5 table tbody tr td:nth-of-type(6),
+#content .content_area .finance5 table tbody tr td:nth-of-type(7) {
+  width: 140px;
+  padding: 20px 0;
+}
+
+

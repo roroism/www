@@ -1,0 +1,92 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채용안내-복리후생</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub6common.css"/>
+  <link rel="stylesheet" href="./css/sub6_content2.css">
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+ 
+    <? include "../common/sub_header.html" ?>
+
+    <!-- VISUAL -->
+    <div class="visual">
+      <img src="./common/images/sub6visual.jpg" alt="">
+      <h3>채용안내</h3>
+      <span>recruitment guide</span>
+    </div>
+
+    <!-- sub_menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub6_1.html">모집과정</a></li>
+        <li class="current"><a href="./sub6_2.html">복리후생</a></li>
+        <li><a href="./sub6_3.php">모집공고</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <article id="content">
+      <div class="title_area">
+        <div class="line_map">
+          <span>HOME</span> &gt; 채용안내 &gt; <strong>복리후생</strong>
+        </div>
+        <h2>복리후생</h2>
+        <p>BGF리테일은 일과 생활의 조화를 통한 개인과 회사의 공동 성장을 지향하며, 임직원의 여가생활, <br/> 개인성장, 건강, 가족복지 등 생활 전반에 대한 지원 제도를 운영하고 있습니다.</p>
+         <!-- <ul class="sub_tab_menu">
+          <li class="sub_tab_menu_grid3"><a href="#">목표</a></li>
+          <li><a href="#">추진체계</a></li>
+          <li><a href="#">ESG 평가 등급</a></li>
+        </ul> -->
+      </div><!--title_area-->
+
+
+      <div class="content_area">
+ 
+        <!-- 복리후생 -->
+        <div class="welfare">
+          <div class="inner">
+            <!-- <h3>복리후생</h3> -->
+            <!-- <p>BGF리테일은 일과 생활의 조화를 통한 개인과 회사의 공동 성장을 지향하며, 임직원의 여가생활, <br/> 개인성장, 건강, 가족복지 등 생활 전반에 대한 지원 제도를 운영하고 있습니다.</p> -->
+            <ul class="welfare_tab">
+              <li><a href="sub6_2_1.html#welfare_1" class="current">여가생활<span>01</span></a></li>
+              <li><a href="sub6_2_1.html#welfare_2">개인성장<span>02</span></a></li>
+              <li><a href="sub6_2_1.html#welfare_3">건강한 삶<span>03</span></a></li>
+              <li><a href="sub6_2_1.html#welfare_4">가족복지<span>04</span></a></li>
+
+            </ul>
+
+            <!-- 복리후생내용 -->
+            <div id="details">
+
+            </div><!-- welfare_area -->
+
+
+          </div><!-- inner -->
+        </div><!-- welfare -->
+      </div><!-- content_area -->
+    </article><!-- content -->
+
+    <? include "../common/sub_footer.html" ?>
+
+<script src="./js/content2/ajax_pageload.js"></script>
+
+</body>
+</html>

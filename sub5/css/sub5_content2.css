@@ -1,0 +1,124 @@
+/* 주식정보 */
+
+#content .title_area {
+  /* margin-bottom: 110px; */
+}
+#content .title_area h2 {
+  position: relative;
+}
+
+#content .content_area .stock_status {
+  position: relative;
+}
+#content .content_area .stock_status h3 {
+  padding-top: 30px;
+  position: relative;
+  padding-bottom: 50px;
+}
+#content .content_area .stock_status h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 60px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -65px;
+}
+#content .content_area .stock_status .chart01 {
+  width: 750px;
+  height: 500px;
+  margin: 0 auto;
+  padding-left: 250px;
+}
+
+/* 표 */
+#content .content_area .stock_status {
+  margin-bottom: 150px;
+}
+#content .content_area .stock_status table {
+  width: 1100px;
+  margin: 100px auto 0;
+}
+#content .content_area .stock_status table thead {
+  /* 22px */
+  font-size: 1.375em;
+  border-top: 2px solid #333;  
+  border-bottom: 1px solid #666;
+  background-color: #c6ffcd;
+}
+#content .content_area .stock_status table thead tr th {
+  padding: 20px 0;
+}
+
+#content .content_area .stock_status table tbody {
+  /* 18px */
+  font-size: 1.125em;
+  color: #666;
+}
+#content .content_area .stock_status table tbody tr {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  
+}
+#content .content_area .stock_status table tbody tr td {
+  width: 33.3%;
+  padding: 20px 0;
+}
+#content .content_area .stock_status table tbody tr:last-child {
+  background-color: #f8f8f8;
+}
+#content .content_area .stock_status .inner > span {
+  color: #999;
+  margin-left: 50px;
+}
+
+
+/* 배당정보 */
+#content .content_area .stock_dividend {
+  margin-bottom: 150px;
+}
+#content .content_area .stock_dividend h3 {
+  position: relative;
+}
+#content .content_area .stock_dividend h3::before {
+  content: "";
+  display: block;
+  width: 1px; height: 60px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -85px;
+}
+/* 표 */
+#content .content_area .stock_dividend table {
+  width: 1100px;
+  margin: 0 auto;
+}
+#content .content_area .stock_dividend table thead {
+  /* 22px */
+  font-size: 1.375em;
+  border-top: 2px solid #333;  
+  border-bottom: 1px solid #666;
+  background-color: #c6ffcd;
+}
+#content .content_area .stock_dividend table thead tr th {
+  padding: 20px 0;
+}
+
+#content .content_area .stock_dividend table tbody {
+  /* 18px */
+  font-size: 1.125em;
+  color: #666;
+}
+#content .content_area .stock_dividend table tbody tr {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+#content .content_area .stock_dividend table tbody tr th {
+  width: 314px;
+  padding: 20px 0;
+}
+#content .content_area .stock_dividend table tbody tr td {
+  width: 157px;
+  padding: 20px 0;
+}

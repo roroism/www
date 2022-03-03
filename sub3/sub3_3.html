@@ -1,0 +1,211 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서비스 안내-BGF푸드 소개</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub3common.css"/>
+  <link rel="stylesheet" href="./css/sub3_content3.css"/>
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+  
+  <? include "../common/sub_header.html" ?>
+  
+  <!-- VISUAL -->
+  <div class="visual">
+    <img src="./common/images/visual_sub3.jpg" alt="visual이미지">
+    <h3>서비스안내</h3>
+    <span>Service introduction</span>
+  </div>
+
+  <!-- sub_menu -->
+  <div class="sub_menu">
+    <ul>
+      <li><a href="./sub3_1.html">BGF로지스 소개</a></li>
+      <li><a href="./sub3_2.html">CU 소개</a></li>
+      <li class="current"><a href="./sub3_3.html">BGF푸드 소개</a></li>
+      <li><a href="./sub3_4.html">생활 혜택</a></li>
+
+    </ul>
+  </div>
+  
+  <!-- content -->
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>HOME</span> &gt; 서비스 안내 &gt; <strong>BGF푸드 소개</strong>
+      </div>
+      <h2>BGF푸드 소개</h2>
+      <ul class="sub_tab_menu slideMenu">
+        <li class="sub_tab_menu_grid3"><a class="link1" href="#">BGF푸드 소개</a></li>
+        <li><a class="link2" href="#">주요활동</a></li>
+        <li><a class="link3" href="#">식품제조&middot;유통사업</a></li>
+      </ul>
+    </div><!-- title_area -->
+
+
+    <div class="content_area" id="content_area">
+      
+      <!-- <ul class="subsidiary_tab">
+        <li><a href="sub3_1_1.html#subsidiary_tab_1">BGF 로지스<span>logis</span></a></li>
+        <li><a href="sub3_1_2.html#subsidiary_tab_2" class="current">BGF 푸드<span>food</span></a></li>
+      </ul> -->
+
+      <!-- 회사소개 -->
+      <div class="introduction_food con1">
+        <div class="inner">
+          <div class="center_box">
+            <h3 class="hidden">BGFfood 회사소개</h3>
+            <p>BGF푸드는 <span class="purple_font">믿고</span> 먹을 수 있는 편의점 <span class="purple_font">안심먹거리</span> 생산/R&D 전문기업입니다.</p>
+            <p>업계 최초의 센트럴 키친(중앙집중조리시스템)을 통해 제조과정의 생산성과 품질을 높이고 있습니다.
+              더욱 다양해진 고객의 취향과 까다로워진 식품 제조 기준을 만족시키는 데에서 그치지 않고, 감동을 전달할 BGF 푸드의 성장에 새 친구들의 역량을 더 해주시기 바랍니다.
+            </p>
+            <ul class="food_service"><!-- 창고, 운수, 무역, 편의점, 화물운송주선 등 -->
+              <li>
+                <!-- 식품제조 -->
+                식품제조<span>Food Manufacturing</span>
+              </li>
+              <li>
+                <!-- 위생관리  -->
+                위생관리<span>Hygiene Management</span>
+              </li>
+              <li>
+                <!-- 품질관리 convenience store -->
+                품질관리<span>Quality Management</span>
+              </li>
+              <li>
+                <!-- 물류센터 Trade -->
+                물류센터<span>Logistics<br>Center</span>
+              </li>
+            </ul>
+          </div>
+        </div><!-- inner -->
+        <div class="introduction__left_bg introduction__bg"></div>
+        <!-- <div class="testbg"></div> -->
+        <div class="introduction__right_bg introduction__bg"></div>
+      </div><!-- introduction -->
+
+      <!-- 주요활동 -->
+      <div class="activity_images_food con2">
+        <div class="inner">
+          <h3>주요활동</h3>
+          <!-- <p>BGF푸드는 위생적인 환경에서 안심먹거리를 개발하는 것을 바탕으로 지속적인 R&D를 통해 상품의 다양함과 질적 향상을 추구합니다.</p> -->
+          <p>BGF푸드는 위생적인 환경을 바탕으로 지속적인 R&D를 통해 상품의 다양함과 질적 향상을 추구합니다.</p>
+          <div class="main">
+            <div class="gallery">
+                     <ul>
+                          <li class="link1"><img src="./images/content1/food/bgf_food01.jpg" alt='bgf푸드활동사진1' /></li>
+                          <li class="link2"><img src="./images/content1/food/bgf_food02.jpg" alt='bgf푸드활동사진2' /></li>
+                          <li class="link3"><img src="./images/content1/food/bgf_food03.jpg" alt='bgf푸드활동사진3' /></li>
+                          <li class="link4"><img src="./images/content1/food/bgf_food04.jpg" alt='bgf푸드활동사진4' /></li>
+                          <li class="link5"><img src="./images/content1/food/bgf_food05.jpg" alt='bgf푸드활동사진5' /></li>
+                    </ul>
+            </div>
+           
+            <div class="dock">
+              <span class="mbutton  btn1" ></span>
+              <span class="mbutton  btn2" ></span>
+              <span class="mbutton  btn3" ></span>
+              <span class="mbutton  btn4" ></span>
+              <span class="mbutton  btn5" ></span>
+              <span class="ps"></span>
+            </div>
+            <div class="btn btnLeft">left</div>
+            <div class="btn btnRight">right</div>
+     	    </div> <!-- main end --> 
+          
+          <div class="activity_images__point">
+            <ul>
+              <li>
+                <dl>
+                  <dt>control tower</dt>
+                  <dd>업계 최초 센트럴키친 설비</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>management</dt>
+                  <dd>간편 식품의 <br> 통합관리 체계 구축</dd>
+                </dl>
+                
+              </li>
+              <li>
+                <dl>
+                  <dt>development</dt>
+                  <dd>지속적인 R&D로 <br> 다양함과 질적 향상</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>operation</dt>
+                  <dd>공장과 물류센터의 <br> 동시 운영</dd>
+                </dl>
+              </li>
+           </ul>
+
+          </div><!-- activity_images__point -->
+        </div><!-- inner -->
+      <div class="activity_images__bg"></div>
+      </div><!-- activity_images -->
+
+
+      <!-- 중간이미지 -->
+      <div class="food_bg"></div>
+
+
+      <!-- 식품제조 및 물류 사업 -->
+      <div class="cvs_food con3">
+        <div class="inner">
+          <h3>식품제조&물류 사업</h3>
+          <p>언제나 믿고 먹을 수 있는 편의점 안심 먹거리 생산/R&D 전문 기업!</p>
+          <p>BGF푸드는 도시락, 김밥, 샌드위치, 햄버거 등 신선식품을 생산하는 도시락 공장과 상온·저온 상품 및 잡화를 취급하는 물류센터의 동시 운영으로 광주, 전라도, 대전, 충청도의 생산 및 물류 거점 역할 을 하고 있습니다.</p>
+
+          <h4>식품제조사업</h4>
+          <div>
+            <img src="./images/content1/food_01.jpg" alt="식품제조사업1" />
+            <img src="./images/content1/food_02.jpg" alt="식품제조사업2" />
+            <p>BGF푸드는 위생적인 환경에서 안심먹거리를 개발하는 것을
+              바탕으로 지속적인 R&D를 통해 상품의 다양함과
+              질적 향상을 추구합니다.
+              또한 간편 식품의 통합관리 체계를 구축하고 컨트롤 타워의 역할을
+              수행함으로써 협력업체들에게 좋은 모델이 되고자 합니다.</p>
+          </div>
+          
+          <h4>유통사업</h4>
+          <div>
+            <img src="./images/content1/food_03.jpg" alt="유통사업1" />
+            <img src="./images/content1/food_04.jpg" alt="유통사업2" />
+            <p>BGF푸드는 도시락, 주먹밥, 김밥, 샌드위치, 햄버거 등
+              신선식품을 생산하는 도시락 공장과 상온·저온 상품 및 잡화를
+              취급하는 물류센터의 동시 운영으로 광주, 전라도, 대전, 충청도의
+              생산 및 물류 거점 역할을 하고 있습니다.</p>
+          </div>
+            
+        </div><!-- inner -->
+      </div><!-- cvs_food -->
+
+
+
+
+
+    </div><!-- content_area -->
+  </article><!-- article -->
+
+  <? include "../common/sub_footer.html" ?>
+  <script src="./js/sub3_3.js"></script>
+</body>
+</html>

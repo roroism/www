@@ -1,0 +1,146 @@
+body {background: #fafafa;}
+#content{width: 1000px; margin: 30px auto; padding: 70px;}  
+.sub_cont_wrap { padding: 50px; background-color: #fff; box-shadow: 8px 8px 18px rgb(0 0 0 / 6%);}
+form { margin-bottom: 100px;  }
+.logo{
+  margin: 50px auto 0; display: block; width: 150px; height: 50px; text-indent: -9999px; overflow: hidden;
+  background: url("../../common/images/logo1.png") center / contain no-repeat;
+}
+
+.step_nav {
+  overflow: hidden;
+  /* width: 70%; */
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.step_nav li {
+  float: left;
+  width: 33.33%;
+  /* 22px */
+  font-size: 1.375rem;
+  border-bottom: 3px solid #ccc;
+  padding: 10px 0;
+}
+.step_nav li.on {
+  color: #3cb149;
+  border-bottom: 3px solid #3cb149;
+}
+
+.join{text-align: left; position: relative;}
+.join h2{
+  font-size: 28px; position: relative; text-align: center;
+  background: url("../images/bg_h2.gif") center / contain no-repeat;
+  width: 90%;
+  margin: 0 auto 50px;
+}
+.join h2 span{
+  background-color: #fff;
+  padding: 0 20px;
+}
+/* .join h2::before{
+		content: '';
+		position: absolute;
+		top: 0; bottom: 0; left: -10px;
+		width: 5px; height: 28px;
+		margin: auto 0;
+		background: #3cb149;
+		vertical-align: top;
+} */
+.join h3{font-size: 20px;margin: 30px 0;}
+
+.join .policy{padding: 10px; overflow-y: scroll; height: 200px; margin: 20px 0;border: 1px solid #ddd;
+		background: #fff; font-size: 14px; line-height: 1.5em; }
+.join .check{margin: 20px 0 60px;}
+.join span.necessary_agree {
+  color: #FF6C6C;
+}
+.join .next_button {
+  text-align: center;
+}
+.join .check_agree {
+	background-color: #3cb149;
+  color: #fff;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 500;
+  height: 50px;
+  width: 200px;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* margin: 0 auto; */
+  position: relative;
+  /* z-index: 2; */
+}
+.join .check_agree span {
+	position: relative;
+  z-index: 2;
+}
+.join .check_agree::after {
+	content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; bottom: 0;
+  margin: auto 0;
+  background-color: #4eca5d;
+  transition: all .3s;
+  border-radius: 3px;
+  /* z-index: 1; */
+}
+.join .check_agree:hover::after {
+  width: 100%;
+}
+.join .cancel{
+	background-color: #aaa;
+  color: #fff;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 500;
+  height: 50px;
+  width: 200px;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* margin: 0 auto; */
+  position: relative;
+  /* z-index: 2; */
+}
+
+/* 체크박스 ui 구현 */
+input[type=checkbox] + label::before {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		/* background-color: transparent; */
+		background: #fff;
+		border: 2px solid #999;
+		border-radius: 50%;
+		content: '';
+		margin: 0px 15px -4px 0px;
+}
+input[type=checkbox] {
+		display: none;
+}
+input[type=checkbox] + label {
+		cursor: pointer;
+}
+input[type=checkbox] + label.guided_no_agree {
+  border: 2px solid #FF6C6C;
+  border-radius: 3px;
+}
+/* input[type=checkbox] + label:focus {
+  border: 2px solid red;
+} */
+input[type=checkbox]:checked + label::before {
+	background:  url(../images/checked_bg.png) center center no-repeat #fff;
+	border: 2px solid #3cb149;
+}
+#allcheck[type=checkbox]:checked + label::before {
+	background:  url(../images/checked_bg.png) center center no-repeat #fff;
+	border: 2px solid #3cb149;
+}

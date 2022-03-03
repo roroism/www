@@ -1,0 +1,77 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서비스 안내-생활 혜택</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub3common.css"/>
+  <link rel="stylesheet" href="./css/sub3_content4.css"/>
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+  
+  <? include "../common/sub_header.html" ?>
+  
+  <!-- VISUAL -->
+  <div class="visual">
+    <img src="./common/images/visual_sub3.jpg" alt="visual이미지">
+    <h3>서비스안내</h3>
+    <span>Service introduction</span>
+  </div>
+
+  <!-- sub_menu -->
+  <div class="sub_menu">
+    <ul>
+      <li><a href="./sub3_1.html">BGF로지스 소개</a></li>
+      <li><a href="./sub3_2.html">CU 소개</a></li>
+      <li><a href="./sub3_3.html">BGF푸드 소개</a></li>
+      <li class="current"><a href="./sub3_4.html">생활 혜택</a></li>
+
+    </ul>
+  </div>
+  
+  <!-- content -->
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>HOME</span> &gt; 서비스 안내 &gt; <strong>생활 혜택</strong>
+      </div>
+      <h2>생활 혜택</h2>
+      <p>일상 속 편의와 혜택을 드리는 CU의 Refresh 서비스를 소개합니다.</p>
+      <!-- <ul class="sub_tab_menu slideMenu">
+        <li><a class="link1" href="#">인사말</a></li>
+        <li><a class="link2" href="#">기업소개</a></li>
+      </ul> -->
+    </div><!-- title_area -->
+
+
+    <div class="content_area">
+      <!-- 제휴카드 -->
+      <div class="partnership_card">
+        <div class="inner">
+          <h3>제휴 신용/체크카드</h3>
+          <div id="page-load"></div>
+        </div><!-- inner -->
+        <div class="modal_popup"></div>
+        <div class="modal_bg"></div>
+      </div><!-- partnership_card -->
+    </div><!-- content_area -->
+  </article><!-- article -->
+  
+  <? include "../common/sub_footer.html" ?>
+  <script src="./js/sub3_4.js"></script>
+</body>
+</html>

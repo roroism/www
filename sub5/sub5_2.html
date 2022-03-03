@@ -1,0 +1,199 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>투자정보-주식정보</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub5common.css"/>
+  <link rel="stylesheet" href="./css/sub5_content2.css">
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+  <link rel='stylesheet' href='./css/Nwagon.css' />
+	<script src='./js/Nwagon.js'></script>
+
+</head>
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <!-- VISUAL -->
+    <div class="visual">
+      <img src="./common/images/sub5visual.jpg" alt="">
+      <h3>투자정보</h3>
+      <span>Investment information</span>
+    </div>
+
+    <!-- sub_menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub5_1.html">재무정보</a></li>
+        <li class="current"><a href="./sub5_2.html">주식정보</a></li>
+        <!-- <li><a href="./sub5_3.html">IR/공시정보</a></li> -->
+        <!-- <li><a href="./sub5_4.html">전자공고</a></li> -->
+      </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <article id="content">
+      <div class="title_area">
+        <div class="line_map">
+          <span>HOME</span> &gt; 투자정보 &gt; <strong>주식정보</strong>
+        </div>
+        <h2>주식정보</h2>
+        <!-- <p>충분한 이해를 통해 서로에게 좋은 친구가 되는 과정입니다.</p>
+        <p>BGF리테일의 새 친구가 되는 과정을 소개합니다!</p> -->
+        <!-- <ul class="sub_tab_menu">
+          <li class="sub_tab_menu_grid3"><a href="#">목표</a></li>
+          <li><a href="#">추진체계</a></li>
+          <li><a href="#">ESG 평가 등급</a></li>
+        </ul> -->
+      </div><!--title_area-->
+
+
+      <div class="content_area">
+
+        <!-- 주식보유현황 -->
+        <div class="stock_status">
+          <div class="inner">
+
+            <h3>주식보유현황</h3>
+            <div class="chart01">
+              <div id="chart_d"></div>
+            </div><!-- chart01 -->
+              <script>
+                
+                var options = {
+                  'dataset': {
+                    title: '주식보유현황',
+                    values:[69.70, 0.01,30.29],
+                    colorset: ['#2BC8C9', '#FF8C00', '#DC143C','#2EB400', '#666666'],
+                    fields: ['최대주주 및 특수관계인', '우리사주', '기타'] 
+                  },
+                  'donut_width' : 110, 
+                  'core_circle_radius':120,
+                  'chartDiv': 'chart_d',
+                  'chartType': 'donut',
+                  'chartSize': {width:750, height:500}
+                };
+            
+                Nwagon.chart(options);
+              </script>
+        
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">주주구분</th>
+                  <th scope="col">주식수</th>
+                  <th scope="col">지분율</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>최대주주 및 특수관계인</td>
+                  <td>66,719,153</td>
+                  <td>69.70%</td>
+                </tr>
+                <tr>
+                  <td>우리사주</td>
+                  <td>4,820</td>
+                  <td>0.01%</td>
+                </tr>
+                <tr>
+                  <td>기타</td>
+                  <td>28,992,818</td>
+                  <td>30.29%</td>
+                </tr>
+                <tr>
+                  <td>합계</td>
+                  <td>95,716,791</td>
+                  <td>100.00%</td>
+                </tr>
+              </tbody>
+            </table>
+            <span>*2020.12.31기준</span>
+          </div><!-- inner -->
+        </div><!-- stock_status -->
+
+        <div class="stock_dividend">
+          <div class="inner">
+            <h3>배당정보</h3>
+            <table class="allocation_table">
+              <thead>
+                  <tr>
+                      <th scope="col"></th>
+                      <th scope="col">2016년</th>
+                      <th scope="col">2017년</th>
+                      <th scope="col">2018년</th>
+                      <th scope="col">2019년</th>
+                      <th scope="col">2020년</th>
+                  </tr>
+              </thead>                    		    
+              <tbody>
+                  <tr>
+                      <th scope="row">배당총액(백만원)</th>
+                      <td>7,406</td>
+                      <td>7,406</td>
+                      <td>7,406</td>
+                      <td>4,232</td>
+                      <td>5,231</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">배당종류</th>
+                      <td>현금배당</td>
+                      <td>현금배당</td>
+                      <td>현금배당</td>
+                      <td>현금배당</td>
+                      <td>현금배당</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">주당 배당금</th>
+                      <td>350</td>
+                      <td>350</td>
+                      <td>350</td>
+                      <td>200</td>
+                      <td>250</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">배당성향(%)</th>
+                      <td>14.3</td>
+                      <td>60</td>
+                      <td>-527.9</td>
+                      <td>-3.0</td>
+                      <td>14</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">배당수익률(%)</th>
+                      <td>0.3</td>
+                      <td>0.5</td>
+                      <td>0.5</td>
+                      <td>0.5</td>
+                      <td>0.5</td>
+                  </tr>
+              </tbody>
+            </table>
+
+          </div><!-- inner -->
+        </div><!-- stock_dividend -->
+
+
+
+      </div><!-- content_area -->
+    </article><!-- content -->
+
+    <? include "../common/sub_footer.html" ?>
+  
+</body>
+</html>

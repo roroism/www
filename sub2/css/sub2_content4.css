@@ -1,0 +1,370 @@
+/* 환경경영 */
+
+#content .content_area .environmental_management {
+  margin-bottom: 90px;
+}
+#content .content_area .environmental_management .inner > div {
+  overflow: hidden;
+}
+#content .content_area .environmental_management h3 {
+  position: relative;
+}
+#content .content_area .environmental_management h3::before {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .content_area .environmental_management h3 + p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+#content .content_area .environmental_management img {
+  float: left;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#content .content_area .environmental_management ul {
+  /* 18px */
+  font-size: 1.125em;
+  margin-top: 25px;
+  float: right;
+  
+}
+#content .content_area .environmental_management ul li {
+  width: 650px;
+  padding: 20px; 
+  margin-left: 60px;
+  position: relative;
+  /* border: 1px solid black; */
+  line-height: 1.5em;
+  vertical-align: -10px;
+}
+#content .content_area .environmental_management ul li span.e_num {
+  /* 45px */
+  font-size: 2.813em;
+  padding-right: 30px;
+  float: left;
+  height: 54px;
+  display: block;
+  line-height: 54px;
+}
+#content .content_area .environmental_management ul li span.u_font {
+  font-size: 25px;
+}
+
+#content .content_area .environmental_management ul li::before {
+  content: "";
+  position: absolute;
+  left: -17px; top: -7px;
+  opacity: .1;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background-color: #3cb149;
+}
+#content .content_area .environmental_management ul li::after {
+  display: none;
+  content: "";
+  position: absolute;
+  /* left: 53px; top: -13px; */
+  left: 102px; top: 20px;
+  opacity: .1;
+  width: 25px; height: 25px;
+  border-radius: 50%;
+  background-color: #751485;
+}
+#content .content_area .environmental_management ul li:last-child::before,
+#content .content_area .environmental_management ul li:last-child::after {
+  display: none;
+}
+#content .content_area .environmental_management ul li p {
+  font-weight: 300;
+  margin-left: 80px;
+  text-align: justify;
+  line-height: 1.5em;
+  vertical-align: -10px;
+}
+#content .content_area .environmental_management ul li:last-child span:nth-of-type(1) {
+  font-weight: 400;
+  /* 20px */
+  font-size: 20px;
+  line-height: 65px;
+  padding-left: 60px;
+  padding-right: 40px;
+}
+#content .content_area .environmental_management ul li:last-child span:nth-of-type(2) {
+  font-weight: 400;
+  /* 20px */
+  font-size: 20px;
+  line-height: 65px;
+  padding-right: 20px;
+}
+#content .content_area .environmental_management ul li:last-child span:nth-of-type(3) {
+  font-weight: 400;
+  /* 20px */
+  font-size: 30px;
+}
+
+
+/* environmental_ms */
+#content .content_area .environmental_ms {
+  border-top: 1px solid #fff;
+  position: relative;
+  margin-bottom: 200px;
+}
+#content .content_area .environmental_ms h3 {
+  margin-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+}
+#content .content_area .environmental_ms h3::before {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .content_area .environmental_ms .inner > div{
+  overflow: hidden;
+}
+#content .content_area .environmental_ms .inner .p_box {
+  /* border: 1px solid black; */
+  float: left;
+  width: 500px;
+  /* background-color: #fff; */
+  /* box-shadow: ; */
+  margin-top: 80px;
+  margin-left: 50px;
+}
+#content .content_area .environmental_ms .inner .p_box dl dt:nth-of-type(1) {
+  /* 20px */
+  font-size: 1.563em;
+  font-weight: 700;
+  padding: 40px 0 10px 40px;
+}
+#content .content_area .environmental_ms .inner .p_box dl dt:nth-of-type(2) {
+  /* 18px */
+  font-size: 18px;
+  padding-left: 40px;
+  color: #666;
+  position: relative;
+}
+#content .content_area .environmental_ms .inner .p_box dl dt:nth-of-type(2)::after {
+  content: "";
+  /* width: 170px; */
+  width: 340px;
+  height: 3px;
+  position: absolute;
+  left: 40px; bottom: -21px;
+  background-color: #3cb149;
+  z-index: 2;
+}
+#content .content_area .environmental_ms .inner .p_box dl dt:nth-of-type(2) span {
+  color: #333;
+}
+#content .content_area .environmental_ms .inner .p_box dl dd p {
+  text-align: justify;
+  line-height: 1.7em;
+  padding: 40px;
+  /* 18px */
+  font-size: 18px;
+}
+#content .content_area .environmental_ms .inner .p_box dl dd p:nth-of-type(1) {
+  padding-bottom: 0;
+}
+#content .content_area .environmental_ms .inner .p_box dl dd p:nth-of-type(2) {
+  padding-top: 20px;
+}
+
+#content .content_area .environmental_ms .inner .img_box {
+  /* overflow: hidden; */
+  /* border: 1px solid black; */
+  float: right;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#content .content_area .environmental_ms .inner .img_box img {
+  width: 250px;
+  float: right;
+  margin: 20px;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+#content .content_area .environmental_ms .inner .img_box img:nth-of-type(1){
+  /* position: absolute;
+  left: 0;  right: 0; */
+}
+#content .content_area .environmental_ms .inner .img_box img:nth-of-type(2){
+  /* position: absolute;
+  left: 0;  right: 0; */
+  margin-top: 70px;
+}
+#content .content_area .environmental_ms .environmental_ms_bg1 {
+  position: absolute;
+  width: 1200px; height: 630px;
+  background-color: #f8f8f8;
+  left: 58%; margin-left: -1200px;
+  top: 230px;
+  z-index: -1;
+}
+#content .content_area .environmental_ms .environmental_ms_bg2 {
+  position: absolute;
+  width: 1200px; height: 315px;
+  opacity: .1;
+  background-color: #3cb149;
+  right: 42%; margin-right: -1200px;
+  /* top: 230px; */
+  bottom: -56px;
+  z-index: -1;
+}
+
+
+/* environmental_main_activity */
+#content .content_area .environmental_main_activity {
+  margin-bottom: 150px;
+}
+#content .content_area .environmental_main_activity h3 {
+  position: relative;
+}
+#content .content_area .environmental_main_activity h3::before {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .content_area .environmental_main_activity p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+#content .content_area .environmental_main_activity .inner > div {
+  overflow: hidden;
+  /* border: 1px solid #666; */
+  /* width: 921px; */
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+#content .content_area .environmental_main_activity .selectedGallery_area {
+  padding: 20px;
+  
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .image_area {
+  float: left;
+  padding: 2%;
+  margin: 1%;
+  width:700px; height:500px; background: center / cover no-repeat url(../images/content4/major_activities_1.jpg);
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .description_area {
+  /* background: green; */
+  float: left;
+  padding: .5%;
+  margin: .5%;
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  /* background-color: #3cb149; */
+  width: 31.6%;
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .description_area dt {
+  border-bottom: 1px solid #999;
+  height: 75px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .description_area dd {
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  padding-top: 15px;
+  text-align: justify;
+  
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .description_area dd:nth-of-type(1) {
+  
+}
+#content .content_area .environmental_main_activity .selectedGallery_area .description_area dd:nth-of-type(2) {
+
+}
+#content .content_area .environmental_main_activity .changeGallery_area {
+  /* float: left; */
+  /* border-left: 1px solid #ccc; */
+  /* width: 900px; */
+  /* margin: 0 auto; */
+  /* border: 1px solid black; */
+  overflow: hidden;
+  /* background-color: #3cb149; */
+  position: relative;
+  float: left;
+}
+#content .content_area .environmental_main_activity .changeGallery_area li {
+  float: left;
+ padding: 20px 20px 10px 20px;
+}
+#content .content_area .environmental_main_activity .changeGallery_area li a {
+ display: block;
+}
+#content .content_area .environmental_main_activity .changeGallery_area li img {
+  width: 140px;
+  height: 100px;
+  cursor: pointer;
+}
+
+
+
+
+/* image 슬라이드 */
+.slide_gallery_wrap {
+  width:900px;
+  overflow:hidden; 
+  position:relative;
+  margin: 0 auto;
+}
+.slide_gallery{
+  overflow: hidden;
+  width: 1800px;
+  position: relative;
+}
+/* .sub_menu_box{width:70px;position:relative;left:340px; overflow: hidden;} */
+.environmental_main_activity .inner > div {
+  position: relative;
+  margin: 0 auto;
+}
+.environmental_main_activity .inner > div .button{
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 605px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.environmental_main_activity .inner > div .m1 {
+  left: 50px;
+  background: url("../images/content4/left_arrow.png") center/50% no-repeat;
+  transition: all .5s;
+}
+.environmental_main_activity .inner > div .m1:hover {
+  background: url("../images/content4/left_arrow_blk.png") center/50% no-repeat;
+  left: 45px;
+}
+.environmental_main_activity .inner > div .m2 {
+  right: 50px;
+  background: url("../images/content4/right_arrow.png") center/50% no-repeat;
+  transition: all .5s;
+}
+.environmental_main_activity .inner > div .m2:hover {
+  background: url("../images/content4/right_arrow_blk.png") center/50% no-repeat;
+  right: 45px;
+}

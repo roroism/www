@@ -1,0 +1,164 @@
+/* concert/view.php */
+
+#content .title_area {
+  margin-bottom: 110px;
+}
+#view_title {
+  border-top: 2px solid #333;
+  padding: 35px;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #999;
+}
+#view_title #view_title1 {
+  color: #555;
+  font-weight: 500;
+  font-size: 1.563em;
+  line-height: 1.5em;
+}
+#view_title #view_title2 {
+  color: #777;
+  font-size: 1.125em;
+  margin-top: 20px;
+  overflow: hidden;
+}
+#view_title #view_title2 dl:nth-of-type(1) {
+  float: left;
+  line-height: 1.5em;
+}
+#view_title #view_title2 dl:nth-of-type(1) dt {
+  float: left;
+  margin-right: 15px;
+}
+#view_title #view_title2 dl:nth-of-type(1) dt:nth-of-type(1) {
+  text-indent: -9999px;
+  margin-right: 0;
+}
+#view_title #view_title2 dl:nth-of-type(1) dd {
+  float: left;
+  margin-right: 15px;
+}
+#view_title #view_title2 dl:nth-of-type(1) dd:nth-of-type(1) {
+  margin-right: 60px;
+}
+#view_title #view_title2 dl:nth-of-type(2) {
+  line-height: 1.5em;
+  float: right;
+}
+#view_title #view_title2 dl:nth-of-type(2) dt {
+  float: left;
+  margin-right: 15px;
+}
+#view_title #view_title2 dl:nth-of-type(2) dd {
+  float: left;
+}
+/* view_content */
+#view_content {
+  padding: 55px 40px 90px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 10px;
+}
+/* view_button */
+#view_button {
+  margin-top: 15px;
+  text-align: right;
+  margin-bottom: 150px;
+  padding: 0 35px;
+}
+#view_button a {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 7px 18px;
+}
+#view_button a:nth-of-type(1) {
+  color: #fff;
+  background-color: #444;
+}
+#view_button a:nth-of-type(2),
+#view_button a:nth-of-type(3),
+#view_button a:nth-of-type(4) {
+  background-color: #e2e2e2;
+}
+
+/* 댓글 내용, 수정, 삭제 */
+#ripple {
+
+}
+#ripple .comment_area {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px 25px;
+}
+#ripple .ripple_writer_title {
+  /* border-bottom: 1px solid #999; */
+}
+#ripple .ripple_writer_title ul {
+  overflow: hidden;
+}
+#ripple .ripple_writer_title ul .comment_nick {
+  float: left;
+
+}
+#ripple .ripple_writer_title ul .comment_date {
+  float: left;
+  color: #999;  
+  margin-left: 20px;
+}
+#ripple .ripple_writer_title ul .comment_delete {
+  float: right;
+}
+#ripple .ripple_writer_title ul .comment_delete:hover {
+  text-decoration: underline;
+}
+#ripple .comment_area .ripple_content {
+  margin-top: 20px;
+  /* margin-left: 20px; */
+  padding: 0 20px;
+  overflow: hidden;
+  /* width: 700px; */
+  width: 1120px;
+  white-space: normal;
+  word-break: break-all;
+  
+}
+/* 댓글쓰기 */
+#ripple_box {
+  margin-top: 20px;
+}
+#ripple_box #ripple_box_inner {
+  margin: 0 auto;
+  /* width: 1000px; */
+  border: 3px solid #eee;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 20px 30px;
+}
+#ripple_box #ripple_box_inner .write_comment_top_area strong{
+  padding-left: 3px;
+}
+#ripple_box #ripple_box_inner textarea {
+  border: none;
+  margin-top: .7rem;
+  resize: none;
+  width: 100%;
+  line-height: 1.5em;
+  font-size: 1.063rem;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  color: #333;
+  height: 6em;
+}
+#ripple_box #ripple_box_inner textarea:focus-visible {
+  outline: none;
+}
+#ripple_box #ripple_box_inner textarea::placeholder {
+  color: #aaa;
+}
+#ripple_box #ripple_box_inner .write_comment_bottom_area {
+  overflow: hidden;
+}
+#ripple_box #ripple_box_inner .write_comment_bottom_area a {
+  color: #aaa;
+  float: right;
+  transition: color .3s;
+}
+#ripple_box #ripple_box_inner .write_comment_bottom_area a:hover {
+  color: #333;
+}

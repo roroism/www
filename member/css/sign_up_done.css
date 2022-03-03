@@ -1,0 +1,101 @@
+body {background: #fafafa;}
+#content{width: 1000px; margin: 0 auto; margin-top: 100px}
+.logo{
+  margin: 50px auto 0; display: block; width: 150px; height: 50px; text-indent: -9999px; overflow: hidden;
+  background: url("../../common/images/logo1.png") center / contain no-repeat;
+}
+.sub_cont_wrap {
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 8px 8px 18px rgb(0 0 0 / 6%);
+  margin-bottom: 150px;
+}
+
+.step_nav {
+  overflow: hidden;
+  /* width: 70%; */
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.step_nav li {
+  float: left;
+  width: 33.33%;
+  /* 22px */
+  font-size: 1.375rem;
+  border-bottom: 3px solid #ccc;
+  padding: 10px 0;
+}
+.step_nav li.on {
+  color: #3cb149;
+  border-bottom: 3px solid #3cb149;
+}
+h2{
+  font-size: 28px; position: relative; text-align: center;
+  background: url("../images/bg_h2.gif") center / contain no-repeat;
+  width: 90%;
+  margin: 0 auto 50px;
+}
+h2 span{
+  background-color: #fff;
+  padding: 0 20px;
+}
+.img_wrap {
+  width: 15%;
+  margin: 0 auto 50px;
+}
+.img_wrap img {
+  width: 100%
+}
+.sub_cont_wrap p {
+  text-align: center;
+}
+.sub_cont_wrap p:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+}
+.sub_cont_wrap p:nth-of-type(2),
+.sub_cont_wrap p:nth-of-type(3) {
+  color: #999;
+  font-size: 1.125rem;
+}
+.button_wrap {
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.button_wrap a {
+  display: inline-block;
+  width: 200px;
+  padding: 15px 0;
+  
+  color: #fff;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color .3s, color .3s;
+  
+  text-align: center;
+  margin: 0 10px;
+}
+.button_wrap a:nth-of-type(1) {
+  border: 1px solid #3cb149;
+  background-color: #3cb149;
+}
+.button_wrap a:nth-of-type(2) {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+}
+.button_wrap a:hover {
+  background-color: #fff;
+}
+.button_wrap a:nth-of-type(1):hover {
+  color: #3cb149;
+}
+.button_wrap a:nth-of-type(2):hover {
+  color: #ccc;
+}

@@ -1,0 +1,41 @@
+{
+  "trailers":[
+    {
+      "title" : "축 브레드이발소 입성✨ 이제 CU에서 만나!",
+      "des" : "#브레드이발소 #씨유 #편의점",
+      "img" : "trailersvideo1.jpg",
+      "video_path" : "https://www.youtube.com/embed/KAscBtJdK7M?wmode=transparent"
+    },
+    {
+      "title" : "쓰복만의 CU 미식회",
+      "des" : "#EVENT #쓰복만 #미식회",
+      "img" : "trailersvideo2.jpg",
+      "video_path" : "https://www.youtube.com/embed/NEA6p76_RaY?wmode=transparent"
+    },
+    {
+      "title" : "(삼김데이)리치리치 삼대장 등판!",
+      "des" : "#리치리치삼김 #삼각김밥데이",
+      "img" : "trailersvideo3.jpg",
+      "video_path" : "https://www.youtube.com/embed/D5apyp6jf1c?wmode=transparent"
+    },
+    {
+      "title" : "CU 쫀득한마카롱 제조 과정",
+      "des" : "#마카롱 #씨유타임 #씨유튜브",
+      "img" : "trailersvideo4.jpg",
+      "video_path" : "https://www.youtube.com/embed/5Ou9W_116sw?wmode=transparent"
+    },
+    {
+      "title" : "우며들기 딱 좋은 시간!",
+      "des" : "#EVENT #씨유라이브 #씨유",
+      "img" : "trailersvideo5.jpg",
+      "video_path" : "https://www.youtube.com/embed/AAGX73a88pA?wmode=transparent"
+    },
+    {
+      "title" : "🍱 The건강식단 먹고 The 건강해지자!",
+      "des" : "#The건강식단 #건강식단 #씨유타임즈",
+      "img" : "trailersvideo6.jpg",
+      "video_path" : "https://www.youtube.com/embed/vZC9EFfuN9s?wmode=transparent"
+    }
+  ]
+}
+

@@ -1,0 +1,149 @@
+
+body {
+  background-color: #f9f9f9;
+}
+.logo {
+  margin: 50px auto 35px; display: block; width: 150px; height: 50px; text-indent: -9999px; overflow: hidden;
+  background: url("../../common/images/logo1.png") center / contain no-repeat;
+}
+article {
+  background-color: #fff;
+  width: 500px;
+  margin: 0 auto;
+  padding: 60px 70px;
+  box-shadow: 8px 8px 18px rgb(0 0 0 / 6%);
+  border-radius: 3px;
+}
+article h2 {
+  /* 30px */
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 700;
+}
+article h2+p {
+  color: #999;
+  text-align: center;
+  line-height: 1.5em;
+}
+article #id_pw_input ul {
+  margin-top: 40px;
+}
+article #id_pw_input ul li input.login_input {
+  /* 17px */
+  font-size: 1.063em;
+  height: 3.3rem;
+  width: 496px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-indent: 20px;
+}
+article #id_pw_input ul li input.login_input::placeholder {
+  text-indent: 20px;
+  color: #999;
+}
+article #id_pw_input ul li input.login_input:focus {
+  border: 1px solid #3cb149;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(60 177 73 / 60%);
+}
+article #id_pw_input ul li input.login_input:focus-visible {
+  outline: none;
+}
+article #id_pw_input ul li:nth-of-type(2) input {
+  margin-top: 10px;
+}
+article .login_support {
+  overflow: hidden;
+  margin: 6px 0 10px;
+}
+article .login_support ul {
+  float: right;
+}
+article .login_support ul li {
+  float: left;
+  position: relative;
+  margin-right: 15px;
+}
+article .login_support ul li a {
+  color: #666;
+}
+article .login_support ul li:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -8px;
+  /* margin: auto 0; */
+  width: 1px; height: 1em;
+  background-color: #666;
+}
+article .login_support ul li a:hover {
+  text-decoration: underline;
+}
+/* 로그인 영역*/
+article #login_button {
+  padding-top: 10px;
+}
+/* 로그인 버튼 */
+article #login_button button {
+  width: 100%;
+  height: 3.3rem;
+  background-color: #3cb149;
+  color: #fff;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+  border: 1px solid #3cb149;
+  box-sizing: border-box;
+}
+article #login_button button:hover {
+  background-color: #fff;
+  color: #3cb149;
+}
+/* 취소 버튼 */
+article #login_button a {
+  display: block;
+  width: 100%;
+  height: 3.3rem;
+  background-color: #ccc;
+  color: #fff;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 3.3rem;
+  margin-top: 10px;
+}
+/* 회원가입 영역 */
+article .sign_up_support {
+  margin: 35px 0 0;
+  border-top: 1px solid #ccc;
+  padding: 25px 0 0;
+  color: #666;
+}
+/* 회원가입 버튼 */
+article .sign_up_support a {
+  display: block;
+  width: 100%;
+  height: 3.3rem;
+  background-color: #fff;
+  color: #666;
+  /* 20px */
+  font-size: 1.125em;
+  border-style: none;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 3.3rem;
+  margin-top: 10px;
+  border: 1px solid #bbb;
+  transition: all .3s;
+}
+article .sign_up_support a:hover {
+  border: 1px solid #666;
+}

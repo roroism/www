@@ -1,0 +1,175 @@
+/* ESG 경영 체계 */
+
+
+/* 목표 */
+#content .esg_goal {
+
+}
+#content .esg_goal h3 {
+  position: relative;
+}
+#content .esg_goal h3::before {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .esg_goal h3 + p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 90px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+#content .esg_goal ul {
+  overflow: hidden;
+  margin: 0 auto;
+}
+#content .esg_goal ul li {
+  width: 360px;
+  height: 360px;
+  float: left;
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 5px solid #fff;
+  transition: all .5s;
+  position: relative;
+  margin: 0 20px;
+}
+#content .esg_goal ul li img {
+  z-index: 1;
+  transition: all .5s;
+}
+#content .esg_goal ul li:hover img {
+  transform: scale(1.1);
+}
+#content .esg_goal ul li:nth-of-type(1):hover {
+  border: 5px solid #3cb149;
+}
+#content .esg_goal ul li:nth-of-type(2):hover {
+  border: 5px solid #191970;
+}
+#content .esg_goal ul li:nth-of-type(3):hover {
+  border: 5px solid #751485;
+}
+#content .esg_goal ul li dl {
+  color: #fff;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+#content .esg_goal ul li dl dt {
+  /* 30px */
+  font-size: 1.875em;
+  font-weight: 700;
+}
+#content .esg_goal ul li dl dd {
+  /* 20px */
+  font-size: 1.375em;
+  margin-top: 50px;
+}
+#content .esg_goal ul li .opacity_box {
+  position: absolute;
+  left: 0; right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3); 
+  overflow: hidden;
+  height: 360px;
+  padding: 100px 0;
+  z-index: 2;
+}
+
+
+
+/* 추진체계 */
+#content .propulsion_system {
+  margin-top: 200px;
+}
+#content .propulsion_system h3 {
+  position: relative;
+}
+#content .propulsion_system h3::before {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .propulsion_system h3 + p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 90px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+#content .propulsion_system .committee {
+  width: 668px;
+  height: 324px;
+  background: url("../images/content1/committee.png") 50% 50% no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#content .propulsion_system .committee span{
+  display: block;
+}
+
+
+
+/* ESG(환경, 사회, 지배구조) 평가 등급 */
+#content .esg_rating {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+#content .esg_rating h3 {
+  position: relative;
+}
+#content .esg_rating h3::before {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+#content .esg_rating h3 + p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  margin-bottom: 90px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+#content .esg_rating table {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.125em;
+  border-top: 2px solid #333;
+  margin: 0 auto;
+}
+#content .esg_rating h3 + p + span {
+  display: block;
+  color: #666;
+  font-size: 16px;
+  margin: 0 0 5px 863px;
+}
+#content .esg_rating table th { 
+  background-color: #f8f8f8;
+  padding: 20px 30px;
+  border: 1px solid #e5e5e5;
+  font-weight: 700;
+  
+}
+#content .esg_rating table td { 
+  font-size: 17px;
+  padding: 30px 100px;
+  border: 1px solid #e5e5e5;
+  font-weight: 400;
+}

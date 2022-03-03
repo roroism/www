@@ -1,0 +1,191 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>커뮤니티-FAQ</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub4common.css"/>
+  <link rel="stylesheet" href="./css/sub4_content3.css">
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+  
+  <? include "../common/sub_header.html" ?>
+  
+  <!-- VISUAL -->
+  <div class="visual">
+    <img src="./common/images/visual_sub4.jpg" alt="visual이미지">
+    <h3>커뮤니티</h3>
+    <span>community</span>
+  </div>
+
+  <!-- sub_menu -->
+  <div class="sub_menu">
+    <ul>
+      <li><a href="../greet/list.php">공지사항</a></li>
+      <li><a href="../concert/list.php">보도자료</a></li>
+      <li class="current"><a href="./sub4_3.html">FAQ</a></li>
+      <li><a href="./sub4_4.html">홍보센터</a></li>
+      <li><a href="./sub4_5.html">온라인문의</a></li>
+    </ul>
+  </div>
+  
+  <!-- content -->
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>HOME</span> &gt; 커뮤니티 &gt; <strong>FAQ</strong>
+      </div>
+      <h2>FAQ</h2>
+      <p>새 예비 친구들이 <span class="eng_font">BGF</span>리테일에 자주 질문한 내용을 공유합니다.</p>
+      <p><span class="eng_font">BGF</span>리테일은 지속가능한 성장을 위해 다양한 이해관계자들과
+        끊임없이 <br/> 소통하며 신뢰 관계를 구축하고 있습니다.</p>
+      <!-- <ul class="sub_tab_menu slideMenu">
+        <li><a class="link1" href="#">인사말</a></li>
+        <li><a class="link2" href="#">기업소개</a></li>
+      </ul> -->
+    </div><!-- title_area -->
+
+
+    <div class="content_area">
+
+      <!-- FAQ -->
+      <div class="faq_box">
+        <div class="inner">
+
+          <div class="faq">  
+            <div class="hgroup">  
+            <h3>자주 묻는 질문</h3>
+            <a class="all" href="#">
+              <span>모두 열기</span>
+            </a>
+            </div>  
+            <ul>  
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >BGF리테일 STAFF라면 무조건 서류전형이 면제인가요?<span></span></a>  
+                </p>  
+                <p class="a">동일한 CU점포에서 연속으로 6개월 이상(주 24시간 이상/ 총 624시간 이상근무) 근무를 하시고, 위의 기준에 충족되는 경우 점주님과 담당SC의 추천을 받아 경력확인 증명서를 발급 받으실 수 있습니다.
+                  ‘영업관리직군(SC)’에 지원할 경우 서류 전형 면제의 혜택을 받을 수 있지만, 다른 직군에 지원한 경우에는 우대 혜택이 없습니다.
+                  그리고 서류전형이 면제가 되는 것이 아니라 합격처리 되는 것이므로, 해당 채용공고에 반드시 입사지원을 해주셔야 합니다. </p>  
+              </li> 
+              
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >실제 STAFF가 채용된 경우가 있나요?<span></span></a>  
+                </p>  
+                <p class="a">네 있습니다. STAFF 우대 혜택을 통해 약 50여명이 입사하였습니다.
+                  STAFF를 경험한 경우, 점포 운영 시스템에 대한 이해도가 높아 빠른 업무 적응이 가능한 것으로 판단하고 있습니다.</p>  
+              </li>
+
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >씨준생 프로그램과는 다른 제도인가요?<span></span></a>  
+                </p>  
+                <p class="a">네 맞습니다. 씨준생 프로그램과는 별도로 운영되는 제도로 STAFF 우대혜택 조건을 충족하신 분 중 경력증명서를 발급받으신 분에 한해 지원하실 수 있습니다.</p>  
+              </li>
+
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >CU 창업에 대해 더 상세한 정보를 미리 접할 기회는 없나요?<span></span></a>  
+                </p>  
+                <p class="a">
+                  지역별 창업설명회 참석을 통해 자세한 가맹상담을 받아보실 수 있습니다.
+                  1. 지역 사무실 창업설명회 : 전국 21개 지역 사무실에서 월 2회 (평일 1회, 주말 1회) 창업설명회가 진행됩니다.(본사 및 강원지역은 상이)
+                  2. CU 점포 현장설명회 : 전국 16개 CU 점포에서 가맹상담을 해드립니다. 생생한 점포 현장까지 눈으로 직접 보실 수 있습니다.
+                  *상세일정은 CU 홈페이지를 통해 확인 가능합니다.
+                  *참여방법 : CU 홈페이지 > 창업설명회 신청</p>  
+              </li>
+
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >CU에서만 판매하는 특별한 상품이 있나요?<span></span></a>  
+                </p>  
+                <p class="a">현재 CU는 음료, 과자, 용기면, 우유, 안주류, 비식품 등 다양한 카테고리의 CU 전용상품을 총 230여가지 운영 중에 있습니다.
+                  CU 전용상품은 고객에게 양질의 상품을 합리적인 가격으로 제공하여 고객의 점포 재방문을 높이고 있습니다.</p>  
+              </li>
+
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >가맹형태는 어떤게 있나요?<span></span></a>  
+                </p>  
+                <p class="a">
+                  CU는 창업을 희망하시는 분의 투자여건에 따라 가맹형태를 선택하실 수 있습니다.
+                  가맹형태는 점주님이 직접 점포를 임차하는 P형(퍼플형/점주수익추구형), 가맹본부가 점포를 임차하는 G형(그린형/점주투자안정형)으로 분류할 수 있습니다.
+                  P형은 시설·인테리어 투자 주체에 따라 점주가 투자하는 P1형, 가맹본부가 투자하는 P2형으로 구분됩니다.
+                  G형은 점주가 점포투자를 일부 부담하는 G1형, 점포투자를 전액 부담하는 G2형으로 구분됩니다.
+                  가맹을 희망하시는 분의 투자 여건, 투자금액 등을 고려하여 가맹형태를 선택하시면 됩니다.
+                </p>  
+              </li>
+
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >점주의 수익은 어떻게 산정하나요?<span></span></a>  
+                </p>  
+                <p class="a">가맹점의 총매출에서 상품을 구입한 매출원가를 제외하고 가맹본부 수수료를 제외하면 점주님의 총수입이 됩니다.
+                  여기에서 점포 운영을 위해 투자된 각종 비용(임차료, 인건비, 영업잡비 등)을 공제하면 점주님의 순수익이 됩니다.
+                  가맹본부 수수료는 가맹형태별, 점포 운영시간별로 각각 다르게 산정됩니다.</p>  
+              </li>
+
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >창업대출제도가 있나요?<span></span></a>  
+                </p>  
+                <p class="a">가맹본부는 현재 G형(그린형/점주투자안정형)에 한해 창업대출제도를 운영하고 있습니다.
+                  전국 하나은행 8개 지점(서울/인천/경기/강원/대전/광주/대구/부산)에서 이용이 가능합니다.
+                  대출금액은 최대 5천만원이며 신용등급에 따라 대출금리가 상이합니다.</p>
+              </li>
+
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >CU 점주만의 혜택은 어떤게 있나요?<span></span></a>  
+                </p>  
+                <p class="a">가맹본부는 CU 점주님만을 위한 다양한 복지/혜택을 운영 중에 있습니다.
+                  점주님만을 위한 쇼핑몰 ‘CU Mall(몰)’, 경조사 지원, 건강검진 할인, 차량정비 할인, 장기운영점주 추가 혜택 등
+                  다양한 제도로 점주님의 만족도를 높이고자 노력하고 있습니다.</p>
+              </li>
+
+              <li class="article hide">  
+                <p class="q">  
+                  <a class="trigger" href="javascript:void(0)" >가맹본부에서 취급하는 상품만 판매가 가능한가요?<span></span></a>  
+                </p>  
+                <p class="a">CU는 총 4,000여 종류 이상의 상품을 운영하고 있으며 각 점포별로 입지 특색에 맞는 약 1,400여종의 상품을 판매하고 있습니다.
+                  가맹본부에서 취급하지 않은 상품을 판매할 경우에는 사전에 가맹본부와 가맹계약자간 상호 협의가 선행되어야 하며,
+                  상품등록을 하지 않은 상품은 판매할 수 없습니다.
+                  다만, 고객의 지속적인 요청 또는 입지 특색에 맞는 특정 상품의 판매가 필요하다고 판단되는 경우에는 상호 협의 하에 해당 상품의 도입/판매가 가능합니다.</p>
+              </li>
+
+            </ul>
+          </div><!-- faq -->
+
+        </div><!-- inner -->
+      </div><!-- faq_box -->
+
+
+
+
+
+
+
+
+ 
+    </div><!-- content_area -->
+  </article><!-- article -->
+
+  <? include "../common/sub_footer.html" ?>
+  <script src="./js/content3/faq.js"></script>
+</body>
+</html>

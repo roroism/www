@@ -1,0 +1,246 @@
+/* 연혁 */
+
+#content .content_area .history .inner > p:nth-of-type(1) {
+  /* 24px */
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+#content .content_area .history .inner > p:nth-of-type(1)::before {
+  content: "";
+  display: block;
+  width: 1px; height: 70px;
+  background-color: #3cb149;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+}
+
+/* tab */
+#content .content_area .history .inner .tab_area ul {
+  overflow: hidden;
+  /* border: 1px solid black; */
+  /* border-left: 1px solid black;
+  border-right: 1px solid black; */
+  width: 100%;
+  background-color: #fff;
+}
+#content .content_area .history .inner .tab_area ul li {
+  float: left;
+  
+  width: 33.3%;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 700;
+}
+#content .content_area .history .inner .tab_area ul li a {
+  display: block;
+  padding: 5px 0;
+  /* 20px */
+  font-size: 1.250em;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  transition: all .3s;
+  
+}
+#content .content_area .history .inner .tab_area ul li a:hover {
+  content: "";
+  border-top: 1px solid #3cb149;
+  border-bottom: 1px solid #3cb149;
+  color: #3cb149;
+}
+#content .content_area .history .inner .tab_area ul li a span{
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+#content .content_area .history .inner .tab_area ul li .current {
+  background-color: #3cb149;
+  color: #fff;
+  border-top: 1px solid #3cb149;
+  border-bottom: 1px solid #3cb149;
+}
+#content .content_area .history .inner .tab_area ul li a.current:hover {
+  background-color: #3cb149;
+  color: #fff;
+}
+
+
+
+/* content */
+#content .content_area .history .bgf_history {
+  position: relative;
+  /* display: none; */
+}
+#content .content_area .history .bgf_history h3 {
+  /* 40px */
+  font-size: 2.500em;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+}
+#content .content_area .history .bgf_history h3::after {
+  content: "";
+  display: block;
+  width: 125px; height: 7px;
+  background-color: #3cb149;
+  position: absolute;
+  margin: 0 auto;
+  left:0; right: 0;
+  bottom: -15px;
+}
+#content .content_area .history .bgf_history > p {
+  /* 20px */
+  font-size: 1.250em;
+  margin-top: 27px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#content .content_area .history .bgf_history > ul {
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+/* 연혁 막대 */
+#content .content_area .history .bgf_history > ul::after {
+  content: "";
+  display: block;
+  width: 1px; 
+  background-color: #333;
+  position: absolute;
+  left: 50%; top: 20px;
+}
+.history2011 > ul::after {height: 1220px;}
+.history2001 > ul::after {height: 1370px;}
+.history1989 > ul::after {height: 1240px;}
+#content .content_area .history .bgf_history ul > li {
+  margin-bottom: 20px;
+  /* overflow: hidden; */
+  /* border: 1px solid black; */
+  min-height: 97px;
+}
+#content .content_area .history .bgf_history ul > li:nth-of-type(odd) dl {
+  /* float: right; */
+  margin-left: 640px;
+}
+#content .content_area .history .bgf_history ul > li:nth-of-type(even) dl {
+  /* float: left; */
+  text-align: right;
+  margin-right: 640px;
+} 
+#content .content_area .history .bgf_history ul > li dt {
+  margin-bottom: 15px;
+}
+#content .content_area .history .bgf_history ul > li dd {
+  /* 18px */
+  font-size: 1.125em;
+  line-height: 1.8em;
+}
+#content .content_area .history .bgf_history .year {
+  color: #3cb149;
+  /* 24px */
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+/* circle */
+#content .content_area .history .bgf_history .year::before {
+  content: "";
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 13px; height: 13px;
+  border: 7px solid #3cb149;
+  position: absolute;
+  left: 50%; margin-left: -13px;
+  z-index: 1;
+}
+#content .content_area .history .bgf_history ul li strong {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125em;
+}
+#content .content_area .history .bgf_history ul li:nth-of-type(odd) strong {
+  padding-right: 35px;
+}
+#content .content_area .history .bgf_history ul li:nth-of-type(even) strong {
+  padding-left: 35px;
+}
+#content .content_area .history .bgf_history img {
+  position: absolute;
+}
+#content .content_area .history .bgf_history.history2011 img:nth-of-type(1) {
+  left: 800px;
+  top: 290px;
+}
+#content .content_area .history .bgf_history.history2011 img:nth-of-type(2) {
+  left: 280px;
+  top: 450px;
+}
+#content .content_area .history .bgf_history.history2011 img:nth-of-type(3) {
+  left: 750px;
+  top: 820px;
+}
+#content .content_area .history .bgf_history.history2011 img:nth-of-type(4) {
+  left: 250px;
+  bottom: 80px;
+}
+#content .content_area .history .bgf_history.history2001 img:nth-of-type(1) {
+  left: 820px;
+  top: 330px;
+}
+#content .content_area .history .bgf_history.history2001 img:nth-of-type(2) {
+  left: 160px;
+  top: 490px;
+}
+#content .content_area .history .bgf_history.history2001 img:nth-of-type(3) {
+  left: 750px;
+  top: 980px;
+}
+#content .content_area .history .bgf_history.history1989 img:nth-of-type(1) {
+  left: 280px;
+  top: 470px;
+}
+
+/* 상단에 고정 sticky menu */
+#content .content_area .history .inner .tab_area {
+  position: relative;
+  height: 74px;
+}
+#content .content_area .history .inner .tab_area ul.navOn {
+  position: fixed;
+  width: 1200px;
+  z-index:60; 
+  /* left:0; */
+  top: 100px;
+  left: 0; right: 0;
+  margin: 0 auto;
+}
+
+/* .text {
+  position: fixed;
+  width: 100px;
+  height: 70px;
+  font-weight: 700;
+  top: 200px;
+  right: 50px;
+  border: 1px solid black;
+  color: #333;
+  z-index: 1000;
+} */
+
+
+
+
+/* 탭 기능 */
+/* .tabs {border:1px solid #ccc; width:600px;} 
+.tabs .tab_menu{overflow: hidden;}
+.tabs .tab_menu li{float: left; margin-right: 10px;}
+
+.tabs a.tab {display:block; width:84px;text-align: center;
+          font-size: 16px; background: red; color: #fff; font-weight: bold;padding: 10px 0; transition: all .5s;} 
+
+.tabs .contlist {display: none;
+    padding:15px;line-height:1.5em; background:#CCF;} 
+.tabs .contlist h3{font-size: 20px; font-weight: bold; margin-bottom: 15px;} */

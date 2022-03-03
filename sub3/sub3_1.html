@@ -1,0 +1,206 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서비스 안내-BGF로지스 소개</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub3common.css"/>
+  <link rel="stylesheet" href="./css/sub3_content1.css"/>
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+  
+  <? include "../common/sub_header.html" ?>
+  
+  <!-- VISUAL -->
+  <div class="visual">
+    <img src="./common/images/visual_sub3.jpg" alt="visual이미지">
+    <h3>서비스안내</h3>
+    <span>Service introduction</span>
+  </div>
+
+  <!-- sub_menu -->
+  <div class="sub_menu">
+    <ul>
+      <li class="current"><a href="./sub3_1.html">BGF로지스 소개</a></li>
+      <li><a href="./sub3_2.html">CU 소개</a></li>
+      <li><a href="./sub3_3.html">BGF푸드 소개</a></li>
+      <li><a href="./sub3_4.html">생활 혜택</a></li>
+
+    </ul>
+  </div>
+  
+  <!-- content -->
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>HOME</span> &gt; 서비스 안내 &gt; <strong>BGF로지스 소개</strong>
+      </div>
+      <h2>BGF로지스 소개</h2>
+      <ul class="sub_tab_menu slideMenu">
+        <li class="sub_tab_menu_grid3"><a class="link1" href="#">BGF로지스 소개</a></li>
+        <li><a class="link2" href="#">주요활동</a></li>
+        <li><a class="link3" href="#">물류사업</a></li>
+      </ul>
+    </div><!-- title_area -->
+
+
+    <div class="content_area" id="content_area">
+      
+      <!-- <ul class="subsidiary_tab">
+        <li><a href="sub3_1_1.html#subsidiary_tab_1" class="current">BGF 로지스<span>logis</span></a></li>
+        <li><a href="sub3_1_2.html#subsidiary_tab_2">BGF 푸드<span>food</span></a></li>
+      </ul> -->
+
+      <!-- 회사소개 -->
+      <div class="introduction con1">
+        <div class="inner">
+          <div class="center_box">
+            <h3 class="hidden">BGFlogis 회사소개</h3>
+            <p>BGF로지스는 최상의 <span class="green_font">서비스</span>를 통해 <span class="green_font">고객만족 경험</span>을 최우선으로 합니다.</p>
+            <p>전국 통합물류센터를 통해 백령도, 울릉도까지 안정적인 물류 공급을 지원합니다.
+              지역 중심의 물류 거점지로서의 역할을 수행합니다.
+              공급상품 특성에 따라 최적의 입지 선정으로 전국납품률 평균 99.9%를 달성하고 있습니다.</p>
+            <ul class="logis_service"><!-- 창고, 운수, 무역, 편의점, 화물운송주선 등 -->
+              <li>
+                <!-- 운수 transportation-->
+                운수<span>transportation</span>
+              </li>
+              <li>
+                <!-- 물류창고 warehouse -->
+                물류창고<span>warehouse</span>
+              </li>
+              <li>
+                <!-- 편의점 convenience store -->
+                편의점<span>convenience store</span>
+              </li>
+              <li>
+                <!-- 무역 Trade -->
+                무역<span>Trade</span>
+              </li>
+            </ul>
+          </div>
+        </div><!-- inner -->
+        <div class="introduction__left_bg introduction__bg"></div>
+        <!-- <div class="testbg"></div> -->
+        <div class="introduction__right_bg introduction__bg"></div>
+      </div><!-- introduction -->
+
+      <!-- 주요활동 -->
+      <div class="activity_images con2">
+        <div class="inner">
+          <h3>주요활동</h3>
+          <p>BGF로지스는 업계 최대규모의 중앙허브 물류센터를 중심으로 전국 21개 물류센터를 운영하고 있습니다.</p>
+          <div class="main">
+            <div class="gallery">
+                     <ul>
+                          <li class="link1"><img src="./images/content1/logis/bgf_logis01.jpg" alt='bgf로지스활동사진1' /></li>
+                          <li class="link2"><img src="./images/content1/logis/bgf_logis02.jpg" alt='bgf로지스활동사진2' /></li>
+                          <li class="link3"><img src="./images/content1/logis/bgf_logis03.jpg" alt='bgf로지스활동사진3' /></li>
+                          <li class="link4"><img src="./images/content1/logis/bgf_logis04.jpg" alt='bgf로지스활동사진4' /></li>
+                          <li class="link5"><img src="./images/content1/logis/bgf_logis05.jpg" alt='bgf로지스활동사진5' /></li>
+                    </ul>
+            </div>
+           
+            <div class="dock">
+              <span class="mbutton  btn1" ></span>
+              <span class="mbutton  btn2" ></span>
+              <span class="mbutton  btn3" ></span>
+              <span class="mbutton  btn4" ></span>
+              <span class="mbutton  btn5" ></span>
+              <span class="ps"></span>
+            </div>
+            <div class="btn btnLeft">left</div>
+            <div class="btn btnRight">right</div>
+     	    </div> <!-- main end --> 
+          
+          <div class="activity_images__point">
+            <ul>
+              <li>
+                <dl>
+                  <dt>Delivery 99.9%</dt>
+                  <dd>전국 납품률 99.9% 달성</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>automatic</dt>
+                  <dd>CVS 물류업계 최초 <br> 자동화시스템</dd>
+                </dl>
+                
+              </li>
+              <li>
+                <dl>
+                  <dt>logistics</dt>
+                  <dd>백령도 울릉도까지 <br> 전국 네트워크 유통망</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>warehouse</dt>
+                  <dd>국내 최초 편의점 전용 <br> 물류센터 가동</dd>
+                </dl>
+              </li>
+           </ul>
+
+          </div><!-- activity_images__point -->
+        </div><!-- inner -->
+      <div class="activity_images__bg"></div>
+      </div><!-- activity_images -->
+
+
+      <!-- 중간이미지 -->
+      <div class="cvs_bg"></div>
+
+
+      <!-- 물류사업 -->
+      <div class="cvs con3">
+        <div class="inner">
+          <h3>물류사업</h3>
+          <p>BGF로지스의 물류사업을 소개합니다.</p>
+          <p>전국적인 물류 네트워크 거점망을 통해 1년 365일 전국의 모든 CU편의점에 최상의 상품과 서비스를 제공함으로써 <br>
+            업계최고의 고도화된 물류서비스를 실현하고 업계최초 녹색물류인증을 통해 환경친화 물류에도 기여하고 있습니다.</p>
+
+          <h4>cvs물류사업</h4>
+          <div>
+            <img src="./images/content1/save_01.jpg" alt="cvs물류사업1" />
+            <img src="./images/content1/save_02.jpg" alt="cvs물류사업2" />
+            <p>BGF로지스의 전국 물류거점 및 수배송 인프라를 활용한 효율적 납품대행과 전문적인
+              물류서비스를 통해, 공산품(잡화,주류, 담배 등) 집하 및 배송과 전국 800여대 차량배송관리로 상온 상품 물류 공급 등
+                최적의 물류비와 서비스를 고객사에 제공하고 있습니다.</p>
+          </div>
+          
+          <h4>화물운송사업</h4>
+          <div>
+            <img src="./images/content1/save_03.jpg" alt="화물운송사업1" />
+            <img src="./images/content1/save_04.jpg" alt="화물운송사업2" />
+            <p>다양한 차종의 최적화된 표준화 물류차량을 도입함으로써 CVS 물류사업 지원을 통해 전국 CVS 물류센터의 상온&middot;저온 점포 물류배송은 물론 맞춤형 물류서비스 설계를 통해
+              전국 CVS 물류센터로 납품하는 협력사의 납품대행 서비스를 제공하는 등 운송사업의 영역을 넓혀 나가고 있습니다.</p>
+          </div>
+            
+        </div><!-- inner -->
+      </div><!-- cvs -->
+
+
+
+
+    </div><!-- content_area -->
+  </article><!-- article -->
+
+  <? include "../common/sub_footer.html" ?>
+  <script src="./js/sub3_1.js"></script>
+</body>
+</html>

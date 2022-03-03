@@ -1,0 +1,188 @@
+/* 모집과정 */
+
+#content .title_area {
+  margin-bottom: 110px;
+}
+#content .title_area h2 {
+  position: relative;
+}
+#content .title_area h2::after {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+}
+#content .title_area h2 + p {
+  /* 30px */
+  font-size: 1.875em;
+  text-align: center;
+  margin-bottom: 17px;
+  line-height: 1.5em;
+  margin-top: 80px;
+  font-weight: 500;
+}
+#content .title_area h2 + p + p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  line-height: 1.5em;
+}
+#content .content_area .recruitment_process .inner {
+  position: relative;
+}
+#content .content_area .recruitment_process .inner .process_title {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .content_area .recruitment_process .inner .process_title li {
+  float: left;
+  margin: 30px 60px 30px 40px;
+  border-radius: 50%;
+  position: relative;
+  width: 259px; height: 259px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+#content .content_area .recruitment_process .inner .process_title li img {
+  width: 80px;
+  height: 80px;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(4) {
+  margin-left: 163px;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(3) {
+  margin-right: 40px;
+}
+#content .content_area .recruitment_process .inner .process_title li::before {
+  content: "";
+  width: 265px;
+  height: 265px;
+  border-radius: 50%;
+  position: absolute;
+  left: -7px; top: -7px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(1)::before,
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(6)::before {
+  border-top: 4px solid #ccc;
+  border-bottom: 4px solid #3cb149;
+  border-left: 4px solid #3cb149;
+  border-right: 4px solid #ccc;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(2)::before,
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(5)::before {
+  border-top: 4px solid #191970;
+  border-bottom: 4px solid #ccc;
+  border-left: 4px solid #ccc;
+  border-right: 4px solid #191970;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(3)::before,
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(4)::before {
+  border-top: 4px solid #ccc;
+  border-bottom: 4px solid #751485;
+  border-left: 4px solid #751485;
+  border-right: 4px solid #ccc;
+}
+#content .content_area .recruitment_process .inner .process_title li::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 30px; height: 30px;
+  right: -20px; top: 118px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  line-height: 30px;
+  font-size: 20px;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(1)::after {
+  content: "1";
+  background-color: #3cb149;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(2)::after {
+  content: "2";
+  background-color: #191970;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(3)::after {
+  content: "3";
+  background-color: #751485;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(4)::after {
+  content: "4";
+  background-color: #751485;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(5)::after {
+  content: "5";
+  background-color: #191970;
+}
+#content .content_area .recruitment_process .inner .process_title li:nth-of-type(6)::after {
+  content: "6";
+  background-color: #3cb149;
+}
+#content .content_area .recruitment_process .inner .process_title li span:nth-of-type(1) {
+  /* 18px */
+  font-size: 18px;
+  line-height: 80px;
+  display: block;
+}
+#content .content_area .recruitment_process .inner .process_title span.arrow1 {
+  position: absolute;
+  width: 70px; height: 70px;
+  background: center / contain no-repeat url("../images/content1/arrow1.png");
+  opacity: .4;
+  transform: rotate(180deg);
+  z-index: 3;
+}
+#content .content_area .recruitment_process .inner .process_title span.firstarrow,
+#content .content_area .recruitment_process .inner .process_title span.secondarrow {
+  left: 275px; top: 92px;
+}
+#content .content_area .recruitment_process .inner .process_title span.fourtharrow,
+#content .content_area .recruitment_process .inner .process_title span.fiftharrow,
+#content .content_area .recruitment_process .inner .process_title span.sixtharrow {
+  left: -83px; top: 92px;
+}
+
+/* process_description */
+#content .content_area .recruitment_process .inner ol.process_description {
+  margin-top: 150px;
+  border-top: 2px solid #333;
+  margin-bottom: 150px;
+}
+#content .content_area .recruitment_process .inner ol.process_description li {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+#content .content_area .recruitment_process .inner ol.process_description li span{
+  float: left;
+  line-height: 38px;
+  /* 20px */
+  font-size: 1.563em;
+  font-family: 'Roboto',sans-serif;
+  color: #3cb149;
+}
+#content .content_area .recruitment_process .inner ol.process_description li dl {
+
+}
+#content .content_area .recruitment_process .inner ol.process_description li dl dt {
+  /* 20px */
+  font-size: 1.563em;
+  float: left;
+  font-weight: 700;
+  width: 12%;
+  padding-left: 50px;
+}
+#content .content_area .recruitment_process .inner ol.process_description li dl dd {
+  /* 18px */
+  font-size: 1.125em;
+  float: left;
+  /* border: 1px solid black; */
+  width: 840px;
+  padding-left: 70px;
+  line-height: 1.7em;
+}

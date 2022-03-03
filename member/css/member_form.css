@@ -1,0 +1,259 @@
+body {
+  background: #fafafa;
+}
+.logo{
+  margin: 50px auto 0; display: block; width: 150px; height: 50px; text-indent: -9999px; overflow: hidden;
+  background: url("../../common/images/logo1.png") center / contain no-repeat;
+}
+
+#content{width: 1000px; margin: 0 auto; margin-top: 100px;}
+.sub_cont_wrap {
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 8px 8px 18px rgb(0 0 0 / 6%);
+  margin-bottom: 100px;
+}
+
+.step_nav {
+  overflow: hidden;
+  /* width: 70%; */
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.step_nav li {
+  float: left;
+  width: 33.33%;
+  /* 22px */
+  font-size: 1.375rem;
+  border-bottom: 3px solid #ccc;
+  padding: 10px 0;
+}
+.step_nav li.on {
+  color: #3cb149;
+  border-bottom: 3px solid #3cb149;
+}
+h2{
+  font-size: 28px; position: relative; text-align: center;
+  background: url("../images/bg_h2.gif") center / contain no-repeat;
+  width: 90%;
+  margin: 0 auto 50px;
+}
+h2 span{
+  background-color: #fff;
+  padding: 0 20px;
+}
+form {
+  margin-top: 30px;
+  /* margin-bottom: 100px; */
+  /* border: 1px solid #ccc; */
+  /* padding: 50px; */
+}
+table{ margin: 0 auto; }
+th,td{
+  /* border: 1px solid #ccc; */
+  padding: 15px
+}
+th{width: 20%}
+td{width: 80%}
+input, select {
+  padding: 10px; border-radius: 3px;
+  font-size: 1.5em; border: 0;
+  /* background: #e3e3e3; */
+  border: 1px solid #ccc;
+  width: 180px;
+  text-align: center;
+  font-size: 1.125em;
+  background-color: #f8f8f8;
+}
+select {
+  width: 80px;
+}
+table tr:nth-of-type(6) input { width: 100px; text-align: center;}
+table tr:last-child td{text-align: center; padding: 100px 0 50px}
+
+#content form input:focus {
+  border: 1px solid #3cb149;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(60 177 73 / 60%);
+}
+#content form input:focus-visible {
+  outline: none;
+}
+
+
+/* button */
+#content .sign_up_button_wrap {
+  text-align: center;
+}
+#content .sign_up_button_wrap .sign_up {
+  background-color: #3cb149;
+  color: #fff;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 500;
+  height: 50px;
+  width: 200px;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* margin: 0 auto; */
+  position: relative;
+  /* z-index: 2; */
+}
+#content .sign_up_button_wrap .sign_up span {
+  position: relative;
+  z-index: 2;
+}
+#content .sign_up_button_wrap .sign_up::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; bottom: 0;
+  margin: auto 0;
+  background-color: #4eca5d;
+  transition: all .3s;
+  border-radius: 3px;
+  /* z-index: 1; */
+}
+#content .sign_up_button_wrap .sign_up:hover::after {
+  width: 100%;
+}
+#content .sign_up_button_wrap .cancel {
+  background-color: #fff;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  height: 50px;
+  width: 200px;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  color: #333;
+  transition: border .3s;
+}
+#content .sign_up_button_wrap .cancel:hover {
+  border: 1px solid #333;
+}
+#content .sign_up_button_wrap .back_index {
+	background-color: #aaa;
+  color: #fff;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 500;
+  height: 50px;
+  width: 200px;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* margin: 0 auto; */
+  position: relative;
+  /* z-index: 2; */
+}
+
+
+/* 비밀번호강도 */
+table tr:nth-of-type(2) td {
+  position: relative;
+}
+.pw_guide {
+  position: absolute;
+  left: 50%; top: 14%;
+  display: inline-block;
+  font-size: 1rem;
+}
+.pw_guide > p {
+  font-size: 14px;
+}
+.pw_guide > div > p {
+  display: inline-block;
+}
+.pw_guide > div > p > span.red {
+  color: rgb(255, 0, 0, 1);
+}
+.pw_guide > div > p > span.orange {
+  color: rgb(255, 228, 0, 1);
+}
+.pw_guide > div > p > span.yellow {
+  color: rgb(255, 228, 0, 1);
+}
+.pw_guide > div > p > span.green {
+  color: rgb(0, 228, 64, 1);
+}
+.pw_guide > div > p > span.blue {
+  color: rgb(43, 114, 255, 1);
+}
+
+.pw_guide > div > span {
+  width: 22px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: 1px;
+  /* line-height: 1rem; */
+  margin: 0 1px;
+  /* opacity: .3; */
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, .1);
+}
+.pw_guide > div > span:nth-of-type(1) {
+  /* background-color: #ff0000; */
+  /* background-color: rgb(255, 0, 0, .1); */
+}
+.pw_guide > div > span:nth-of-type(1).red,
+.pw_guide > div > span:nth-of-type(2).red,
+.pw_guide > div > span:nth-of-type(3).red,
+.pw_guide > div > span:nth-of-type(4).red {
+  background-color: rgb(255, 0, 0, 1);
+}
+.pw_guide > div > span:nth-of-type(1).orange,
+.pw_guide > div > span:nth-of-type(2).orange,
+.pw_guide > div > span:nth-of-type(3).orange,
+.pw_guide > div > span:nth-of-type(4).orange {
+  background-color: rgb(255, 153, 0, 1);
+}
+.pw_guide > div > span:nth-of-type(1).yellow,
+.pw_guide > div > span:nth-of-type(2).yellow,
+.pw_guide > div > span:nth-of-type(3).yellow,
+.pw_guide > div > span:nth-of-type(4).yellow {
+  background-color: rgb(255, 228, 0, 1);
+}
+.pw_guide > div > span:nth-of-type(1).green,
+.pw_guide > div > span:nth-of-type(2).green,
+.pw_guide > div > span:nth-of-type(3).green,
+.pw_guide > div > span:nth-of-type(4).green {
+  background-color: rgb(0, 228, 64, 1);
+}
+.pw_guide > div > span:nth-of-type(1).blue,
+.pw_guide > div > span:nth-of-type(2).blue,
+.pw_guide > div > span:nth-of-type(3).blue,
+.pw_guide > div > span:nth-of-type(4).blue {
+  background-color: rgb(43, 114, 255, 1);
+}
+
+
+/* 비밀번호확인 가이드 */
+#pass_confirm {
+  float: left;
+}
+.pw_confirm_guide {
+  float: left;
+  /* border: 1px solid black; */
+  /* width: 200px; */
+  height: 40px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  line-height: 40px;
+}
+.pw_confirm_guide span {
+
+}
+
+/* 아이디 닉네임 guide */
+#loadtext,
+#loadtext2 {
+  margin-left: 5px;
+}

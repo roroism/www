@@ -1,0 +1,114 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-오시는길</title>
+
+  <!-- 카카오맵 api, js, 키 -->
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=57d617c9ab605698e6036476fe778dbc"></script>
+  <script src="./js/my_project_kakao_map.js"></script>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub1common.css"/>
+  <link rel="stylesheet" href="./css/sub1_content4.css">
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+  
+    <? include "../common/sub_header.html" ?>
+
+    <!-- VISUAL -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="visual이미지">
+      <h3>BGF리테일소개</h3>
+      <span>BGFretail introduction</span>
+    </div>
+
+    <!-- sub_menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub1_1.html">기업철학</a></li>
+        <li><a href="./sub1_2.html">기업비전</a></li>
+        <li><a href="./sub1_3.html">연혁</a></li>
+        <li class="current"><a href="./sub1_4.html">오시는길</a></li>
+      </ul>
+    </div>
+
+
+
+    <!-- content -->
+    <article id="content">
+      <div class="title_area">
+        <div class="line_map">
+          <span>HOME</span> &gt; 회사소개 &gt; <strong>오시는길</strong>
+        </div>
+        <h2>오시는길</h2>
+        <!-- <p>슬로건..........</p> -->
+        <!-- <ul class="sub_tab_menu">
+          <li><a href="#">인사말</a></li>
+          <li><a href="#">기업소개</a></li>
+        </ul> -->
+      </div>
+
+      
+      <div class="content_area">
+
+        <!-- 오시는길 area -->
+        <div class="find_us">
+          <div class="inner">
+            <h3>교통안내</h3>
+            <div class="map">
+              <div id="mapbgfretail" style="width:1000px;height:450px;"></div>
+            </div>
+
+            <div class="bgf_address">
+              <p><span class="eng_font">BGF</span>리테일</p>
+              <dl>
+                <dt>주소</dt>
+                <dd>서울시 강남구 테헤란로 405(삼성동)</dd>
+              </dl>
+              <dl>
+                <dt>TEL</dt>
+                <dd>1577-8007</dd>
+              </dl>
+            </div>
+
+            <ul class="public_transportation">
+              <li>
+                <dl>
+                  <dt>지하철 이용 시</dt>
+                  <dd><i class="fas fa-subway"></i><strong><span></span>2호선</strong> <span></span>선릉역 8번 출구에서 도보로 221m</dd>
+                  <dd><i class="fas fa-subway"></i><strong><span></span>수인분당선</strong> <span></span>선릉역 8번 출구에서 도보로 221m</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>버스 이용 시</dt>
+                  <dd><i class="fas fa-bus-alt"><span class="hidden">마을버스</span></i><strong><span></span> 강남07</strong> <span></span>선릉역 &middot; 선정릉 정문 하차</dd>
+                  <dd><i class="fas fa-bus-alt"><span class="hidden">지선버스</span></i><strong><span></span> 4312 </strong> <span></span>선릉역 &middot; 선정릉 정문 하차</dd>
+                  <dd><i class="fas fa-bus-alt"><span class="hidden">간선버스</span></i><strong><span></span> 360 </strong> <span></span>선릉역 하차</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+
+</body>
+</html>

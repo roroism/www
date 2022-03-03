@@ -1,0 +1,224 @@
+/* sub6 공통 - 비주얼, subnav, title영역 */
+
+header#headerArea {
+    background: #fff;
+}
+
+
+
+.visual {
+    width: 2000px;
+    margin-top: 100px;
+    position: relative;
+    left: 50%; margin-left: -1000px; top: 0;
+}
+.visual h3 {
+    position: absolute;
+    top: 120px; left: 0;
+    width: 100%;
+    text-align: center;
+    /* 46px */
+    /* font-size: 2.875em; */
+    /* 32px */
+    font-size: 2em;
+    color: #fff;
+    font-weight: 400;
+}
+.visual span {
+    position: absolute;
+    top: 170px; left: 0;
+    width: 100%;
+    /* border: 1px solid; */
+    text-align: center;
+    /* 25px */
+    /* font-size: 1.563em; */
+    /* 16px */
+    color: #fff;
+    font-weight: 400;
+}
+.sub_menu {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: -69px;
+    /* position: relative로 올린 만큼 margin-bottom을 빼주어 원래 위치에 남아있는 공간을 없애준다. */
+    margin-bottom: -69px;
+}
+.sub_menu ul {
+    overflow: hidden;
+    width: 800px;
+    margin: 0 auto;
+}
+.sub_menu ul li {
+    float: left;
+    width: 200px;
+    /* width: 33.3%; */
+}
+.sub_menu ul li a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .7);
+    transition-property: background-color;
+    transition-duration: .5s;
+    position: relative;
+}
+.sub_menu ul li a:hover {
+    /* background: orange; */
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+}
+/* 선택한 상태로 만들기 */
+.sub_menu .current a {
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    font-weight: 700;
+}
+
+
+
+.sub_menu a::after {
+    content: "";
+    width: 0; height: 3px;
+    background-color: #3cb149;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all .3s;
+}
+.sub_menu a:hover::after {
+    width: 100%; height: 3px;
+    left: 0%;
+}
+.sub_menu .current a::after {
+    content: "";
+    display: block;
+    width: 100%; height: 3px;
+    background-color: #3cb149;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* content */
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+#content .title_area {
+    position: relative;
+    padding-top: 114px; /* title_area 영역 확보padding으로 확보했기 때문에 이 area 안의 컨텐츠는 padding-top아래에 위치한다. */
+    margin-bottom: 170px;
+    /* border-bottom: 1px solid #ccc; */
+    /* overflow: hidden; */
+}
+#content .title_area .sub_tab_menu {
+    overflow: hidden;
+    /* border: 1px solid blue; */
+    margin: 0 auto 20px;
+    /* width: 470px; */
+    /* font-weight: 700; */
+    font-size: 1.250em;
+    /* border: 1px solid red; */
+    position: relative;
+}
+#content .title_area .sub_tab_menu li {
+    float: left;
+    width: 215px;
+    margin: 0 10px;
+    padding-bottom: 40px;
+    
+}
+#content .title_area .sub_tab_menu li:nth-of-type(1) {margin-left: 375px;}
+#content .title_area .sub_tab_menu li:nth-of-type(1).sub_tab_menu_grid3 {
+    margin-left: 257px;
+}
+#content .title_area .sub_tab_menu li:nth-of-type(1).sub_tab_menu_grid4 {
+    margin-left: 138px;
+}
+#content .title_area .sub_tab_menu li:nth-of-type(1)::after {
+    content: "";
+    display: block;
+    width: 1200px; height: 1px;
+    /* background-color: #ccc; */
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    z-index: -1;
+
+}
+#content .title_area .sub_tab_menu li a {
+    display: block;
+    /* border: 1px solid black; */
+    color: #999;
+    text-align: center;
+    position: relative;
+    /* transition-property: background-color;
+    transition-duration: .3s; */
+    /* transition: all .3s; */
+}
+#content .title_area .sub_tab_menu li a:hover {
+    color: #666;
+    font-weight: 700;
+}
+#content .title_area .sub_tab_menu li a::after {
+    content: "";
+    display: block;
+    width: 15px; height: 15px;
+    background-color: #999;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; right: 0;
+    margin: 0 auto;
+    bottom: -34px;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+#content .title_area .sub_tab_menu li a:hover::after {
+  background-color: #3cb149;
+}
+#content .line_map {
+    position: absolute;
+    left: 30px; top: 30px;
+    /* border: 1px solid; */
+    color: #666;
+}
+#content .line_map span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: center / contain no-repeat url("../../../common/images/home.png");
+    text-indent: -9999px;
+    color: #fff;
+    overflow: hidden;
+    opacity: .7;
+    vertical-align: -3px;
+}
+#content .line_map strong {
+    color: #333;
+}
+#content h2 {
+    text-align: center;
+    font-size: 3.125em;
+    /* padding-top: 114px; */
+    padding-bottom: 88px;
+    /* border: 1px solid black; */
+    /* margin-bottom: 150px; */
+    
+}
+#content h3 {
+  text-align: center;
+  /* 40px */
+  font-size: 2.500em;
+  padding-bottom: 100px;
+}
+/* #content h4 {
+  text-align: center;
+  font-size: 2.188em;
+  padding-bottom: 100px;
+} */

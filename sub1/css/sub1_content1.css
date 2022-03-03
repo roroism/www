@@ -1,0 +1,168 @@
+/* 각각의 페이지의 내용 콘텐츠 영역-기업철학 내용 */
+
+/* content_area ceo_message */
+#content .content_area .ceo_message {
+  margin-bottom: 200px;
+}
+
+#content .content_area .ceo_message .inner {
+  /* overflow: hidden; */
+}
+#content .content_area .ceo_message .inner h3 {
+    /* 40px */
+    font-size: 2.500em;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+#content .content_area .ceo_message .inner > div {
+  overflow: hidden;
+}
+#content .content_area .ceo_message .inner h3::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: #3cb149;
+    position: absolute;
+    top: -85px;
+    left: 50%;
+}
+#content .content_area .ceo_message .inner img {
+  margin-left: 48px;
+  float: left;
+  box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.3);
+}
+#content .content_area .ceo_message .inner .ceo_message_right_area {
+  /* margin-left: 74px; */
+  float: right;
+  width: 700px;
+  margin-right: 36px;
+  /* border: 1px solid black; */
+}
+#content .content_area .ceo_message .inner p {
+  text-align: justify;
+}
+#content .content_area .ceo_message .inner p:nth-of-type(1) {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  /* 30px */
+  font-size: 1.875em;
+  margin-bottom: 15px;
+}
+#content .content_area .ceo_message .inner p:nth-of-type(2) {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  /* 20px */
+  font-size: 1.250em;
+  margin-bottom: 35px;
+}
+#content .content_area .ceo_message .inner p:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  width: 77px;
+  height: 1px;
+  position: relative;
+  bottom: -18px;
+  background-color: #333;
+}
+#content .content_area .ceo_message .inner p:nth-of-type(n+3):nth-of-type(-n+5) {
+  /* 18px */
+  font-size: 1.125em;
+  margin-bottom: 27px;
+  line-height: 1.688em;
+}
+#content .content_area .ceo_message .inner p:nth-of-type(6) {
+  font-weight: 400;
+  /* 20px */
+  font-size: 1.250em;
+  margin-left: 400px;
+}
+#content .content_area .ceo_message .inner p:nth-of-type(6) span:nth-of-type(2) {
+  /* 36px */
+  font-size: 2.250em;
+}
+
+/* content_area sub_introduction */
+#content .content_area .sub_introduction{margin-bottom: 150px;}
+#content .content_area .sub_introduction .inner h3 {
+  /* 40px */
+  font-size: 2.500em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+#content .content_area .sub_introduction .inner h3::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background-color: #3cb149;
+  position: absolute;
+  top: -85px;
+  left: 50%;
+}
+#content .content_area .sub_introduction .inner > p {
+  /* 20px */
+  font-size: 1.250em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#content .content_area .sub_introduction .inner ul {
+  text-align: justify;
+}
+#content .content_area .sub_introduction .inner ul li {
+  overflow: hidden;
+}
+#content .content_area .sub_introduction .inner ul li img {
+  position: relative;
+  z-index: 2;
+}
+#content .content_area .sub_introduction .inner ul li:nth-of-type(odd) img {float: left;}
+#content .content_area .sub_introduction .inner ul li:nth-of-type(even) img {float: right;}
+#content .content_area .sub_introduction .inner ul li dl {
+  margin-top: 200px;
+  
+  /* border: 1px solid black; */
+}
+#content .content_area .sub_introduction .inner ul li:nth-of-type(odd) dl {
+  float: right;
+  margin-right: 56px;
+  width: 492px;
+  position: relative;
+}
+#content .content_area .sub_introduction .inner ul li:nth-of-type(odd) dl::after {
+  content: "";
+  display: block;
+  width: 520px; height: 2px;
+  background-color: #3cb149;
+  position: absolute;
+  left: -53px;
+  top: 50px;
+}
+#content .content_area .sub_introduction .inner ul li:nth-of-type(even) dl {
+  float: left;
+  margin-left: 56px;
+  width: 492px;
+  position: relative;
+}
+#content .content_area .sub_introduction .inner ul li:nth-of-type(even) dl::after {
+  content: "";
+  display: block;
+  width: 520px; height: 2px;
+  background-color: #3cb149;
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+#content .content_area .sub_introduction .inner ul li dt {
+  /* 30px */
+  font-size: 1.875em;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+#content .content_area .sub_introduction .inner ul li dd {
+  /* 18px */
+  font-size: 1.125em;
+  line-height: 1.688em;
+}

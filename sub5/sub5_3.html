@@ -1,0 +1,73 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>투자정보-IR/공시정보</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub5common.css"/>
+  <link rel="stylesheet" href="./css/sub5_content3.css">
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <!-- VISUAL -->
+    <div class="visual">
+      <img src="./common/images/sub5visual.jpg" alt="">
+      <h3>투자정보</h3>
+      <span>Investment information</span>
+    </div>
+
+    <!-- sub_menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub5_1.html">재무정보</a></li>
+        <li><a href="./sub5_2.html">주식정보</a></li>
+        <li class="current"><a href="./sub5_3.html">IR/공시정보</a></li>
+        <!-- <li><a href="./sub5_4.html">전자공고</a></li> -->
+      </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <article id="content">
+      <div class="title_area">
+        <div class="line_map">
+          <span>HOME</span> &gt; 투자정보 &gt; <strong>IR/공시정보</strong>
+        </div>
+        <h2>IR/공시정보</h2>
+        <!-- <p>충분한 이해를 통해 서로에게 좋은 친구가 되는 과정입니다.</p>
+        <p>BGF리테일의 새 친구가 되는 과정을 소개합니다!</p> -->
+        <!-- <ul class="sub_tab_menu">
+          <li class="sub_tab_menu_grid3"><a href="#">목표</a></li>
+          <li><a href="#">추진체계</a></li>
+          <li><a href="#">ESG 평가 등급</a></li>
+        </ul> -->
+      </div><!--title_area-->
+
+
+      <div class="content_area">
+        게시판
+
+
+      </div><!-- content_area -->
+    </article><!-- content -->
+
+    <? include "../common/sub_footer.html" ?>
+  
+</body>
+</html>

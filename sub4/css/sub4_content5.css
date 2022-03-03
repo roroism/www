@@ -1,0 +1,165 @@
+/* 온라인문의 */
+
+#content .title_area {
+  margin-bottom: 110px;
+}
+#content .title_area h2 {
+  position: relative;
+}
+#content .title_area h2::after {
+  content: "";
+  width: 1px; height: 70px;
+  background: #3cb149;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+}
+#content .title_area h2 + p {
+  /* 30px */
+  font-size: 1.875em;
+  text-align: center;
+  margin-bottom: 17px;
+  line-height: 1.5em;
+  margin-top: 80px;
+  font-weight: 500;
+}
+#content .title_area h2 + p + p {
+  /* 24px */
+  font-size: 1.500em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+#content .content_area .questions h3 {
+  /* 40px */
+  font-size: 2.500em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+#content .content_area .questions form {
+  border-top: 5px solid #3cb149;
+  width: 1000px;
+  margin: 0 auto 100px;
+}
+#content .content_area .questions form .row {
+  /* margin-top: 50px; */
+  /* border-top: 1px solid #999; */
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  /* margin: 0 auto; */
+  /* height: 80px; */
+}
+#content .content_area .questions form .row:last-child {
+  border-bottom: none;
+
+}
+#content .content_area .questions form .row dl {
+  width: 912px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#content .content_area .questions form .row dl dt {
+  float: left;
+}
+#content .content_area .questions form .row dl dd {
+  float: left;
+  position: relative;
+}
+#content .content_area .questions form .row dl dd p.text-danger {
+  position: absolute;
+  right: 0;
+  top: 0; bottom: 0;
+  margin: auto 0;
+}
+#content .content_area .questions form .row dl dd p.text-danger ul li{
+  line-height: 37px;
+  margin-right: 15px;
+  color: #ff8a8a;
+  /* 14px */
+  font-size: 0.875em;
+}
+#content .content_area .questions form label,
+#content .content_area .questions form input {
+  display: block;
+  height: 33px;
+}
+#content .content_area .questions form label {
+  /* 20px */
+  font-size: 1.125em;
+  width: 200px;
+  /* padding-left: 20px; */
+  text-indent: 20px;
+  padding: 3px 2px;
+}
+#content .content_area .questions form input,
+#content .content_area .questions form textarea {
+  /* 16px */
+  font-size: 1em;
+  width: 680px;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding-left: 20px;
+}
+#content .content_area .questions form input::placeholder,
+#content .content_area .questions form textarea::placeholder {
+  color: #999;
+  /* 15px */
+  /* font-size: 0.938em; */
+  /* 14px */
+  font-size: 0.875em;
+}
+#content .content_area .questions form input:focus,
+#content .content_area .questions form textarea:focus {
+  border: 1px solid #3cb149;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%), 0 0 8px rgb(60 177 73 / 60%);
+}
+#content .content_area .questions form input:focus-visible,
+#content .content_area .questions form textarea:focus-visible {
+  outline: none;
+}
+#content .content_area .questions form textarea {
+  width: 660px;
+  max-width: 660px;
+  padding: 7px 20px;
+}
+#content .content_area .questions form .button_wrap {
+  text-align: center;
+}
+#content .content_area .questions form button {
+  background-color: #3cb149;
+  color: #fff;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  /* 20px */
+  font-size: 1.125em;
+  font-weight: 500;
+  height: 50px;
+  width: 200px;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* margin: 0 auto; */
+  position: relative;
+  /* z-index: 2; */
+}
+#content .content_area .questions form button span {
+  position: relative;
+  z-index: 2;
+}
+#content .content_area .questions form button::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; bottom: 0;
+  margin: auto 0;
+  background-color: #4eca5d;
+  transition: all .3s;
+  border-radius: 3px;
+  /* z-index: 1; */
+}
+#content .content_area .questions form button:hover::after {
+  width: 100%;
+}

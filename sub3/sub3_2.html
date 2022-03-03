@@ -1,0 +1,248 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서비스 안내-CU 소개</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub3common.css"/>
+  <link rel="stylesheet" href="./css/sub3_content2.css"/>
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+  
+  <? include "../common/sub_header.html" ?>
+  
+  <!-- VISUAL -->
+  <div class="visual">
+    <img src="./common/images/visual_sub3.jpg" alt="visual이미지">
+    <h3>서비스안내</h3>
+    <span>Service introduction</span>
+  </div>
+
+  <!-- sub_menu -->
+  <div class="sub_menu">
+    <ul>
+      <li><a href="./sub3_1.html">BGF로지스 소개</a></li>
+      <li class="current"><a href="./sub3_2.html">CU 소개</a></li>
+      <li><a href="./sub3_3.html">BGF푸드 소개</a></li>
+      <li><a href="./sub3_4.html">생활 혜택</a></li>
+    </ul>
+  </div>
+  
+  <!-- content -->
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>HOME</span> &gt; 서비스 안내 &gt; <strong>CU 소개</strong>
+      </div>
+      <h2>CU 소개</h2>
+      <!-- <p>새 예비 친구들이 <span class="eng_font">BGF</span>리테일에 자주 질문한 내용을 공유합니다.</p> -->
+      <!-- <p><span class="eng_font">BGF</span>리테일은 지속가능한 성장을 위해 다양한 이해관계자들과
+        끊임없이 <br/> 소통하며 신뢰 관계를 구축하고 있습니다.</p> -->
+      <ul class="sub_tab_menu slideMenu">
+        <li class="sub_tab_menu_grid4"><a class="link1" href="#">About Us</a></li>
+        <li><a class="link2" href="#">Brand Story</a></li>
+        <li><a class="link3" href="#">CU Vision</a></li>
+        <li><a class="link4" href="#">Life Platform</a></li>
+      </ul>
+    </div><!-- title_area -->
+
+
+    <div class="content_area con1">
+      
+      <div class="about_us">
+        <div class="inner">
+          <h3>ABOUT US</h3>
+          <p>매일매일 신선함으로 가득 차는 CU는 재치 있는 상품으로 하루를 충전하고, 365일 24시간 언제 어디서나 편리하게 원하는 것을 넘어 필요한 것까지 찾아주는 서비스로 편의점 이상의 가치를 드립니다.</p>
+          
+          <ul>
+            <li>
+              <div></div>
+              <dl>
+              <dt>Nice to CU</dt>
+              <dd>
+                언제 어디서나 만나면 반가운 브랜드. <br>
+                신선함으로 일상을 충전하고 활력을 얻는 공간 &middot; 일상의 플랫폼.<br>
+                CU가 고객의 하루를 함께합니다.
+              </dd>
+              </dl>
+            </li>
+            <li>
+              <div></div>
+              <dl>
+                <dt>CU의 한 달 평균 이용 고객 수</dt>
+                <dd>
+                  12,000만명.
+                  모든 국민이 한 달에 한 번 이상
+                  방문하는 숫자, 고객의 가장 가까운 곳에서 
+                  고객의 하루 하루를 더욱 가치있게 만듭니다.
+                </dd>
+              </dl>
+            </li>
+          </ul>
+
+        </div><!-- inner -->
+      </div><!-- about_us -->
+   
+      <div class="brand_story con2">
+        <div class="inner">
+          <h3>Brand Story</h3>
+          <p>고객과 사회에 좋은 친구.</p>
+          <p>BGF리테일의 편의점 브랜드 CU입니다.</p>
+          <div class="brand_story__wrap">
+            <div class="brand_story__wrap__leftBox">
+              <dl>
+                <dt>Nice to CU</dt>
+                <dd>
+                  Nice to see you! 친근한 인사차럼 <br>
+                  고객에게 언제 어디서나 반가운 브랜드로 다가갑니다.
+                </dd>
+                <dd>
+                  상품과 서비스 제공을 넘어 <br>
+                  당신에게 휴식과 위로, 응원과 힘이 되는 <br>
+                  즐거운 경험과 공간을 만들어갑니다. <br>
+                </dd>
+              </dl>
+            </div>
+            <img src="./images/content2/brand_story.png" alt="CU로고" />
+          </div>
+
+        </div><!-- inner -->
+      </div><!-- brand_story -->
+
+
+      <div class="cu_bg"></div>
+
+
+      <div class="cu_vision con3">
+        <div class="inner">
+          <h3>CU Vision</h3>
+          <p>고객의 일상을 리프레쉬 일상의 라이프 플랫폼 제공.</p>
+          <p>CU는 고객을 리프레쉬 할 수 있는 상품과 서비스를 제공하여
+            하루의 시작도, 잠깐의 휴식도, 하루의 마무리도 함께하는
+            편한 친구 같은 일상의 플랫폼으로 성장할 것입니다.</p>
+          <ul>
+            <li>
+              <dl>
+                <dt>브랜드 본질 <br><span>ESSENS</span></dt>
+                <dd>Daily Refresh</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>브랜드 비전 <br><span>Vision</span></dt>
+                <dd>Daily Life Platform</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>대고객 메세지 <br><span>Slogan</span></dt>
+                <dd>Fresh and Refresh</dd>
+              </dl>
+            </li>
+          </ul>
+        </div><!-- inner -->
+      </div><!-- cu_vision -->
+
+      <div class="life_platform con4">
+        <div class="inner">
+          <h3>Life Platform</h3>
+          <p>고객의 하루가 시작되고, 잠깐의 휴식이 되어 머무르고, 하루의 마무리를 같이 하는 CU</p>
+          <p>이전까지의 편의점은 단순히 제품과 서비스를 채워두고 제공하는 편의점으로 고객들이 필요로 하는 상품과 서비스, 편안한 휴식 제공에 대해 부족함이 있었습니다.
+            CU는 정형화된 틀을 깨는 Fresh한 생각으로 매장을 방문한 고객들이 1분 1초도 Refresh 할 수 있도록 편안한 휴식처가 되기 위해 노력하고 있습니다.</p>
+          
+          <ul>
+            <li>
+              <img src="./images/content2/fresh350.jpg" alt="Fresh한 쇼핑공간">
+              <div class="text_wrap">
+                <div class="text_wrap__title">
+                  <strong><span class="green_font">s</span>pace</strong>
+                </div>
+                <p>
+                  동선 하나까지 세심하게 배려하여 <br>
+                  매대를 낮추고 복도를 넓힌 <br>
+                  <strong><span class="green_font">Fresh</span>한 쇼핑공간</strong>
+                </p>
+                <!-- <div>space</div>
+                <p>동선 하나까지 세심하게 배려하여
+                  매대를 낮추고 복도를 넓힌
+                  <strong>Fresh한 쇼핑공간</strong>
+                </p> -->
+              </div>
+              
+            </li>
+            <li>
+              <img src="./images/content2/refresh350.jpg" alt="Refresh">
+              <div class="text_wrap">
+                <div class="text_wrap__title">
+                  <strong><span class="pblue_font">r</span>efresh</strong>
+                </div>
+                <p>
+                  매장의 인테리어를 환하고 <br>
+                  깨끗하게 개선해 시각적인 <br>
+                  <strong><span class="pblue_font">Refresh</span>의 시간</strong>
+                </p>
+                <!-- <div>Refresh</div>
+                <p>매장의 인테리어를 환하고
+                  깨끗하게 개선해 시각적인
+                  <strong>Refresh</strong>
+                </p> -->
+              </div>
+              
+            </li>
+            <li>
+              <img src="./images/content2/conveniencestore350.jpg" alt="사람 중심의 편의점">
+              <div class="text_wrap">
+                <div class="text_wrap__title">
+                  <strong><span class="purple_font">c</span>onvenience</strong>
+                </div>
+                <p>
+                  카페, 미팅룸, 공연장과 같이 <br>
+                  생활에 필요한 부분을 늘 연구하는 <br>
+                  <strong><span class="purple_font">사람 중심</span>의 편의점</strong>
+                </p>
+                <!-- <div>convenience</div>
+                <p>
+                  카페, 미팅룸, 공연장과 같이
+                  생활에 필요한 부분을 늘 연구하는
+                  <strong>사람 중심의 편의점</strong>
+                </p>-->
+              </div> 
+            </li>
+          </ul>
+          <div class="triangle--bottom"></div>
+          <p>앞으로 CU는 상품과 서비스만 제공하는 어제의 편의점을 넘어 혼자서도 가장 편안한 시간을 보내고, 행복하게 함께 식사를 하고,
+            누구와도 부담없이 만나는 ‘라이프 플랫폼’, 내일의 편의점으로 여러분의 마음속에 자리잡기 위해 당신을 대하는 자세를 더
+            Fresh하게 만들어 CU를 찾는 모든 분들이 언제나 Refresh한 순간을 느낄 수 있도록 최선을 다하겠습니다.</p>
+          <p><strong>하루를 시작해서 하루를 마무리 할 수 있는 당신만의 휴식처가 되기 위해 CU가 다시 한번 달라집니다.</strong></p>
+
+
+
+        </div><!-- inner -->
+      </div><!-- life_platform -->
+
+
+
+
+
+ 
+    </div><!-- content_area -->
+  </article><!-- article -->
+
+  <? include "../common/sub_footer.html" ?>
+
+</body>
+</html>

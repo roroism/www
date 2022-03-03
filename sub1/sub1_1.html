@@ -1,0 +1,135 @@
+<?
+	session_start();
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-기업철학</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../common/css/common.css"/>
+  <link rel="stylesheet" href="./common/css/sub1common.css"/>
+  <link rel="stylesheet" href="./css/sub1_content1.css">
+
+  <!-- 브라우저 접두사 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+  
+  <? include "../common/sub_header.html" ?>
+  
+  <!-- VISUAL -->
+  <div class="visual">
+    <img src="./common/images/visual.jpg" alt="visual이미지">
+    <h3>회사소개</h3>
+    <span>BGFretail introduction</span>
+  </div>
+
+  <!-- sub_menu -->
+  <div class="sub_menu">
+    <ul>
+      <li class="current"><a href="./sub1_1.html">기업철학</a></li>
+      <li><a href="./sub1_2.html">기업비전</a></li>
+      <li><a href="./sub1_3.html">연혁</a></li>
+      <li><a href="./sub1_4.html">오시는길</a></li>
+    </ul>
+  </div>
+  
+  <!-- content -->
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>HOME</span> &gt; 회사소개 &gt; <strong>기업철학</strong>
+      </div>
+      <h2>기업철학</h2>
+      <!-- <p>슬로건..........</p> -->
+      <ul class="sub_tab_menu slideMenu">
+        <li><a class="link1" href="#">인사말</a></li>
+        <li><a class="link2" href="#">기업소개</a></li>
+      </ul>
+    </div>
+
+
+
+    <div class="content_area">
+
+      <!-- 인사말 area -->
+      <div class="ceo_message con1">
+        <div class="inner">
+          <h3>인사말</h3>
+          <div>
+            <img src="./images/content1/images/ceo.jpg" alt="BGFretail회장사진">
+            <div class="ceo_message_right_area">
+              <p><span class="green_font">"좋은 친구 같은 기업 BGF"</span></p>
+              <p><span class="eng_font">BGF</span>를 사랑해주는 고객 여러분, 안녕하십니까?</p>
+              <p><span class="eng_font">BGF</span>는 <span class="eng_font">Be Good Friends</span>의 줄임말로, 고객과 가맹점주는 물론 지역 사회에 대한 역할과 책임
+                을 다하는 '좋은 친구' 같은 기업이 되겠다는 의미를 담고 있습니다.</p>
+              <p>BGF는 변화와 위기에 맞서 끊임없는 혁신을 거듭하며 소매 유통을 넘어 제조, 물류, 금융서비
+                스 등 모든 사업부문의 가치를 유기적으로 연결하고 시너지를 발휘하여 일상의 편의를 넘어 
+                감동을 주는 기업으로 성장하기 위해 노력하고 있습니다.</p>
+              <p>앞으로도 ‘<strong>언제 어디서나 최상의 상품과 서비스를 제공하여 고객가치를 실현하고 사회발전에 
+                공헌하는 기업으로 성장 한다</strong>’ 는 경영 이념에 기반한 내실 있는 경영활동으로 글로벌 기업 
+                도약의 기반을 다지는 한편, 국가 경제와 사회 발전에 공헌하는 모범적인 기업, 사회적 책임을
+                끊임없이 실천하는 기업으로 성장하기 위한 노력을 지속할 것입니다. 감사합니다.</p>
+              <p><span class="eng_font">BGF retail</span> 회장 <span>홍석조</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 기업소개 area -->
+      <div class="sub_introduction con2">
+        <div class="inner">
+          <h3>기업소개</h3>
+          <p><span class="eng_font green_font">BGF</span><span class="green_font">리테일</span>은 소비자 라이프스타일에 맞춘 상품과 서비스로 <span class="purple_font">고객의 삶의 질</span>을 높이기 위한 혁신을 거듭합니다.</p>
+          <ul>
+            <li>
+              <img src="./images/content1/images/introduction1.jpg" alt="편리한 생활을 창조하는 BGF리테일 이미지"/>
+              <dl>
+                <dt>편리한 생활을 창조하는 <span class="eng_font">BGF</span>리테일</dt>
+                <dd>대한민국 최고 유통서비스 회사 <span class="eng_font green_font">BGF</span><span class="green_font">리테일</span>은
+                  <span class="eng_font purple_font">Be Good Friends</span>에서 연유한 이름으로 고객, 가맹점주, 지역사회에
+                  좋은 친구 같은 기업이 되겠다는 의미를 담고 있습니다. 
+                  항상 새롭고 신선한 상품과 서비스를 제공하는 좋은 이웃으로
+                  고객여러분께 한발 더 다가가겠습니다.</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>편의점의 새로운 기준을 이야기합니다</dt>
+                <dd><span class="eng_font green_font">BGF</span><span class="green_font">리테일</span>은 지난 2012년 사명변경과 함께 
+                  대한민국 독자 브랜드 <span class="eng_font purple_font">CU</span>를 새롭게 선보이며 
+                  소비자 라이프 스타일에 맞춘 상품과 서비스로 고객에게 
+                  새롭고 즐거운 경험을 제공하며 고객의 삶의 질을 높이기 위한 
+                  혁신을 거듭해 왔습니다.</dd>
+              </dl>
+              <img src="./images/content1/images/introduction2.jpg" alt="편의점의 새로운 기준을 이야기합니다 이미지"/>
+            </li>
+            <li>
+              <img src="./images/content1/images/introduction3.jpg" alt="상생경영, 혁신의 원동력입니다 이미지"/>
+              <dl>
+                <dt>상생경영, 혁신의 원동력입니다</dt>
+                <dd><span class="eng_font green_font">BGF</span><span class="green_font">리테일</span>은 가맹점 및 중소기업과의 수평적 파트너십에 
+                  기반을 두어 진정한 <span class="purple_font">조화</span>와 <span class="purple_font">상생</span>을 추구합니다. 
+                  전국 가맹점주들과의 끊임없는 소통을 통해 가맹점의 
+                  경쟁력과 수익성 향상을 꾀하며, 중소기업과의 창의적인 
+                  협업으로 지속 가능한 성장 발판을 마련하고 있습니다.</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <? include "../common/sub_footer.html" ?>
+
+</body>
+</html>
