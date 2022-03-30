@@ -117,7 +117,7 @@ h3 {
 /*레이아웃*/
 section {
   width: 100%;
-  padding: 5.5rem 0;
+  padding: 5rem 0;
   /* Home */
   /* Profile */
   /* PC */
@@ -158,8 +158,10 @@ section {
             width: 100%;
             height: 100%; }
             section:nth-of-type(2) .section_inner .visual_area .myphoto .myphoto_inner .img_wrap {
-              width: 400px;
-              height: 400px;
+              max-width: 400px;
+              max-height: 400px;
+              width: 100%;
+              height: 100%;
               background: url("../img/myphoto.JPG") center 80%/120% no-repeat;
               border-radius: 50%;
               margin: 0 auto; }
@@ -247,8 +249,8 @@ section {
           font-size: 1.4rem;
           font-weight: 400; }
         section:not(section:nth-of-type(2)) .section_inner .description_area p {
-          font-size: 1.2rem;
-          margin: 2rem 0 0;
+          font-size: 1.125rem;
+          margin: 1.3rem 0 0;
           padding: 0 1rem;
           text-align: justify;
           line-height: 1.5em; }
@@ -261,30 +263,28 @@ section {
             margin-left: 15px; }
             section:not(section:nth-of-type(2)) .section_inner .description_area ul li.main_colorfont .used_color {
               border-radius: 50%;
-              width: 30px;
-              height: 30px;
+              width: 23px;
+              height: 23px;
               display: inline-block;
               box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2); }
             section:not(section:nth-of-type(2)) .section_inner .description_area ul li.main_colorfont .used_font {
               margin-left: 10px;
-              vertical-align: 8px; }
+              vertical-align: 5px; }
           section:not(section:nth-of-type(2)) .section_inner .description_area ul li.skill_list {
             clear: left; }
           section:not(section:nth-of-type(2)) .section_inner .description_area ul li dl dt {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            margin: 2rem 0 1rem; }
+            margin: 1.3rem 0 1rem; }
           section:not(section:nth-of-type(2)) .section_inner .description_area ul li dl dd {
             padding: 0 1rem;
-            font-size: 1.125rem;
+            font-size: 1rem;
             line-height: 1.5em;
             margin-bottom: 1rem; }
             section:not(section:nth-of-type(2)) .section_inner .description_area ul li dl dd.skill_icon {
-              font-size: 1.125rem; }
+              font-size: 1rem; }
               section:not(section:nth-of-type(2)) .section_inner .description_area ul li dl dd.skill_icon ul {
-                padding-top: .5rem;
-                overflow-y: auto;
-                height: 256px; }
+                padding-top: .5rem; }
                 section:not(section:nth-of-type(2)) .section_inner .description_area ul li dl dd.skill_icon ul li {
                   width: 100px;
                   float: left;
@@ -292,24 +292,25 @@ section {
                   section:not(section:nth-of-type(2)) .section_inner .description_area ul li dl dd.skill_icon ul li .image_wrap {
                     background-color: #fff;
                     border-radius: 50%;
-                    width: 80px;
-                    height: 80px;
+                    width: 60px;
+                    height: 60px;
                     overflow: hidden;
                     position: relative;
                     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
                     margin: 0 auto; }
                     section:not(section:nth-of-type(2)) .section_inner .description_area ul li dl dd.skill_icon ul li .image_wrap img {
                       display: block;
-                      width: 60px;
-                      height: 60px;
+                      width: 40px;
+                      height: 40px;
                       position: absolute;
                       transform: translate(-50%, -50%);
                       left: 50%;
                       top: 50%; }
                   section:not(section:nth-of-type(2)) .section_inner .description_area ul li dl dd.skill_icon ul li span {
                     display: block;
+                    width: 100px;
                     font-size: 1rem;
-                    margin-top: .5rem;
+                    margin: .4rem auto 0;
                     display: block;
                     text-align: center;
                     font-family: "Roboto", sans-serif;
@@ -318,8 +319,7 @@ section {
         section:not(section:nth-of-type(2)) .section_inner .description_area .viewsite_qrcode_wrap {
           overflow: hidden; }
           section:not(section:nth-of-type(2)) .section_inner .description_area .viewsite_qrcode_wrap .button_viewsite {
-            float: left;
-            margin-top: 2rem; }
+            float: left; }
             section:not(section:nth-of-type(2)) .section_inner .description_area .viewsite_qrcode_wrap .button_viewsite a {
               font-size: 1.125rem;
               display: inline-block;
@@ -651,5 +651,12 @@ section {
 
 /*텍스트 박스*/
 /* article { position:absolute; top:46%; left:300px; z-index:11;} */
+@media screen and (max-width: 1507px) {
+  section:not(section:nth-of-type(2)) .section_inner .description_area ul li.main_colorfont {
+    display: none; } }
+@media screen and (max-width: 1334px) {
+  section:nth-of-type(2) .section_inner .visual_area .myphoto .myphoto_inner .img_wrap {
+    width: 30vw;
+    height: 30vw; } }
 
 /*# sourceMappingURL=main.css.map */
