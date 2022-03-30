@@ -30,6 +30,7 @@ $(document).ready(function() {
   videoEl.addEventListener('ended', () => {
     
     $('#wave').removeClass('on');
+    $('#wave .img_wrap img').removeClass('playing');
 
     if(activeMusicInd == playListElLength - 1) {
       activeMusicInd = 0;
@@ -39,8 +40,10 @@ $(document).ready(function() {
 
     changeMusic();
     changeSelectMusicTitle();
+    changeDisc();
 
     $('#wave').addClass('on');
+    $('#wave .img_wrap img').addClass('playing');
     videoEl.play();
 
   }, false);
@@ -92,32 +95,49 @@ $(document).ready(function() {
 
         changeMusic();
         changeSelectMusicTitle();
+        changeDisc();
 
-        if(playFlag) {
+        if(playFlag) { //playing
           $('#wave').addClass('on');
+          $('#wave .img_wrap img').addClass('playing');
           videoEl.play();
           // document.getElementById('audio'+activeMusicInd).play();
+        } else { //stoped
+          $('#wave .img_wrap img').removeClass('playing');
         }
         break;
       case 1 :  //stop
         $('#wave').removeClass('on');
+        $('#wave .img_wrap img').removeClass('playing');
         videoEl.pause();
         videoEl.currentTime = 0;
         // document.getElementById('audio'+activeMusicInd).pause();
         // document.getElementById('audio'+activeMusicInd).currentTime = 0;
         videoEl.textTracks[0].mode = 'hidden';
         playFlag = false;
+        $('.discbutton li').eq(3).css('display','none');
+        $('.discbutton li').eq(2).fadeIn();
         break;
       case 2 :  //play
         $('#wave').addClass('on');
+        $('#wave .img_wrap img').addClass('playing');
         videoEl.play();
         videoEl.textTracks[0].mode = 'showing';
         playFlag = true;
+        $('.discbutton li').eq(2).css('display','none');
+        $('.discbutton li').eq(3).fadeIn();
+        // resume disk rotation
+        $('#wave .img_wrap img').css('animation-play-state', 'running');
         break;
       case 3 :  //pause
         $('#wave').removeClass('on');
+        // $('#wave .img_wrap img').removeClass('playing');
         videoEl.pause();
         playFlag = false;
+        $('.discbutton li').eq(3).css('display','none');
+        $('.discbutton li').eq(2).fadeIn();
+        // pause disk rotation
+        $('#wave .img_wrap img').css('animation-play-state', 'paused');
         break;
       case 4 :  //next
         $('#wave').removeClass('on');
@@ -143,11 +163,15 @@ $(document).ready(function() {
  
         changeMusic();
         changeSelectMusicTitle();
+        changeDisc();
 
         if(playFlag) {
           $('#wave').addClass('on');
+          $('#wave .img_wrap img').addClass('playing');
           videoEl.play();
           // document.getElementById('audio'+activeMusicInd).play();
+        } else { //stoped
+          $('#wave .img_wrap img').removeClass('playing');
         }
         break;
     }
@@ -166,15 +190,18 @@ $(document).ready(function() {
       return;
     } else {
       $('#wave').removeClass('on');
+      $('#wave .img_wrap img').removeClass('playing');
       videoEl.pause();
       videoEl.currentTime = 0;
       activeMusicInd = playListInd;
 
       changeMusic();
       changeSelectMusicTitle();
+      changeDisc();
 
       if(playFlag) {
         $('#wave').addClass('on');
+        $('#wave .img_wrap img').addClass('playing');
         videoEl.play();
       }
       // console.log('play list click','end');
@@ -197,6 +224,11 @@ $(document).ready(function() {
 
     $('.play_list li').removeClass('active');
     $('.play_list li').eq(activeMusicInd).addClass('active');
+  }
+
+  function changeDisc() {
+    document.querySelector('#wave .img_wrap img').setAttribute('src','./images/sub2/' + responseObject.music[activeMusicInd].img);
+    document.querySelector('#wave .img_wrap img').setAttribute('alt',responseObject.music[activeMusicInd].title);
   }
 
 });
