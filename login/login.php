@@ -1,7 +1,8 @@
 ﻿<?
   session_start();
 ?>
-<meta charset="utf-8">
+<!-- <meta charset="utf-8"> -->
+<!-- header("Content-Type:text/html;charset=utf-8"); -->
 <?
    @extract($_GET); 
   @extract($_POST); 
@@ -13,22 +14,56 @@
   
 
    if(!$id) {   //아무값도 입력되지 않았냐?
-     echo("
-           <script>
-             window.alert('아이디를 입력하세요.');
-             history.go(-1);
-           </script>
-         ");
+    //  echo("
+    //        <script>
+    //          window.alert('아이디를 입력하세요.');
+    //          history.go(-1);
+    //        </script>
+    //      ");
+    echo('
+      <!DOCTYPE html>
+      <html lang="ko">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>로그인</title>
+        <script>
+          window.alert("아이디를 입력하세요.");
+          history.go(-1);
+        </script>
+      </head>
+      <body>
+      </body>
+      </html>
+    ');
          exit;
    }
 
    if(!$pass) {
-     echo("
-           <script>
-             window.alert('비밀번호를 입력하세요.');
-             history.go(-1);
-           </script>
-         ");
+    //  echo("
+    //        <script>
+    //          window.alert('비밀번호를 입력하세요.');
+    //          history.go(-1);
+    //        </script>
+    //      ");
+    echo('
+      <!DOCTYPE html>
+      <html lang="ko">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>로그인</title>
+        <script>
+          window.alert("비밀번호를 입력하세요.");
+          history.go(-1);
+        </script>
+      </head>
+      <body>
+      </body>
+      </html>
+    ');
          exit;
    }
 
@@ -71,26 +106,34 @@
 
            exit;
         }
-        else    // 입력 pass 와 테이블에 저장된 pass 일치한다.
+        else    // 입력 pass 와 테이블에 저장된 pass 일치한다. (로그인 조건을 모두 만족했을 시)
         {
-           $userid = $row[id];
-		   $username = $row[name];
-		   $usernick = $row[nick];
-		   $userlevel = $row[level];
+          $userid = $row[id];
+          $username = $row[name];
+          $usernick = $row[nick];
+          $userlevel = $row[level];
   
             
-           //세션변수에 id~level 값을 저장한다(로그인상태)
-           $_SESSION['userid'] = $userid;//$_SESSION['userid'] = $row[id];
-           $_SESSION['username'] = $username;//$_SESSION['username'] = $row[name];
-           $_SESSION['usernick'] = $usernick;//$_SESSION['usernick'] = $row[nick];
-           $_SESSION['userlevel'] = $userlevel;//$_SESSION['userlevel'] = $row[level];
+          //세션변수에 id~level 값을 저장한다(로그인상태)
+          $_SESSION['userid'] = $userid;//$_SESSION['userid'] = $row[id];
+          $_SESSION['username'] = $username;//$_SESSION['username'] = $row[name];
+          $_SESSION['usernick'] = $usernick;//$_SESSION['usernick'] = $row[nick];
+          $_SESSION['userlevel'] = $userlevel;//$_SESSION['userlevel'] = $row[level];
 
-           echo("
+          //아이디를 본인PC에 저장하기를 희망(value:1)한다면 저장하고 아니라면 삭제한다. 
+          if($save_id == 1) {
+            setcookie("savedId", $userid);
+            //setcookie("username","이순신", time()+60); // 60초(1분)간 지속됨
+          } else {
+            setcookie("savedId", "");
+          }         
+          
+          echo("
               <script>
-			    alert('로그인이 되었습니다.');
+			        alert('로그인이 되었습니다.');
                 location.href = '../index.html';
               </script>
-           ");
+          ");
         }
    }          
 ?>

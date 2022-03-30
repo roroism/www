@@ -29,12 +29,23 @@
 				<div id="id_pw_input">
 					<ul>
 						<li>
-							<!-- <label for="id">아이디</label> -->
-							<input type="text" name="id" class="login_input" placeholder="아이디를 입력하세요" required>
+							<label class="hidden" for="input_id">아이디</label>
+							
+						<? 
+						if($_COOKIE['savedId']) {
+						?>
+							<input type="text" name="id" class="login_input" id="input_id" placeholder="아이디를 입력하세요" value="<?=$_COOKIE['savedId']?>" required>
+						<?
+						} else {
+						?>
+							<input type="text" name="id" class="login_input" id="input_id" placeholder="아이디를 입력하세요" required>
+						<?
+						}
+						?>
 						</li>
 						<li>
-						<!-- <label for="id">비밀번호</label> -->
-							<input type="password" name="pass" class="login_input" placeholder="비밀번호를 입력하세요" required>
+						<label class="hidden" for="input_pw">비밀번호</label>
+							<input type="password" name="pass" class="login_input" id="input_pw" placeholder="비밀번호를 입력하세요" required>
 						</li>
 					</ul>						
 				</div>
@@ -43,6 +54,20 @@
 						<input type="text" id="save_id">
 						<label for="save_id">아이디 저장</label>
 					</div> -->
+					<div class="save_id_wrap">
+						<?
+						if($_COOKIE['savedId']) {
+						?>
+							<input type="checkbox" name="save_id" id="save_id" value="1" checked>
+						<?
+						} else {
+						?>
+							<input type="checkbox" name="save_id" id="save_id" value="1">
+						<?
+						}
+						?>
+						<label for="save_id">아이디 저장</label>
+					</div>
 					<ul>
 						<li><a href="./id_pw_find.php?find=id">아이디 찾기</a></li>
 						<li><a href="./id_pw_find.php?find=pw">비밀번호 찾기</a></li>
@@ -61,5 +86,18 @@
 			</div>
 		</article>
 	</div>
+	<script src="../common/js/jquery-1.12.4.min.js"></script>
+	<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#save_id").change(function(){
+					if($("#save_id").is(":checked")){
+							alert("개인정보보호를 위해 개인 PC에서만 사용하세요.");
+					}else{
+							// alert("체크박스 체크 해제!");
+					}
+			});
+		});
+	</script>
 </body>
 </html>

@@ -34,6 +34,7 @@
 				<p>가입 시 입력하신 정보로 아이디를 찾아드립니다</p>
 				
 				<fieldset>
+				<label class="hidden" for="id_name">이름</label>
 					<input type="text" name="name" class="find_input" id="id_name" placeholder="이름을 입력하세요">
 						<div class="telBox">
 								<label class="hidden" for="id_hp1">연락처 앞3자리</label>
@@ -53,9 +54,9 @@
 					
 						<input type="button" value="아이디찾기" class="find id_find">
 
-						<div id="loadtext"></div>
+						<!-- <div id="loadtext"></div> -->
 
-					<div id="login_button">
+					<div class="login_button">
 						<a href="./login_form.php">로그인</a>
 						<!-- <button type="submit">로그인</button> -->
 						<!-- <a href="../index.html">취소</a> -->
@@ -70,7 +71,9 @@
 				<p>가입 시 입력하신 정보로 비밀번호를 찾아드립니다</p>
 
 				<fieldset>
+					<label class="hidden" for="pw_name">이름</label>
 					<input type="text" name="pw_name" id="pw_name" class="find_input find_name" placeholder="이름을 입력하세요">
+					<label class="hidden" for="pw_id">아이디</label>
           <input type="text" name="pw_id" id="pw_id" class="find_input find_id" placeholder="아이디를 입력하세요">
 					<div class="telBox">
 						<label class="hidden" for="pw_hp1">연락처 앞3자리</label>
@@ -90,9 +93,9 @@
 
 					<input type="button" value="비밀번호찾기" class="find pw_find">
 
-					<div id="loadtext"></div>
+					<!-- <div id="loadtext"></div> -->
 
-					<div id="login_button">
+					<div class="login_button">
 						<a href="./login_form.php">로그인</a>
 						<!-- <button type="submit" >로그인</button> -->
 						<!-- <a href="../index.html">취소</a> -->

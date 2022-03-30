@@ -57,6 +57,14 @@ article .login_support {
   overflow: hidden;
   margin: 6px 0 10px;
 }
+/* 아이디 저장 */
+article .login_support .save_id_wrap {
+  float: left;
+}
+article .login_support .save_id_wrap input[type="checkbox"]:checked {
+  background: #3cb149;
+}
+/* 아이디,비밀번호 찾기 */
 article .login_support ul {
   float: right;
 }

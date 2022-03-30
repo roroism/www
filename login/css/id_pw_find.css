@@ -101,6 +101,9 @@ article .tab_desc .telBox select:focus-visible {
 article .find_pw input.find_input:nth-child(2)  {
   margin-top: 10px;
 }
+#pw_id {
+  margin-top: 10px;
+}
 article .find {
   margin-top: 30px;
 }
@@ -127,11 +130,11 @@ article input.find:hover {
 }
 
 /* 로그인 영역*/
-article #login_button {
+article .login_button {
   margin-top: 15px;
 }
 /* 로그인 버튼 */
-article #login_button a {
+article .login_button a {
   display: block;
   width: 100%;
   height: 3.3rem;
@@ -149,7 +152,7 @@ article #login_button a {
   text-align: center;
   line-height: 3.3rem;
 }
-article #login_button a:hover {
+article .login_button a:hover {
   background-color: #fff;
   color: #ccc;
 }
