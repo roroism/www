@@ -74,21 +74,26 @@
     }
 
     function reset_form() {
-      document.member_form.id.value = "";
-      document.member_form.pass.value = "";
-      document.member_form.pass_confirm.value = "";
-      document.member_form.name.value = "";
-      document.member_form.nick.value = "";
-      document.member_form.hp1.value = "010";
-      document.member_form.hp2.value = "";
-      document.member_form.hp3.value = "";
-      document.member_form.email1.value = "";
-      document.member_form.email2.value = "";
+      // document.member_form.id.value = "";
+      // document.member_form.pass.value = "";
+      // document.member_form.pass_confirm.value = "";
+      // document.member_form.name.value = "";
+      // document.member_form.nick.value = "";
+      // document.member_form.hp1.value = "010";
+      // document.member_form.hp2.value = "";
+      // document.member_form.hp3.value = "";
+      // document.member_form.email1.value = "";
+      // document.member_form.email2.value = "";
     
-      document.member_form.id.focus();
-
+      // document.member_form.id.focus();
+			window.location.reload();
       return;
     }
+
+		function back_index() {
+			console.log('back_index() enter');
+			window.location.href='../index.html';
+		}
   </script>
 </head>
 <body>
@@ -150,6 +155,9 @@
 							<span></span>
 						</div>
 					</div>
+					<div class="pw_length_check">
+						<span>0</span>/16
+					</div>
      		</td>
      	</tr>
      	<tr>
@@ -195,6 +203,7 @@
      			<input type="text" id="email1" name="email1"  required> @ 
      			<label class="hidden" for="email2">이메일주소</label>
      			<input type="text" name="email2" id="email2"  required>
+					<!-- <a href="javascript:void(0)">메일인증</a> -->
      		</td>
      	</tr>
      	<tr>
@@ -261,33 +270,34 @@
 	<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
 	<script src="./js/member_form.js"></script>
 	<script>
+		//비밀번호확인란 비밀번호 일치 여부
 		let confirmGuideEl = document.querySelector('.pw_confirm_guide span');
-		function passConfirmCheck(event) {
-			if(event.target.value == '') {
-				confirmGuideEl.textContent='';
-				return false;
-			}
-			if(document.querySelector('#pass').value == document.querySelector('#pass_confirm').value) {
-				confirmGuideEl.setAttribute('style','color : #008000');
-				confirmGuideEl.textContent='비밀번호가 일치합니다.';
-			} else {
-				confirmGuideEl.setAttribute('style','color : #ff0000');
-				confirmGuideEl.textContent='비밀번호가 일치하지 않습니다.';
-			};
+  	function passConfirmCheck(event) {
+    if(event.target.value == '') {
+      confirmGuideEl.textContent='';
+      return false;
+    }
+    if(document.querySelector('#pass').value == document.querySelector('#pass_confirm').value) {
+      confirmGuideEl.setAttribute('style','color : #008000');
+      confirmGuideEl.textContent='비밀번호가 일치합니다.';
+    } else {
+      confirmGuideEl.setAttribute('style','color : #ff0000');
+      confirmGuideEl.textContent='비밀번호가 일치하지 않습니다.';
+    };
+  }
+  //end of 비밀번호확인란 비밀번호 일치 여부
 
-		}
+	//전화번호 입력란 숫자만 입력하게 하기
+	function checkNumber(idEl) {
+    // console.log('idEl',idEl);
+    // document.querySelector('#'+idEl).value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+    document.querySelector('#'+idEl).value = document.querySelector('#'+idEl).value.replace(/[^0-9]/g, '');
 
-		//전화번호 입력란 숫자만 입력
-		function checkNumber(idEl) {
-			// console.log('idEl',idEl);
-			// document.querySelector('#'+idEl).value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
-			document.querySelector('#'+idEl).value = document.querySelector('#'+idEl).value.replace(/[^0-9]/g, '');
-
-			if(idEl == 'hp2' && document.querySelector('#'+idEl).value.length == 4) {
-				document.member_form.hp3.focus();	
-			}
-		}
-
+    if(idEl == 'hp2' && document.querySelector('#'+idEl).value.length == 4) {
+      document.member_form.hp3.focus();	
+    }
+  }
+  //end of 전화번호 입력란 숫자만 입력하게 하기
 	</script>
 </body>
 </html>

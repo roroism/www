@@ -1,6 +1,8 @@
 $(document).ready(function(){
   //id 중복검사
   $("#id").keyup(function() {    // id입력 상자에 id값 입력시
+    // console.log('this.value.length', this.value.length);
+    // if(this.value.length != 0) {
     var id = $('#id').val(); //a
     console.log('#id');
     $.ajax({
@@ -14,6 +16,7 @@ $(document).ready(function(){
             $("#loadtext").html(data);
         }
     });
+    // }
   });
    
   //nick 중복검사		 
@@ -55,6 +58,13 @@ $(document).ready(function(){
     if (e.keyCode == '16') {
       return false;
     }
+
+    //자리수체크 및 출력
+    // console.log('this.value.length', this.value.length);
+    $('.pw_length_check span').text(this.value.length);
+    //end of 자리수체크 및 출력
+
+
     // console.log('pass keyup');
     // 비밀번호 8~16자리
     // 숫자 포함?
@@ -166,9 +176,6 @@ $(document).ready(function(){
 
   // }
   });
-
-
-
 
   //family site
   $('.familysite .arrow').toggle(function(e){

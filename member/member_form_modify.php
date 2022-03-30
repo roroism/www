@@ -96,6 +96,10 @@
 
       return;
    }
+
+   function cancel_modify() {
+     window.history.back();
+   }
 </script>
 </head>
 <?
@@ -223,7 +227,7 @@
 
           <div class="modify_button_wrap">
             <button type="button" onclick="check_input()" class="modify_btn"><span>저장하기</span></button>
-            <button type="button" onclick="reset_form()" class="cancel"><span>취소하기</span></button>
+            <button type="button" onclick="cancel_modify()" class="cancel"><span>취소하기</span></button>
           </div>
 
         </form>
