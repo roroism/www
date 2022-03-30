@@ -217,7 +217,7 @@ font-family: 'Noto Sans KR', 'Roboto', sans-serif; */
 
   /* 2depth */
 #gnb ul.dropdownmenu li ul{width:100%; height:220px; position:absolute;top:50px;left:0;
-    padding:15px 0; line-height:2em; display:none;}
+    padding:15px 0; line-height:2em; display:none; z-index: 3;}
 
 #gnb ul.dropdownmenu li ul li{ text-align:center; font-weight: 400; position: relative;}
 #gnb ul.dropdownmenu li ul li a{display:block; color:#666; transition: all .5s; font-size: 18px;}
@@ -250,6 +250,7 @@ font-family: 'Noto Sans KR', 'Roboto', sans-serif; */
   background-color: #3cb149;
   transition: all .2s;
   display: none;
+  z-index: 1;
 }
 /* #headerArea.on #gnb .gnb_underline_wrap .gnb_underline {
   display: block;
@@ -261,6 +262,19 @@ font-family: 'Noto Sans KR', 'Roboto', sans-serif; */
   height: 4px;
   background-color: rgba(0, 0, 0, 1);
 } */
+#headerArea #gnb .gnb_2depth_bg {
+  position: absolute;
+  /* left: 100px; */
+  /* width: 100px; */
+  /* top: -1px; */
+  height: 233px;
+  border-top: 2px solid #3cb149;
+  background-color: rgba(60, 177, 73, .1);
+  transition: all .2s;
+  /* display: none; */
+  width: 200px;
+  z-index: 2;
+}
 
 
 
@@ -403,9 +417,98 @@ font-family: 'Noto Sans KR', 'Roboto', sans-serif; */
 
 
 /* topMove */
-.topMove {display: block; position: fixed; left: 50%; margin-left: 650px; bottom: 281px; z-index: 50;}
-.topMove i {font-size: 50px; color: #3cb149;}
+/* .topMove {display: block; position: fixed; left: 50%; margin-left: 650px; bottom: 281px; z-index: 50;}
+.topMove i {font-size: 50px; color: #3cb149;} */
+
+/* topmove */
+
+/* end of topmove */
 
 
 
 
+
+
+.circular{
+  display: none;
+  height:50px;
+  width: 50px;
+  transform:scale(1.6);
+  position: fixed; left: 50%; margin-left: 650px; bottom: 240px; z-index: 60;
+  cursor: pointer;
+}
+.circular .inner{
+  position: absolute;
+  z-index: 66;
+  top: 50%;
+  left: 50%;
+  /* height: 40px;
+  width: 40px;
+  margin: -20px 0 0 -20px; */
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+  /* background: #dde6f0; */
+  background: #c8f3cd;
+  border-radius: 50%;
+ 
+}
+.circular .number{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:70;
+  font-size:18px;
+  font-weight:500;
+  /* color:#4158d0; */
+  text-indent: -9999px;
+  width: 100%;
+  background: url("../images/arrow_top.png") center / 40% no-repeat;
+}
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 100%;
+  clip: rect(0px, 50px, 50px, 25px);
+}
+.circle .bar .progress{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  clip: rect(0px, 25px, 50px, 0px);
+  /* background: #4158d0; */
+  background: #3cb149;
+  /* border: 1px solid #4158d0; */
+}
+.circle .left .progress{
+  z-index:61;
+  /* animation: left 4s linear both; */
+}
+/* @keyframes left{
+  100%{
+    transform: rotate(180deg);
+  }
+} */
+.circle .left {
+  /* background: rgb(52, 235, 36); */
+}
+.circle .right {
+  /* background: rgb(21, 180, 201); */
+  transform: rotate(180deg);
+  z-index:63;
+ 
+}
+.circle .right .progress{
+  /* transform: rotate(0deg); */
+  /* animation: right 4s linear forwards;
+  animation-delay:4s; */
+}
+/* @keyframes right{
+  100%{
+    transform: rotate(90deg);
+  }
+} */
