@@ -55,7 +55,7 @@
 #view_content {
   padding: 55px 40px 90px;
   border-bottom: 1px solid #999;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 /* view_button */
 #view_button {
@@ -81,11 +81,22 @@
 
 /* 댓글 내용, 수정, 삭제 */
 #ripple {
-
 }
 #ripple .comment_area {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 20px 25px;
+  border-top: 1px solid #ccc;
+  padding: 10px 20px 10px;
+  position: relative;
+}
+#ripple .comment_area:first-of-type {
+  border-top: none;
+}
+#ripple .comment_area .ripple_icon {
+  position: absolute;
+  left: -24px;
+  top: 13px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/enter.png") center / contain no-repeat;
 }
 #ripple .ripple_writer_title {
   /* border-bottom: 1px solid #999; */
@@ -102,8 +113,26 @@
   color: #999;  
   margin-left: 20px;
 }
+#ripple .ripple_writer_title ul .comment_updateFlag {
+  float: left;
+  color: #999;
+  margin-left: 10px;
+}
+#ripple .ripple_writer_title ul .comment_update {
+  margin-left: 20px;
+  float: left;
+}
+#ripple .ripple_writer_title ul .comment_update a {
+  color: #666;
+}
+#ripple .ripple_writer_title ul .comment_update a:hover {
+  text-decoration: underline;
+}
 #ripple .ripple_writer_title ul .comment_delete {
   float: right;
+}
+#ripple .ripple_writer_title ul .comment_delete a {
+  color: #666;
 }
 #ripple .ripple_writer_title ul .comment_delete:hover {
   text-decoration: underline;
@@ -117,8 +146,113 @@
   width: 1120px;
   white-space: normal;
   word-break: break-all;
-  
+  display: none;
 }
+#ripple .comment_area .ripple_content.on {
+  display: block;
+}
+#ripple .comment_area .ripple_content .delete_comment_text {
+  color: #aaa;
+}
+
+
+/* 댓글 수정 area*/
+#ripple .ripple_modify {
+  margin-top: 17px;
+  padding: 0 20px 0 17px;
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all;
+  display: none;
+  width: 80%;
+  /* border: 2px solid #ccc; */
+}
+#ripple .ripple_modify.on {
+  display: block;
+}
+#ripple .ripple_modify textarea {
+  line-height: 1.5em;
+  font-size: 1rem;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  color: #333;
+  height: 4.2em;
+  resize: none;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 3px;
+}
+#ripple .ripple_modify textarea:focus-visible {
+  outline: none
+}
+#ripple .ripple_modify textarea:focus {
+  border: 1px solid #666;
+}
+#ripple .modify_comment_bottom_area {
+  overflow: hidden;
+}
+#ripple .modify_comment_bottom_area a {
+  float: right;
+}
+#ripple .modify_comment_bottom_area a:hover {
+  text-decoration: underline;
+}
+
+/* 답글 버튼 */
+#ripple .comment_area .comment_comment {
+  margin-top: 15px;
+}
+#ripple .comment_area .comment_comment a {
+  color: #666;
+}
+
+
+/* 댓글의 댓글 */
+.write_ripple_in_ripple {
+  display: none;
+}
+.write_ripple_in_ripple.active{
+  display: block;
+}
+.write_ripple_in_ripple .ripple_in_ripple_box_inner {
+  margin: 0 auto;
+  /* width: 1000px; */
+  border: 3px solid #eee;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 15px 30px;
+}
+.write_ripple_in_ripple .ripple_in_ripple_box_inner .write_comment_top_area strong{
+  padding-left: 3px;
+}
+.write_ripple_in_ripple .ripple_in_ripple_box_inner textarea {
+  border: none;
+  margin-top: .7rem;
+  resize: none;
+  width: 100%;
+  line-height: 1.5em;
+  font-size: 1.063rem;
+  font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif;
+  color: #333;
+  height: 4.2em;
+}
+.write_ripple_in_ripple .ripple_in_ripple_box_inner textarea:focus-visible {
+  outline: none;
+}
+.write_ripple_in_ripple .ripple_in_ripple_box_inner textarea::placeholder {
+  color: #aaa;
+}
+.write_ripple_in_ripple .ripple_in_ripple_box_inner .write_comment_bottom_area {
+  overflow: hidden;
+}
+.write_ripple_in_ripple .ripple_in_ripple_box_inner .write_comment_bottom_area a {
+  color: #aaa;
+  float: right;
+  transition: color .3s;
+}
+.write_ripple_in_ripple .ripple_in_ripple_box_inner .write_comment_bottom_area a:hover {
+  color: #333;
+}
+
 /* 댓글쓰기 */
 #ripple_box {
   margin-top: 20px;
