@@ -84,7 +84,7 @@ $(document).ready(function() {
 
       if(cnt==imageCount)cnt=0;  //카운트 초기화
      
-      timeonoff= setInterval( moveg , 4000); //타이머의 부활!!!
+      timeonoff= setInterval( moveg , 4000); //타이머 시작
      
       if(onoff==false){ //중지상태냐??
             onoff=true; //동작~~
@@ -95,12 +95,12 @@ $(document).ready(function() {
 
 	 //stop/play 버튼 클릭시 타이머 동작/중지
   $('.ps').click(function(){ 
-     if(onoff==true){ // 타이머가 동작 중이냐??
+     if(onoff==true){ // 타이머가 동작 중일경우
 	       clearInterval(timeonoff);   //stop버튼 클릭시 객체 삭제
 		     $(this).css({'background':'url(./images/play_button_arrowhead.png) 50% 50% no-repeat','background-size':'contain'}); //js파일에서는 경로의 기준이 html파일이 기준!!
          onoff=false;   
-	   }else{  // false 타이머가 중지 상태냐??
-		   timeonoff= setInterval( moveg , 4000); //play버튼 클릭시  부활
+	   }else{  // false 타이머가 중지 상태일경우
+		   timeonoff= setInterval( moveg , 4000); //play버튼 클릭시 부활
 		   $(this).css({'background':'url(./images/pause.png) 50% 50% no-repeat', 'background-size':'contain'});
 		   onoff=true; 
 	   }
